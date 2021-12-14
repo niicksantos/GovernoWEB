@@ -228,7 +228,7 @@ return [
         // Navbar items:
         [
             'type'         => 'navbar-search',
-            'text'         => 'search',
+            'text'         => 'pesquisar',
             'topnav_right' => true,
         ],
         [
@@ -236,11 +236,467 @@ return [
             'topnav_right' => true,
         ],
 
+
         // Sidebar items:
         [
             'type' => 'sidebar-menu-search',
-            'text' => 'search',
+            'text' => 'pesquisar',
         ],
+        [
+            'text' => 'Proposição',
+            'icon' => 'fas fa-user-tie',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Situação',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Origem',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Fase',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tema',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Setor',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Legislação',
+            'icon' => 'fas fa-gavel',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Espécies Normativas',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tema da Legislação',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Situação',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Agenda',
+            'icon' => 'far fa-calendar-alt',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar Evento',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Banner Home',
+            'icon' => 'far fa-images',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Páginas',
+            'icon' => 'far fa-file-alt',
+            'label' => '!',
+            'label_color' => 'success',
+            'submenu' => [
+                [
+                    'text' => 'Cidade',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Ato do Presidente',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Composição e Definição',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Estrutura',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Ex Parlamentares',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Organograma',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tribuna Livre',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Links Úteis',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Prestação de Contas Simplificada',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Contra o Coronavírus (COVID-19)',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Notícias',
+            'icon' => 'far fa-newspaper',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Vídeos',
+            'icon' => 'fab fa-youtube',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Pesquisa de Opinião',
+            'icon' => 'fas fa-chart-pie',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Popup',
+            'icon' => 'fas fa-exclamation-circle',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Vereadores',
+            'icon' => 'fas fa-user-tie',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Cadastrar Legislatura',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar Legislatura',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Comissões',
+            'icon' => 'fas fa-users',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar Comissão',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar Comissão',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Situação Comissão',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo Comissão',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Mesa Diretora',
+            'icon' => 'fas fa-user-friends',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar Mesa Diretora',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar Mesa Diretora',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Sessão',
+            'icon' => 'fas fa-gavel',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo de Sessão',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo de Docummento',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Edital',
+            'icon' => 'fas fa-file-alt',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Mobilidade',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Status',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo de Arquivo',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Cadastros',
+                    'url'  => '#',
+                ],
+            ],
+        ], 
+        [
+            'text' => 'Ouvidoria',
+            'icon' => 'fas fa-phone-volume',
+            'submenu' => [
+                [
+                    'text' => 'Consultar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Cidadão',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo Solicitação',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Status de Solicitação',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Departamentos',
+                    'url'  => '#',
+                ],
+            ],
+
+            
+            
+        ], 
+        [
+            'text' => 'E-Sic',
+            'icon' => 'fas fa-info-circle',
+            'submenu' => [
+                [
+                    'text' => 'Consultar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Tipo Solicitação',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Status de Solicitação',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Turismo',
+            'icon' => 'fas fa-plane-departure',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar Empresa',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Dados COVID-19',
+            'icon' => 'fas fa-chart-line',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Opinião Projeto de Lei',
+            'icon' => 'fas fa-comment-dots',
+            'submenu' => [
+                [
+                    'text' => 'Comentários',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Votos',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Transparencia',
+            'icon' => 'fas fa-search-dollar',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar Documento',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar Documento',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Dúvidas Frequentes',
+            'icon' => 'fas fa-question',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Configurações',
+            'icon' => 'fas fa-cogs',
+            'submenu' => [
+                [
+                    'text' => 'Página Inicial',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Arquivo de Imagens',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Usuário',
+            'icon' => 'fas fa-user-plus',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Consultar/Alterar',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+
+
+        /*
+
         [
             'text' => 'blog',
             'url'  => 'admin/blog',
@@ -250,7 +706,7 @@ return [
             'text'        => 'pages',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
+            'label'       => '!',
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
@@ -318,6 +774,8 @@ return [
             'icon_color' => 'cyan',
             'url'        => '#',
         ],
+
+        */
     ],
 
     /*

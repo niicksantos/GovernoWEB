@@ -20,3 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// ROTAS DO PAINEL ADM
+
+route::get('/Admin', ['as' => 'admin.admin_index', 'uses' => 'Admin\AdminController@IndexAdmin']);
+
+route::get('/Sair', ['uses' => 'Admin\AdminController@Logout']);

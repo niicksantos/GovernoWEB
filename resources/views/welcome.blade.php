@@ -75,12 +75,14 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
+                        <a class="btn btn-primary" href="{{ url('Admin') }}" role="button">Painel</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+                            <a class="btn btn-primary" href="{{ url('Admin') }}" role="button">Painel</a>
                     @endauth
                 </div>
             @endif
