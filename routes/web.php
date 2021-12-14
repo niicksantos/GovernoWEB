@@ -24,6 +24,21 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // ROTAS DO PAINEL ADM
 
-route::get('/Admin', ['as' => 'admin.admin_index', 'uses' => 'Admin\AdminController@IndexAdmin']);
+Route::prefix('Admin')->group(function() {
+    route::get('/', ['as' => 'admin.admin_index', 'uses' => 'Admin\AdminController@IndexAdmin']);
 
-route::get('/Sair', ['uses' => 'Admin\AdminController@Logout']);
+
+
+
+    //NOTICIAS
+
+    route::get('/Noticia', ['as' => 'admin.noticias.cadastrar_noticia', 'uses' => 'Admin\noticias\NoticiasController@CadastraNoticia']);
+    
+});
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Painel',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Prefeitura de</b> !!!',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -388,7 +388,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Cadastrar',
-                    'url'  => '#',
+                    'url'  => 'Admin/Noticia',
                 ],
                 [
                     'text' => 'Consultar/Alterar',
