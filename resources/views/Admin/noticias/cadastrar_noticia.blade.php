@@ -62,8 +62,15 @@
 
 <script>
     $(document).ready(function () {
+        
         CKEDITOR.replace('texto_noticia');
+
+    
+
     });
+
+    $('#data_noticia').datepicker();
+
 </script>
 
 @endsection
