@@ -61,12 +61,9 @@
 </div>
 
 <script>
- 
- $(document).ready(function() {
-    
-    
-
-});
+    $(document).ready(function () {
+        CKEDITOR.replace('texto_noticia');
+    });
 </script>
 
 @endsection
