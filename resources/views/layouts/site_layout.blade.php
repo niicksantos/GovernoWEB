@@ -48,7 +48,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-header">
                 <div class="container-fluid ml-auto">
                     
-                    <a class="logo-site" href="#"><img src="{{ url('img/logo.png') }}" alt=""></a>
+                    <a class="logo-site" href="{{ url('/') }}"><img src="{{ url('img/logo.png') }}" alt=""></a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
