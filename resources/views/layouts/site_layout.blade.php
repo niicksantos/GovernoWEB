@@ -7,9 +7,9 @@
     
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="{{ asset('ckeditor/ckeditor.js') }}" defer></script>
     
 
@@ -18,27 +18,31 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    
    
     <title>@yield('titulo', 'Prefeitura Municipal de ***')</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <header>
             <!--Navbar Topo de Página -->
             <nav class="navbar text-white navbar-site">
                 <div class="container">
                     <div class="row ml-auto"></div>
-                    <p>Acessibilidade</p>
+                    <p class="titulo-acess">Acessibilidade</p>
                         <div class="ajustes">
-                            <a class="btn btn-primary" href="#" role="button"><i class="fas fa-adjust"></i></a>
+                            <a class="btn btn-primary btn-acess" role="button" id="contraste"><i class="fas fa-adjust"></i></a>
+                            <a class="btn btn-primary btn-acess" role="button">A+</a>
+                            <a class="btn btn-primary btn-acess" role="button">A-</i></a>
+                            <a class="btn btn-primary btn-acess" role="button">A=</i></a>
                         </div>    
                     </div>
             </nav>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Header com Menu Principal -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-header">
                 <div class="container-fluid ml-auto">
                 <a class="navbar-brand" href="#">Navbar scroll</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,5 +90,28 @@
             </div>
         </footer>
     </div>
+
+    <script>
+
+      $("#contraste").click(function() {
+        var contraste = false;
+            
+            if(contraste == false){
+                $("body")
+                    .css("background-color", "black")
+                    .css("color", "white");
+                    contraste = true;
+            } else{
+                $("body")
+                    .css("background-color", "white")
+                    .css("color", "black");
+                    contraste = false;
+            }
+          console.log(contraste);  
+      });
+      
+    </script>
+
+
 </body>
 </html>
