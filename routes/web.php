@@ -14,12 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.home');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+//SITE
+
+Route::get('/home', 'Site\HomeController@IndexSite')->name('home');
+
+
+
+
+
+
+
 
 
 // ROTAS DO PAINEL ADM
@@ -29,11 +39,12 @@ Route::prefix('Admin')->group(function() {
 
 
 
-
     //NOTICIAS
 
     route::get('/Noticia', ['as' => 'admin.noticias.cadastrar_noticia', 'uses' => 'Admin\noticias\NoticiasController@CadastraNoticia']);
     
+
+
 });
 
 

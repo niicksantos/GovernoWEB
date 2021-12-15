@@ -24,7 +24,7 @@
     @yield('content')
     </section>
     
-    <footer class="footer navbar-fixed-bottom">
+    <footer class="footer fixed-bottom">
         <div class="card-footer">
             Rodapé
         </div>
