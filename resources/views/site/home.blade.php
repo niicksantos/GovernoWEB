@@ -4,7 +4,7 @@
 
 <!-- SLIDER -->
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-pause="false" data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner site-carousel">
         @foreach ($slider as $item)
             @if ($contslider == 0)
                 <div class="carousel-item active">

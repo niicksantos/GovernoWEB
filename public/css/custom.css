@@ -3,17 +3,18 @@
 /*-----NAVBAR-----*/
 
 .navbar-site{
+    margin-top: 1%;
     max-height: 50px;
     background-color: #00486F;
     border-radius: 5px;
 }
 
 .ajustes{
-    margin: 0% 0% 1.4% 1%;
+    margin: 0% 0% 1.4% 34%;
 }
 
 .btn-acess{
-    margin-top: -1%;
+    margin-top: -27%;
     color: #fff;
     background-color: transparent;
     max-height: 50px;
@@ -23,11 +24,31 @@
 
 .titulo-acess{
     font-size: 1.1rem;
+    margin-top: 1.2%!important;
 }
+
+.nav-pesquisa{
+    margin: -1.5% 0% 0% 2%;
+}
+
 
 
 /*------HEADER-----*/
 
 .navbar-header{
     height: 10rem;
+    margin: 0.2% 0% 2% 0%;
+    border-radius: 5px;
+}
+
+.logo-site img{
+    max-height: 80px;
+    max-height: 80px;
+}
+
+
+/*------HEADER-----*/
+
+.site-carousel{
+    border-radius: 5px;
 }
