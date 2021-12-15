@@ -31,7 +31,7 @@
             <nav class="navbar text-white navbar-site">
                 <div class="container">
                     <div class="row ml-auto">
-                        <p class="titulo-acess">Acessibilidade22</p>
+                        <p class="titulo-acess">Acessibilidade</p>
                         <div class="ajustes">
                             <a class="btn btn-primary btn-acess" role="button" id="contraste"><i class="fas fa-adjust"></i></a>
                             <a class="btn btn-primary btn-acess" role="button">A+</a>
