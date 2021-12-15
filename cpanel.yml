@@ -1,0 +1,4 @@
+eployment:
+  tasks:
+    - export DEPLOYPATH=/home2/scwebxyz/governo.ibitweb.com.br
+    - /bin/cp * $DEPLOYPATH 
