@@ -43,11 +43,11 @@
     <div class="row">
         <div class="col-12">
             <div class="acess_rap_btns">
-                <div class="btn_acrpd"><img src="{{ url('img/icon-1.png') }}" alt=""><p>E-SIC</p></div>
-                <div class="btn_acrpd"><img src="{{ url('img/icon-2.png') }}" alt=""><P>AGENDA DE REUNIÕES</P></div>
-                <div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>TRANSPARÈNCIA</p></div>
-                <div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>CONTAS PUBLICAS/LRF</p></div>
-                <div class="btn_acrpd"><img src="{{ url('img/icon-4.png') }}" alt=""><p>DÚVIDAS FREQUENTES</p></div>                
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-1.png') }}" alt=""><p>E-SIC</p></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-2.png') }}" alt=""><P>AGENDA DE REUNIÕES</P></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>TRANSPARÈNCIA</p></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>CONTAS PUBLICAS/LRF</p></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-4.png') }}" alt=""><p>DÚVIDAS FREQUENTES</p></div>                </a>
             </div>
         </div>
     </div>
