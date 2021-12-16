@@ -13,6 +13,6 @@ class NoticiasController extends Controller
     }
 
     public function CadastraNoticia() {
-        return view('admin.noticias.cadastrar_noticia');
+        return view('Admin.noticias.cadastrar_noticia');
     }
 }
