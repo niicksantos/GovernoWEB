@@ -54,6 +54,24 @@
 </div>
 
 
+<div class="container">
+    <div class="div_noticias">
+        <div class="row">
+            <div class="col-12">
+                <div class="losango_titulo">
+                    <p>Últimas Notícias</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="box_noticias">          
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
 
 @endsection
 
