@@ -20,7 +20,7 @@ Auth::routes();
 //SITE
 
 Route::get('/', 'Site\HomeController@IndexSite')->name('home');
-
+Route::get('/home', 'Site\HomeController@HomeSite');
 
 
 

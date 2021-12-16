@@ -11,6 +11,9 @@ use App\Models\Site\Slider;
 class HomeController extends Controller
 {
     
+    public function HomeSite() {
+        return redirect()->route('home');
+    }
 
     public function IndexSite() {
 
