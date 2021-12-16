@@ -45,7 +45,7 @@
             </nav>
 
             <!-- Header com Menu Principal -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-header">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-header">
                 <div class="container-fluid ml-auto">
                     
                     <a class="logo-site" href="{{ url('/') }}"><img src="{{ url('img/logo.png') }}" alt=""></a>
@@ -59,14 +59,14 @@
         </header>
 
         <section>
-        @yield('content')
+            @yield('content')
         </section>
         
-        <footer class="footer fixed-bottom bg-dark">
+        <!-- <footer class="footer fixed-bottom bg-dark">
             <div class="card-footer text-white">
                 Rodapé
             </div>
-        </footer>
+        </footer> -->
     </div>
 
     <script>
@@ -89,7 +89,6 @@
       });
       
     </script>
-
 
 </body>
 </html>

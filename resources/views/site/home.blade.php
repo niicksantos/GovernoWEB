@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!-- SLIDER -->
+<!----- SLIDER ----->
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-pause="false" data-bs-ride="carousel">
     <div class="carousel-inner site-carousel">
         @foreach ($slider as $item)
@@ -25,6 +25,31 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
         </button>
+    </div>
+</div>
+
+<!----- ACESSO RAPIDO ----->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="acess-rapido">
+                <div class="losango"></div>
+                <p>ACESSO RÁPIDO</p>
+                <div class="losango"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="acess_rap_btns">
+                <div class="btn_acrpd"><img src="{{ url('img/icon-1.png') }}" alt=""><p>E-SIC</p></div>
+                <div class="btn_acrpd"><img src="{{ url('img/icon-2.png') }}" alt=""><P>AGENDA DE REUNIÕES</P></div>
+                <div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>TRANSPARÈNCIA</p></div>
+                <div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>CONTAS PUBLICAS/LRF</p></div>
+                <div class="btn_acrpd"><img src="{{ url('img/icon-4.png') }}" alt=""><p>DÚVIDAS FREQUENTES</p></div>                
+            </div>
+        </div>
     </div>
 </div>
 
