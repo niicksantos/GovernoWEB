@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Site\Slider;
+use App\Models\Site\Noticia;
 
 
 
@@ -19,8 +20,20 @@ class HomeController extends Controller
 
         $contslider = 0;
         $slider = Slider::all() ->where('exibir', 1);
+        $noticia = Noticia::all()->sortByDesc('id')
+                                 ->take(5);
 
-        return view('site.home', ['contslider' => $contslider,  'slider' => $slider]);
+
+        return view('site.home', ['contslider' => $contslider,
+                                  'slider' => $slider,
+                                  'noticia' =>$noticia 
+                                
+                                    ]);
+
+        
+
+
+
     }
 
 
