@@ -66,28 +66,27 @@
         <div class="row">
             <div class="col-12">
                 <div class="box_noticias">        
+                    <div class="row">
+                    @foreach ($destaque as $dest)
+                        <div class="col-12 noticia_destaque">
+                            <a href="{{ $dest->url }}" ><img class="img_noticia" src="{{ $dest->capa }}" alt="{{ $dest->titulo }}">
+                            <p>{!! $dest->titulo !!}</p>    
+                        
+                            <div class="texto_noticia">
+                            {!! Str::limit($dest->texto, 400) !!}
+                            </a>
+                            </div>
+                        </div>
+                    @endforeach
+ 
+                    </div> 
                     @foreach ($noticia as $not)
-                        @if ($not->destaque == 1)
-                            <div class="row">
-                                <div class="col-12 noticia_destaque">
-                                    <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
-                                    <p>{!! $not->titulo !!}</p>    
-                                
-                                    <div class="texto_noticia">
-                                    {!! Str::limit($not->texto, 400) !!}
-                                    </a>
-                                    </div>
-                                </div> 
-                            </div> 
-                        @else
-                            <div class="row">
-                                <div class="col-3 noticia_padrao">
-                                    <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
-                                    <p>{!! $not->titulo !!}</p></a> 
-                                </div>
-                            </div>  
-                        @endif
-
+                        <div class="row">
+                            <div class="col-3 noticia_padrao">
+                                <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
+                                <p>{!! $not->titulo !!}</p></a> 
+                            </div>
+                        </div>  
                     @endforeach  
                 </div>
             </div>

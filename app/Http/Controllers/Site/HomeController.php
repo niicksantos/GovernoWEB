@@ -21,11 +21,15 @@ class HomeController extends Controller
         $contslider = 0;
         $slider = Slider::all() ->where('exibir', 1);
         $noticia = Noticia::all()->sortByDesc('id')
-                                 ->take(5);
+                                 ->take(5)
+                                 ->skip(1);
+
+        $destaque = Noticia::all() ->where('destaque', 1);
 
 
         return view('site.home', ['contslider' => $contslider,
                                   'slider' => $slider,
+                                  'destaque' => $destaque,
                                   'noticia' =>$noticia 
                                 
                                     ]);
