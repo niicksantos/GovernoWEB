@@ -19,8 +19,20 @@ Auth::routes();
 
 //SITE
 
-Route::get('/', 'Site\HomeController@IndexSite')->name('home');
-Route::get('/home', 'Site\HomeController@HomeSite');
+Route::prefix('/')->group(function() {
+
+    route::get('/', ['as' => 'home', 'uses' => 'Site\HomeController@IndexSite']);
+    route::get('/home', ['as' => 'home', 'uses' => 'Site\HomeController@IndexSite']);
+
+
+    //NOTICIAS
+
+    route::get('Noticias', ['as' => 'noticias.noticias', 'uses' => 'Site\noticias\NoticiasController@Index']);
+    route::get('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@ExibeNoticia']);
+
+
+
+});
 
 
 
