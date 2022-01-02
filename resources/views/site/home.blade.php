@@ -81,12 +81,15 @@
  
                     </div> 
                     @foreach ($noticia as $not)
-                        <div class="row">
-                            <div class="col-3 noticia_padrao">
-                                <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
-                                <p>{!! $not->titulo !!}</p></a> 
-                            </div>
-                        </div>  
+                        @if ($not->destaque == 0)
+                            <div class="row">
+                                <div class="col-3 noticia_padrao">
+                                    <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
+                                    <p>{!! $not->titulo !!}</p></a> 
+                                </div>
+                            </div>                            
+                        @endif
+                         
                     @endforeach  
                 </div>
             </div>
