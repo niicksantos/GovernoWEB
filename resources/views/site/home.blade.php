@@ -71,10 +71,10 @@
                             <div class="row">
                                 <div class="col-12 noticia_destaque">
                                     <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
-                                    <p>{{ $not->titulo }}</p>    
+                                    <p>{!! $not->titulo !!}</p>    
                                 
                                     <div class="texto_noticia">
-                                    {{ Str::limit($not->texto, 400) }}
+                                    {!! Str::limit($not->texto, 400) !!}
                                     </a>
                                     </div>
                                 </div> 
@@ -83,7 +83,7 @@
                             <div class="row">
                                 <div class="col-3 noticia_padrao">
                                     <a href="{{ $not->url }}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
-                                    <p>{{ $not->titulo }}</p></a> 
+                                    <p>{!! $not->titulo !!}</p></a> 
                                 </div>
                             </div>  
                         @endif
