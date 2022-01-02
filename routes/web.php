@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::prefix('/')->group(function() {
 
-    route::get('/', ['as' => 'home', 'uses' => 'Site\HomeController@IndexSite']);
+    route::get('/', ['as' => 'index', 'uses' => 'Site\HomeController@IndexSite']);
     route::get('/home', ['as' => 'home', 'uses' => 'Site\HomeController@IndexSite']);
 
 
