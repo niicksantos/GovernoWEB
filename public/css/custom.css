@@ -288,6 +288,8 @@
     .noticia_destaque {
         height: 16rem;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         max-width: 15rem!important;
         margin: 2rem 3rem 3.5rem -0.5rem;
     }
