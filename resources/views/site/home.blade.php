@@ -82,7 +82,7 @@
                 <div class="box_noticias">            
                     @foreach ($noticia as $not)
                         @if ($not->destaque == 0)
-                            <div class="row">
+                            <div class="row not_linha">
                                 <div class="col-3 noticia_padrao">
                                     <a href="{{ route('noticias.noticia', ['id' => $not->id])}}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
                                     <p>{!! $not->titulo !!}</p></a> 
