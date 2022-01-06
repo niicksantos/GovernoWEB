@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-sm-6">
+        <div class="col-12s">
             <div class="acess_rap_btns">
                 <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-1.png') }}" alt=""><p>E-SIC</p></div></a>
                 <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-2.png') }}" alt=""><P>AGENDA DE REUNIÕES</P></div></a>
@@ -55,31 +55,31 @@
 
 
 <div class="container">
-    <div class="div_noticias">
-        <div class="row">
-            <div class="col-12">
-                <div class="losango_titulo">
-                    <p>Últimas Notícias</p>
-                </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="noticias_titulo">
+                <div class="losango"></div>
+                <p>ÚLTIMAS NOTÍCIAS</p>
+                <div class="losango"></div>
             </div>
         </div>
+    </div>
+    <div class="div_noticias">
         <div class="row">
-            <div class="col-12">
-                <div class="box_noticias">        
+            <div class="col-12">      
                     <div class="row">
                     @foreach ($destaque as $dest)
                         <div class="col-12 noticia_destaque">
                             <a href="{{ route('noticias.noticia', ['id' => $dest->id])}}" ><img class="img_noticia" src="{{ $dest->capa }}" alt="{{ $dest->titulo }}">
-                            <p>{!! $dest->titulo !!}</p>    
+                            <!--<p>{!! $dest->titulo !!}</p> -->
                         
                             <div class="texto_noticia">
-                            {!! Str::limit($dest->texto, 400) !!}
+                            {!! Str::limit($dest->texto, 600) !!}
                             </a>
                             </div>
                         </div>
                     @endforeach
- 
-                    </div> 
+                <div class="box_noticias">            
                     @foreach ($noticia as $not)
                         @if ($not->destaque == 0)
                             <div class="row">
