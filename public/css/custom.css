@@ -256,7 +256,7 @@ body{
 .noticia_padrao {
     display: flex;
     background-color: #fff;
-    height: 20rem;
+    height: 18rem;
     width: 16rem!important;
     margin: 2rem 4rem 2rem 0rem;
     transition: 0.7s;
@@ -273,9 +273,10 @@ body{
     font-weight: bold;
 }
 
-.noticia_padrao a p{
-    margin-top: 2.5rem;
+.noticia_padrao a p {
+    margin-top: 1.5rem;
     color: #696464;
+    font-size: 0.9rem;
 }
 
 .not_linha {

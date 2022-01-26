@@ -1,0 +1,979 @@
+@charset "utf-8";
+/* ATENÇÃO: ESTE ARQUIVO É PADRONIZADO */
+
+
+#cont_conteudo_site_interna {
+	width:930px;
+	float:right;
+	margin-top:15px;		
+}
+
+/* cont_interna_imagem_titulo_descricao aparece em paginas, prefeitura, projetos, servicos e videos */
+.cont_interna_imagem_titulo_descricao {
+	width:300px;
+	height:396px;
+	float:left;
+	margin-top:15px;
+	margin-right:10px;
+	overflow:hidden;	
+}
+
+
+/* cont_titulo_noticia aparece em paginas, prefeitura, projetos, servicos e videos */
+.cont_titulo_noticia {
+	width:300px;
+	float:left;	
+}
+
+
+/* cont_imagem_interna300 aparece em paginas, prefeitura, projetos, servicos e videos */
+.cont_imagem_interna300 {
+	width:300px;
+	height:193px;
+	float:left;
+	overflow:hidden;
+}
+
+/* cont_data_noticia_retangulo aparece em paginas, projetos e videos */
+.cont_data_noticia_retangulo {
+	width:50px;
+	height:60px;
+	float:left;
+	overflow:hidden;
+}
+
+/* cont_busca_detalhada aparece em contas_publicas, editais e leis_decretos */
+.cont_busca_detalhada {
+	width:900px;
+	height:16px;
+	float:left;
+	padding:13px;
+	margin-top:15px;
+}	
+
+/*
+	cont_input_busca_detalhada_interna
+	- Praticamente está no SITE INTEIRO: cidade, contas_publicas, editais, estrutura, galeria, leis_decretos, paginas, prefeitura, projetos e secretarias
+*/
+.cont_input_busca_detalhada_interna {
+	width:950px;
+	float:left;	
+	margin-top:15px;
+}
+
+
+
+
+/* cont_campo_input_interna aparece em leis_decretos, contas_publicas e editais */
+.cont_campo_input {
+	width:260px;
+	float:left;
+	margin-right:35px;
+	margin-bottom:22px;
+}
+
+
+/* cont_campo_input_interna aparece em leis_decretos, add_vagas, contas_publicas e editais */
+.cont_campo_input_interna {
+	width:260px;
+	height:35px;
+	float:left;
+}
+
+
+/* icon_interna aparece em contas_publicas e editais */
+.icon_interna {
+	width:36px;
+	height:36px;
+	float:left;
+	margin-right:15px;
+}
+
+
+/*
+	*** OS CSSs abaixo aparecem em editais
+*/
+
+.retangulo_interna_expor {
+	width:420px;
+	float:left;	
+	padding:10px;
+	margin-bottom:15px;
+	margin-right:25px;
+	overflow:hidden;
+	
+}
+
+.retangulo_interna_expor_maior {
+	width:900px;
+	float:left;	
+	padding:10px;
+	margin:0 auto;
+	/*alignment-adjust:middle;*/
+}
+
+.login_licitacao {
+	width:565px;
+	float:left;
+	padding:10px
+}
+
+.cont_campo_input_interna_login {
+	width:230px;
+	height:35px;
+	float:left;
+}
+
+.cont_campo_input_login {
+	width:240px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:12px;
+	margin-top:12px;
+}
+
+.entrar_login {
+	width:60px;
+	height:37px;
+	margin-top:28px;
+	float:left;
+}
+
+
+/* **** FIM editais ***** */
+
+/* 
+	***** OS CSSs abaixo aparecem em estrutura e secretarias
+*/ 
+.turismo_interna  {
+	width:200px;
+	height:250px;
+	float:left;
+	margin-right:20px;
+	margin-top:15px;
+}
+
+.imagem_turismo_interna img {
+	width:200px;
+	float:left;
+	height:220px;
+}
+
+.fundo_turismo_interna  {
+	width:200px;
+	height:45px;
+	float:left;
+}
+
+/************************** ***** /
+
+/* cont_telefones_uteis esta no links, servicos_online e telefones */
+.cont_telefones_uteis {
+	width:200px;
+	margin-right:10px;
+	float:left;
+	height:225px;
+	margin-top:15px;
+	overflow:hidden;
+	padding:10px;
+}
+
+/* imagem_telefones_interna esta no links, servicos_online e telefones */
+.imagem_telefones_interna  {
+	width:200px;
+	height:116px;
+	float:left;
+	background:url(../imginternas/fundo_telefone.jpg) no-repeat;
+	border-radius:6px;
+}
+
+.font_telefone_interna {
+	width:200px;
+	float:left;	
+	text-align:center;
+}
+
+/* botao_acessar esta no jornal, link e servicos_online */
+.botao_acessar {
+	width:122px;
+	height:38px;
+	float:left;
+	margin-top:4px;
+	margin-left:42px;
+}
+
+/* cont_donwload esta em cidade, estrutura, paginas, prefeitura, projetos, secretarias e servicos */
+.cont_donwload {
+	width:270px;
+	height:80px;
+	float:left;	
+	padding:10px;
+	margin-top:10px;
+	margin-right:15px;
+	background-image:url(../imginternas/download_interna.jpg);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+/* font_download_interna_tamanho esta em cidade, estrutura, paginas, prefeitura, projetos, secretarias e servicos */
+.font_download_interna_tamanho {
+	width:200px;
+	float:left;	
+}
+
+/* font_download_interna_tamanho_saiba esta em cidade, estrutura, paginas, prefeitura, projetos, secretarias e servicos */
+.font_download_interna_tamanho_saiba {
+	width:200px;
+	margin-top:5px;
+	float:left;	
+	text-decoration:underline;
+}
+
+
+
+/* cont_galeria_imagem aparece em galeria */
+
+
+/* cont_galeria_descricao aparece em galeria */
+
+
+.cont_prefeito_imagem {
+	width:246px;
+	float: right;
+	text-align:center;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+.cont_input_prefeito_interna {
+	width:900px;
+	float:left;	
+	margin-top:15px;
+}
+
+/* aparece em cidade, estrutura, g_prefeitos, paginas, prefeitura, projetos, secretarias, servicos */
+.cont_pagina_texto_interna {
+	width:930px;
+	float:left;	
+	margin-top:15px;
+}
+
+/* cont_galeria_imagem_pagina_interna aparece em cidade, estrutura, galeria, paginas, prefeitura, projetos, secretarias, servicos */
+.cont_galeria_imagem_pagina_interna {
+	width:166px;
+	height:109px;
+	float:left;
+	border-radius:4px;
+}
+
+/* aparece em contato, newsletter, prefeito, vice_prefeito */
+.cont_input_contato_prefeito_interna {
+	width:880px;
+	float:left;
+	margin-top:15px;
+	padding:10px;
+}
+
+/* aparece em contato, newsletter, prefeito, vice_prefeito */
+.cont_lado_contato_interna {
+	width:400px;
+	float:left;	
+}
+
+.cont_lado_contato_interna_right {
+	width:400px;
+	float:right;	
+}
+
+/* aparece em contato, emprega, newsletter, prefeito, vice_prefeito */
+.cont_campo_contato_interna_input {
+	width:400px;
+	float:left;	
+	margin-bottom:15px;
+}
+
+.campo_contato_interna_input {
+	width:400px;
+	height:35px;
+	float:left;	
+}
+
+
+.campo_contato_interna_input_mensagem {
+	width:400px;
+	height:120px;
+	float:left;	
+}
+
+.campo_contato_interna_input_cap {
+	width:240px;
+	height:35px;
+	float:right;	
+}
+
+.cap {
+	width:120px;
+	height:35px;
+	float:left;
+}
+
+
+.enviar_contato_interna_botao {
+	width:400px;
+	height:35px;
+	float:left;
+	margin-top:17px;
+}
+
+
+.cont_imagem_cidade_bandeira {
+	width:246px;
+	height:160px;
+	float: right;	
+	margin-top:10px;
+}
+
+
+.cont_imagem_pagina_interna {
+	width:325px;
+	/*height:225px;*/
+	float: right;	
+	margin-top:10px;
+	margin-left:15px;
+}
+
+.lado_cidade_bandeira_hino {
+	float:right;
+	width:246px;	
+	margin-left:20px;
+}
+
+.cont_contato_cidadao {
+	width:450px;
+	float:left;	
+}
+
+.cont_mapa_contato_interna {
+	width:425px;
+	height:300px;
+	float:right;	
+	margin-right:30px;
+}
+
+.cont_emprega_interna {
+	width:240px;
+	height:22px;
+	margin-top:15px;
+	float:left;	
+	margin-right:25px;
+}
+
+.icone_emprega_interna {
+	width:42px;
+	height:40px;
+	float:left;
+	margin-top:-10px;
+	margin-right:5px
+}
+
+.cont_botao_emprega_INTERNA {
+	width:271px;
+	height:80px;
+	float:left;	
+	margin-left:90px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.cont_login_emprega_interna {
+	width:403px;
+	height:272px;
+	float:left;
+	margin-right:35px;
+	padding:10px;
+}
+
+.botao_entrar_emprega_interna {
+	width:135px;
+	height:39px;
+	float:right;
+	margin-top:-10px;
+}
+
+.cont_jornal_interna {
+	width:204px;
+	height:350px;
+	float:left;
+	margin-top:10px;
+	text-align:center;
+	padding:10px;	
+	overflow:hidden;
+	margin-right:5px;
+}
+
+.cont_data_jornal_interna {
+	width:204px;
+	float:left;
+	text-align:center;	
+}
+
+.jornal_interna_imagem {
+	width:204px;
+	height:249px;
+	float:left;
+	margin-top:10px;	
+}
+
+/* aparece em cadastro_candidato, cadastro_empresa, editais */
+.cont_input_interna {
+	width:420px;
+	height:35px;
+	float:left;	
+}
+
+.cont_input_interna_codigo {
+	width:275px;
+	height:35px;
+	float:left;	
+	margin-top:-60px;
+	margin-left:10px;
+}
+
+/* contencao do botao enviar na pagina criacao de formulario */
+.cont_botao_enviar_crian {
+	width:120px;
+	height:28px;
+	float:right;
+	margin-top:22px;
+	margin-right:-20px;
+	padding-bottom:22px;
+}
+
+
+/* aparece em sic_moderador, sic_replica, sic_solicitacao */
+.cont_input_sic_interna_mensagem {
+	width:930px;
+	height:150px;
+	float:left;	
+}
+
+/* aparece na criacao de formulario */
+.cont_input_criacao_form {
+	width:490px;
+	height:35px;
+	float:left;	
+}
+
+/* aparece no campo da criacao de formulario somente para o editor de texto */
+.cont_input_criacao_form_editor {
+	width:490px;
+	height:150px;
+	float:left;	
+}
+
+/* aparece no campo de seleção da criacao de formulario */
+.cont_input_criacao_form_select {
+	width:490px;
+	height:35px;
+	float:left;	
+}
+
+/* aparece em sic_formulario, sic_login, sic_meusdados, sic_moderador, sic_replica, sic_solicitacao */
+.cont_input_sic_interna {
+	width:400px;
+	float:left;
+	height:33px;
+}
+
+/* aparece em cadastro_candidato, cadastro_empresa, editais, envia_curriculo, sic_formulario, sic_login, sic_meusdados, sic_moderador, sic_replica, sic_solicitacao */
+.cont_botao_sic {
+	width:150px;
+	height:30px;
+	float:right;
+	margin-right:-23PX;
+	margin-top:10px;	
+}
+
+/* aparece em cadastro_candidato, cadastro_empresa, editais, sic_formulario, sic_meusdados */
+.cont_login_sic_interna_formulario {
+	width:930px;
+	float:left;
+
+}
+
+/* aparece em cadastro_candidato, cadastro_empresa, editais, sic_formulario, sic_meusdados */
+.cont_lado_interna_sic_form_left {
+	width:420px;
+	float:left;	
+}
+
+/* aparece na criacao do formulario */
+.cont_criacao_formulario_interna {
+	width:480px;
+	background-color:#F4FAFF;
+	border-radius:6px;
+	float:left;
+	margin-left:180px;	
+	margin-top:20px;
+	padding-left:60px;
+	padding-right:80px;
+	padding-bottom:20px;
+	padding-top:20px;
+	border:1px solid #DDD;
+}
+
+/* aparece em cadastro_candidato, cadastro_empresa, editais, sic_formulario, sic_meusdados */
+.cont_lado_interna_sic_form_right {
+	width:420px;
+	float:right;	
+}
+
+.cont_imagem_sair_siccam {
+	width:940px;
+	float:left;	
+	margin-top:30px;
+}
+
+.cont_imagem_sic_interna {
+	width:57px;
+	height:52px;
+	float:left;	
+}
+
+
+#sic_menu ul {
+	height:35px;
+	padding:0px;
+	margin:0px;
+	float: left;
+	list-style:none;
+	margin-top:25px;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+}
+
+#sic_menu ul li { display: inline; }
+
+#sic_menu ul li a {
+	color:#FFFFFF;
+	text-decoration: none;
+	padding: 8px 25px;
+	float:left;
+}
+ 
+#sic_menu ul li a:hover {
+	color:#FFFFFF;
+}
+
+.tamanho_busca_arquivo_interna {
+	width:630px;
+	float:left;
+	height:70px;
+	border-bottom:1px solid #999;	
+	margin-bottom:20px;
+}
+
+.menu_busca_interna {
+	width:230px;
+	float:right;
+	padding:15px;
+	position:fixed;
+	margin-left:680px;
+}
+
+#e_menu_lateral_busca ul {
+	margin: 0;
+	padding: 0;
+	width:230px;
+	list-style-type: none;
+	font-family: 'proxima_nova_rgregular';
+	font-size:15px;
+}
+
+#e_menu_lateral_busca ul li a {
+	text-decoration:none;
+	color:#036;
+	padding: 5px 11px;
+	margin-top:5px;
+	display:block;
+}
+
+/* aparece em paginas e projetos */
+.botao_enviar_amigo_interna {
+	width:205px;
+	height:25px;
+	float:right;
+	margin-top:15px;
+}
+
+/* aparece em paginas e projetos */
+.botao_imprimir_interna {
+	width:105px;
+	height:25px;
+	float:right;
+	margin-top:15px;
+	margin-right:15px;
+}
+
+#emprega_menu ul {
+	height:39px;
+	padding:0px;
+	margin:0px;
+	float: left;
+	list-style:none;
+	font-family: 'proxima_nova_rgregular';
+	font-size:15px;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	width:930px;
+}
+
+#emprega_menu ul li { display: inline; }
+ 
+#emprega_menu ul li a {
+	color:#FFF;
+	text-decoration: none;
+	padding: 12px 85px;
+	float:left;
+}
+ 
+#emprega_menu ul li a:hover {
+	color:#00e166;
+}
+
+/* aparece em cadastro_candidato, cadastro_empresa */
+.cont_editor_emprega {
+	width:927px;
+	border-radius:4px;
+	float:left;
+	margin-top:20px;
+}
+
+/* aparece em cidade, estrutura, g_prefeitos, paginas, prefeitura, projetos, secretarias, servicos */
+#cont_imagem_botoes_interna {
+	width:350px;
+	float:right;
+}
+
+/* aparece em cidade, estrutura, g_prefeitos, paginas, prefeitura, projetos, secretarias, servicos */
+#cont_descricao_imagem_botoes_interna {
+	width:930px;
+}
+
+
+/* LEIS E DECRETOS */
+.cont_leis_decretos_interna {
+	width:930px;
+	float:left;	
+	margin-bottom:30px;
+}
+
+
+.cont_leis_decretos_interna_titulo {
+	width:840px;
+	float:left;	
+}
+
+.cont_botao_leis_decretos {
+	width:73px;
+	height:78px;
+	float:left;	
+	margin-right:15px;
+}
+
+.cont_categoria_interna_leis {
+	height:40px;
+	float:left;
+	width:82px;
+	text-align:center;
+	padding-top:20px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.cont_download_interna_leis {
+	height:20px;
+	float:left;
+	width:84px;
+	text-align:center;
+	padding-top:7px;
+}
+
+.titulo_descricao_links {
+	width:200px;
+	float:left;
+	margin-left:5px;	
+}
+
+.botao_acessar {
+	width:122px;
+	height:27px;
+	float:left;
+	border-radius:4px;
+}
+
+.fisica_juridica_cont {
+	float:right;
+	width:450px;
+	text-align:right;	
+}
+
+.botao_editais_empresa {
+	width:271px;
+	height:60px;
+	float:left;	
+	margin-left:50px;
+	margin-top:10px;
+	margin-bottom:30px;
+}
+
+
+
+.galeria_prefeitos_interna  {
+	width:294px;
+	height:270px;
+	float:left;
+	margin-right:16px;
+	margin-top:15px;
+	overflow:hidden;
+}
+
+.fundo_galeria_prefeitos_interna  {
+	width:285px;
+}
+
+
+/* SIC */
+
+.cont_login_sic_interna {
+	width:380px;
+	height:327px;
+	float:left;
+	margin-top:50px;
+	margin-left:50px;
+}
+
+.sic_solicitacao {
+	width:960px;
+	height:36px;
+	float:left;
+
+}
+
+.tamanho_itens_sic {
+	width:190px;
+	float:left;
+	height:36px;
+}
+
+.tamanho_itens_sic2 {
+	width:130px;
+	float:left;
+	height:36px;
+}
+
+#botao_expirada {
+	width:90px;
+	float:right;
+	margin-right:15px;
+	margin-top:5px;
+	padding:6px;
+	height:14px;	
+}
+
+#botao_respondido {
+	width:90px;
+	float:right;
+	margin-right:15px;
+	margin-top:5px;
+	padding:6px;
+	height:14px;
+}
+
+#botao_aberto {
+	width:90px;
+	float:right;
+	margin-right:15px;
+	margin-top:5px;
+	height:14px;
+	padding:6px;	
+}
+
+#botao_aguardando {
+	width:90px;
+	float:right;
+	margin-right:15px;
+	margin-top:8px;
+	height:14px;
+	padding:6px;
+}
+
+#botao_finalizado {
+	width:90px;
+	float:right;
+	height:14px;
+	margin-right:15px;
+	margin-top:5px;
+	padding:6px;
+}
+
+
+.cont_pergunta {
+	max-width:700px;
+	float:left;
+	font-family: 'proxima_nova_rgregular';	
+}
+
+.cont_resposta2 {
+	max-width:700px;
+	float:right;
+}
+
+
+#cont_resposta_opcao {
+	width:600px;
+	float:right;	
+}
+
+#cont_pergunta_opcao {
+	width:700px;
+	float:left;
+	margin-left:20px;	
+}
+
+
+#cont_resposta_opcao {
+	width:700px;
+	float:right;
+		
+}
+
+#resposta_sic {
+	width:600px;
+	padding:10px;
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+
+}
+
+#botao_reclamar {
+	width:200px;
+	height:30px;
+	float:right;
+	height:18px;
+	padding:10px;
+	margin-top:-4px;
+}
+
+
+#resolvido {
+	width:180px;
+	height:30px;
+	float:right;
+	height:18px;
+	padding:10px;
+	margin-right:10px;
+}
+
+#proximo_nivel {
+	width:130px;
+	height:30px;
+	float:right;
+	height:18px;
+	padding:10px;
+	margin-right:10px;
+}
+
+
+#opcao_conversa {
+	display:block;
+	float:right;
+	margin-top:-4px;
+
+}
+
+
+#cont_replica_sic {
+	width:100px;
+	padding:10px;
+	float:left;	
+}
+
+#cont_botao_sic_interna_3 {
+	width:700px;
+	float:right;
+	margin-top:20px;
+	height:50px;	
+	margin-bottom:-10px;
+}
+
+/* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONT GALERIA DE FOTOS */
+
+.cont_galeria_interna {
+	width:960px;
+	float:left;	
+	margin-top:15px;
+}
+
+
+.cont_galeria_fotos {
+	width:260px;
+	height:350px;
+	float:left;
+	padding:10px;
+	margin-top:15px;
+	margin-right:23px;
+	overflow:hidden;
+}
+
+.cont_galeria_imagem {
+	width:290px;
+	height:190px;
+	float:left;
+}
+
+.cont_galeria_tamanho {
+	width:260px;
+	float:left;
+	text-align:center;
+}
+
+
+/* FIM CONT GALERIA DE FOTOS */
