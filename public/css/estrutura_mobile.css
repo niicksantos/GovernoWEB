@@ -1,0 +1,22 @@
+body {padding:0;margin:0;}
+
+#topo {width:100%; float:left; padding:0; margin:0; border-top: 0; padding-top: 20px; background: #fff; }
+
+#brasao {width:auto; height:auto; max-width:90%; display:table; margin:0 auto; }
+#brasao img {width:100%; height:auto; float:left; }
+
+.busca_mobile {width:96%; float:left; margin: 10px 2%; margin-top: 15px; }
+.e_cor_label { display: none; }
+.e_busca_mobile {float:left; width:100%; height: 40px; outline:none; background-image:url(/img/busca_mobile.png); background-position: center right 10px; background-repeat:no-repeat; font-size:11px; padding:15px; background-color: #edeff3; border: solid 1px #e1e4ea; border-radius: 4px; color: #444; font-family: "Lato"; }
+
+#rodape_mobile {width:90%;height:auto; margin-top:0; float:left; display:block; margin-left:0; padding: 25px 5%; border-radius: 0 !important; }
+
+#menu-container{ width:98%; margin-left:1%; z-index:2;float:left;}
+
+#contencao_menu_mobile_p {  z-index:1000;  position: relative; float:left;  width:100%; height:44px; display:block;}
+
+.rede_social_mobile {float:left; width:96%; margin: 0 2% 15px 2%; color:#333; font-size:11px; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+.rede_social_mobile span { display: none;  }
+.icone_rede_social {width:25px; height: 25px; float:left; border-radius: 100%; overflow: hidden; margin-left:3px; }
+.icone_rede_social img {width:25px; height:auto; }
+.icone_rede_social:hover img {margin-top: -25px; }

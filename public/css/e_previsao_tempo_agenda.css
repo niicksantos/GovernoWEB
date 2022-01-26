@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* PREVISÃO DO TEMPO / AGENDA DE EVENTOS */
+#e_conteudo .e_area_tempo_eventos {width: 100%; padding: 20px; font-size: 0; margin-bottom: 20px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo {width: 60%; display: inline-block; vertical-align: top; background: url(../img/bg_previsaotempo.png) no-repeat; background-color: #0299d3; background-size: cover; background-position: center; border-radius: 5px; overflow: hidden; margin-right: 25px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo {padding: 30px 20px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_cont_titulo_tempo {width: 200px; display: inline-block; vertical-align: middle; background: #fff; border-radius: 5px; padding: 20px 28px; margin-right: 20px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_cont_titulo_tempo .e_titulo_tempo {text-align: right; font-size: 24px; color: #7a8798; text-transform: uppercase; letter-spacing: -1px; line-height: 25px; margin-bottom: 5px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_cont_titulo_tempo .e_titulo_tempo span {font-size: 28px; color: #505e71;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_cont_titulo_tempo .e_cidade_previsao {font-size: 16px; color: #00b6fb; background: #f2f4f5; border-radius: 3px; display: table; margin: 0 auto; padding: 8px 22px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes {width: 415px; width: calc(100% - 240px); height: 110px; position: relative; display: inline-block; vertical-align: middle; margin-left: 20px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes {position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo {width: 200px; height: 80px; display: inline-block; vertical-align: top; background: #fff; border-radius: 3px; padding: 10px; margin-right: 30px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo:last-child {margin-right: 0;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_img_prev {width: 50px; display: inline-block; vertical-align: middle; text-align: center; margin: 10px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_img_prev img {width: 49px; height:40px; }
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev {display: inline-block; vertical-align: middle; text-align: center;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_data_prev {display: block; font-size: 14px; color: #7a8798; text-transform: uppercase; padding-bottom: 10px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_prev_tempo {width: 100px; height: 30px; background: #f2f4f5; border-radius: 3px; text-align: center; font-size: 17px; text-transform: uppercase; line-height: 32px;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_prev_tempo .e_prev_min {color: #34bde4; padding-right: 7px; border-right: solid 1px #ccc;}
+#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_prev_tempo .e_prev_max {color: #fe5e06; padding-left: 7px;}
+/* AGENDA */
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos {width: 35%; display: inline-block; vertical-align: top; margin-left: 25px;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_titulo_principal {margin-top: 0;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda {width: 100%; height: 140px; position: relative;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_cont_barra_agenda {position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento {width: 405px; height: 115px; display: inline-block; vertical-align: top; background: #fff; border-radius: 4px; box-shadow: -1px 1px 3px 1px #d7dee4; padding: 10px 20px; white-space: normal; margin-right: 20px;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda a:last-child .e_evento {margin-right: 0;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento .e_img_evento {width: 85px; height: 85px; display: inline-block; vertical-align: middle; border: solid 4px #d9e1ea; border-radius: 100%; overflow: hidden; margin: 5px 0; transition: .4s cubic-bezier(0.01, 0.02, 0.01, 0.63);}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento:hover .e_img_evento {transform: scale(1.1);}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento .e_info_evento {width: 280px; width: calc(100% - 90px); display: inline-block; vertical-align: middle; padding-left: 15px;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento .e_info_evento .e_nome_evento {display: block; font-size: 15px; color: #6d7785; padding-bottom: 5px;}
+#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento .e_info_evento .e_data_evento {display: block; font-size: 10px; color: #00adef; text-transform: uppercase;}
+
+
+/* PREVISÃO DO TEMPO */
+#e_conteudo .e_area_prev_tempo {width: 100%; padding: 20px; font-size: 0;}
+#e_conteudo .e_area_prev_tempo .e_conteudo_interno {background: url(../img/bg_previsaotempo.png) no-repeat; background-color: #0299d3; background-size: cover; background-position: center; border-radius: 5px; overflow: hidden; padding: 20px;}
+#e_conteudo .e_area_prev_tempo .e_cont_titulo_tempo {width: 200px; display: inline-block; vertical-align: middle; background: #fff; border-radius: 5px; padding: 20px 28px; margin-right: 20px;}
+#e_conteudo .e_area_prev_tempo .e_cont_titulo_tempo .e_titulo_tempo {text-align: right; font-size: 24px; color: #7a8798; text-transform: uppercase; letter-spacing: -1px; line-height: 25px; margin-bottom: 5px;}
+#e_conteudo .e_area_prev_tempo .e_cont_titulo_tempo .e_titulo_tempo span {font-size: 28px; color: #505e71;}
+#e_conteudo .e_area_prev_tempo .e_cont_titulo_tempo .e_cidade_previsao {font-size: 16px; color: #00b6fb; background: #f2f4f5; border-radius: 3px; display: table; margin: 0 auto; padding: 8px 22px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes {width: 910px; width: calc(100% - 240px); height: 110px; position: relative; display: inline-block; vertical-align: middle; margin-left: 20px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes {position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo {width: 200px; height: 80px; display: inline-block; vertical-align: top; background: #fff; border-radius: 3px; padding: 10px; margin-right: 30px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo:last-child {margin-right: 0;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_img_prev {width: 50px; display: inline-block; vertical-align: middle; text-align: center; margin: 10px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_img_prev img {width: 49px; height:40px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev {display: inline-block; vertical-align: middle; text-align: center;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_data_prev {display: block; font-size: 14px; color: #7a8798; text-transform: uppercase; padding-bottom: 10px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_prev_tempo {width: 100px; height: 30px; background: #f2f4f5; border-radius: 3px; text-align: center; font-size: 17px; text-transform: uppercase; line-height: 32px;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_prev_tempo .e_prev_min {color: #34bde4; padding-right: 7px; border-right: solid 1px #ccc;}
+#e_conteudo .e_area_prev_tempo .e_content_previsoes .e_cont_barra_previsoes .e_previsao_tempo .e_info_prev .e_prev_tempo .e_prev_max {color: #fe5e06; padding-left: 7px;}
+
+
+/* AGENDA DE EVENTOS */
+#e_conteudo .e_area_agenda {width: 100%; padding: 20px; font-size: 0;}
+#e_conteudo .e_area_agenda .e_titulo_principal {text-align: center;}
+#e_conteudo .e_area_agenda .e_cont_agenda {width: 100%; height: 140px; position: relative; text-align: center;}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_cont_barra_agenda {position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow-x: auto; overflow-y: hidden; white-space: nowrap;}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_evento {width: 405px; height: 115px; display: inline-block; vertical-align: top; background: #fff; border-radius: 4px; box-shadow: -1px 1px 3px 1px #d7dee4; padding: 10px 20px; white-space: normal; text-align: left; margin-right: 20px;}
+#e_conteudo .e_area_agenda .e_cont_agenda a:last-child .e_evento {margin-right: 0;}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_evento .e_img_evento {width: 85px; height: 85px; display: inline-block; vertical-align: middle; border: solid 4px #d9e1ea; border-radius: 100%; overflow: hidden; margin: 5px 0; transition: .4s cubic-bezier(0.01, 0.02, 0.01, 0.63);}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_evento:hover .e_img_evento {transform: scale(1.1);}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_evento .e_info_evento {width: 280px; width: calc(100% - 90px); display: inline-block; vertical-align: middle; padding-left: 15px;}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_evento .e_info_evento .e_nome_evento {display: block; font-size: 15px; color: #6d7785; padding-bottom: 5px;}
+#e_conteudo .e_area_agenda .e_cont_agenda .e_evento .e_info_evento .e_data_evento {display: block; font-size: 10px; color: #00adef; text-transform: uppercase;}
+
+@media (min-width: 1001px) and (max-width: 1200px) {	
+	/* PREVISÃO DO TEMPO / AGENDA DE EVENTOS */
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos {width: 33%;}
+    #e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_titulo_principal .e_link_ver_mais {margin-right: 0;}
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {	
+	/* PREVISÃO DO TEMPO / AGENDA DE EVENTOS */
+	#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo {width: 100%; margin-right: 0; margin-bottom: 40px;}
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos {width: 100%; margin-left: 0; margin-top: 20px; text-align: center;}
+    #e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_cont_barra_agenda {overflow-x: auto;}
+}
+
+@media (max-width: 800px) {	
+	/* PREVISÃO DO TEMPO / AGENDA DE EVENTOS */
+	#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo {width: 100%; margin-right: 0; margin-bottom: 40px;}
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos {width: 100%; margin-left: 0; margin-top: 20px; text-align: center;}
+    #e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_cont_barra_agenda {overflow-x: auto;}
+}
+
+@media (max-width: 480px) {	
+	/* PREVISÃO DO TEMPO / AGENDA DE EVENTOS */
+	#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_cont_titulo_tempo {display: table; margin: 0 auto; margin-bottom: 20px;}
+	#e_conteudo .e_area_tempo_eventos .e_area_previsao_tempo .e_cont_prev_tempo .e_content_previsoes {width: 100%; margin-left: 0;}
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento {width: 275px; height: 190px;}
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento .e_img_evento {display: table; margin: 0 auto;}
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda .e_evento .e_info_evento {width: 100%; margin-top: 10px;}
+	#e_conteudo .e_area_tempo_eventos .e_area_agenda_eventos .e_cont_agenda {height: 220px;}
+	
+	/* PREVISÃO DO TEMPO */
+	#e_conteudo .e_area_prev_tempo .e_cont_titulo_tempo {display: table; margin: 0 auto; margin-bottom: 20px;}
+    #e_conteudo .e_area_prev_tempo .e_content_previsoes {width: 100%; margin-left: 0;}
+
+    /* AGENDA DE EVENTOS */
+	#e_conteudo .e_area_agenda .e_cont_agenda {height: 220px;}
+	#e_conteudo .e_area_agenda .e_cont_agenda .e_evento {width: 275px; height: 190px;}
+	#e_conteudo .e_area_agenda .e_cont_agenda .e_evento .e_img_evento {display: table; margin: 0 auto;}
+	#e_conteudo .e_area_agenda .e_cont_agenda .e_evento .e_info_evento {width: 100%; margin-top: 10px;}
+}

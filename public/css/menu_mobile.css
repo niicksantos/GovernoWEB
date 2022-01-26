@@ -1,0 +1,254 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+#contencao_menu_mobile {  z-index:1000;  position: relative; float:left;  width:98%; height:44px; margin-left:1%; background-color:#004074; display:block;}
+.menu-fixo  {
+		    position:fixed !important;
+		    top: 0;
+		    z-index: 99;
+		}
+		
+#container {
+	margin: 0 auto;
+	width:100%;
+	position:absolute;
+	
+}
+
+
+.menu {overflow-y: scroll;
+   overflow-x: hidden;
+   height:290px;
+   float:left;
+   width:90%;
+   background-color:#004074;	}
+
+.menu::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.menu::-webkit-scrollbar
+{
+	width:10px;
+	background-color: #F5F5F5;
+}
+
+.menu::-webkit-scrollbar-thumb
+{
+	background-color: #0F3464;
+}
+
+
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* COR DO FUNDO DO MENU */
+nav { 
+	margin:0;
+	padding: 0;
+	position:absolute;
+	background-color: #004074;
+	font-family: 'ubunturegular'; 
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: absolute;
+	}
+
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: #004a86;
+	border-top:1px solid #003E70;
+	}
+
+nav a {
+	display:block;
+	padding:12px 20px;	
+	color:#FFF !important;
+	font-size:13px;
+	font-family: 'ubunturegular'; 
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #003F73;  }
+
+nav a:hover { 
+	background-color: #004a86; 
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 55px; 
+}
+	
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-54px;
+	left:170px; 
+}
+
+.toggle_menu {
+		display:none;
+		
+	}
+
+.teste {float:left; width:100%; }
+	
+
+.icone_menu {font-size:17px; display:block; color:#FFF; float:left; margin-right:7px;}
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width :1199px) {
+
+	
+
+	nav {
+		margin: 0;
+		width:75%;
+		float:left;
+		position:absolute; 
+	}
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	
+	.toggle {
+		display: block;
+		background-color: #004a86;
+		padding:17px 20px;	
+		color:#FFF;
+		font-size:13px;
+		text-decoration:none;
+		border:none;
+	}
+	
+	.toggle_menu {
+		display: block;
+		background-color: #004074;
+		padding:14px 20px;	
+		color:#FFF;
+		width:60%;
+		font-size:13px;
+		text-decoration:none;
+		border:none;
+	}
+	
+	
+	.toggle:hover {
+		background-color: #004074;
+	}
+
+	
+	[id^=drop]:checked + ul {
+		display:block;
+	}
+
+	
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #004176;
+	}
+	
+ 
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:13px; 
+		background-color: #004176;
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color:#004176; 
+	}
+
+	
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		background-color:#008CFF; 
+	}
+		
+	
+
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}

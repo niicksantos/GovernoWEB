@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* UNIDADES FISCAIS */
+#e_conteudo .e_area_unidades_fiscais {width: 100%; padding: 20px; font-size: 0;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades {height: 75px; position: relative; text-align: center; margin-bottom: 20px;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_cont_barra_unidades {position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow-x: auto; overflow-y: hidden; white-space: nowrap;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal {width: 275px; height: 50px; display: inline-block; vertical-align: top; background: #fff; border-radius: 3px; box-shadow: 0 1px 3px 0 #dcdce7; margin-right: 20px;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal .e_img_unidades {width: 50px; height: 100%; display: inline-block; vertical-align: middle; margin-left: 15px; background: #f8f8f8; text-align: center;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal .e_img_unidades img {transition: .4s cubic-bezier(0.01, 0.02, 0.01, 0.63);}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal:hover .e_img_unidades img {transform: scale(1.1);}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal .e_info_unidades {width: 200px; width: calc(100% - 70px); display: inline-block; vertical-align: middle; padding-left: 15px;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal .e_info_unidades .e_nome_unidade {float: left; font-size: 13px; color: #00adef; text-transform: uppercase;}
+#e_conteudo .e_area_unidades_fiscais .e_cont_unidades .e_unidade_fiscal .e_info_unidades .e_valor_unidade {float: right; font-size: 13px; color: #999; text-transform: uppercase; margin: 0 15px; margin-top: -2px;}

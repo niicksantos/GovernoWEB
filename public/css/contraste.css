@@ -1,0 +1,65 @@
+/*
+.contraste, .contraste ul, .contraste p{
+	background-color: #000 !important;
+}
+*/
+.contraste, .contraste div, .contraste nav, .contraste header, .contraste main, .contraste footer, .contraste ul, .contraste li, .contraste p, .contraste span, .contraste label, .contraste hr, .contraste *:after, .contraste *:before {
+	background: #000 !important;
+}
+
+.contraste *{
+	color: #FFF !important;
+	border-color: #FFF !important;
+}
+
+.contraste a {
+	color: #FC0 !important;
+}
+
+.contraste a:hover{
+	text-decoration: underline !important;
+}
+
+.contraste img{
+	border:1px solid #FC0 !important;
+	margin:2px;
+	
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+ 
+.contraste iframe, .contraste .sw_video_capa, .contraste svg {
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+ 
+.contraste pre *{
+	background-color: #161616  !important;
+	color: #FBBD0A !important;
+}
+
+.contraste input, .contraste select, .contraste option {
+	background: #fff !important;
+	color: #000 !important;	
+}
+
+.contraste input[type="submit"], .contraste input[type="button"], .contraste button {
+	background-color:#161616  !important;
+	color: #FBBD0A !important;
+	border: #FBBD0A solid 1px;
+	padding: 10px;
+}
+
+.contraste #logo_branca, .contraste .logo_branca { display: block !important; }
+
+.contraste *::-webkit-scrollbar-track { background-color:#000 !important; border: solid 1px #fff !important; }
+.contraste *::-webkit-scrollbar { background-color:#000 !important; border: solid 1px #fff !important; }
+.contraste *::-webkit-scrollbar-thumb { background-color: #FBBD0A !important; }
+
+.contraste *:before, .contraste *:after { filter: grayscale(1);}

@@ -217,8 +217,8 @@
                             <div id="e_cont_sessao" class="e_cont_sessao">
                                 <div class="e_icone_sessao"><span class="fa fa-university"></span></div>
                                 <div class="e_area_texto_sessao">
-                                    <span class="e_titulo_sessao e_over_r">Próxima Sessão</span>
-                                    <span class="e_data_sessao e_over_l">Segunda, 07/02 - 20h</span>
+                                    <span class="e_titulo_sessao e_over_r">Consulte</span>
+                                    <span class="e_data_sessao e_over_l">SESSÃO PLENÁRIA</span>
                                 </div>
                             </div>
                         </a>
@@ -733,38 +733,24 @@
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/noticias/3" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Notícias</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
 
-                                                
                                                 <a href="/portal/contato" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Contato</span></div>
-                                                </a>
-
-                                                
+                                                </a> 
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/servicos/1007/historia-da-camara/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">História da Câmara</span></div>
                                                 </a>
-
-                                                
                                             </li>
-
-                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -789,23 +775,7 @@
     </div>    
 
     <script>
-
-      $("#contraste").click(function() {
-        var contraste = false;
-            
-            if(contraste == false){
-                $("body")
-                    .css("background-color", "black")
-                    .css("color", "white");
-                    contraste = true;
-            } else{
-                $("body")
-                    .css("background-color", "white")
-                    .css("color", "black");
-                    contraste = false;
-            }
-          console.log(contraste);  
-      });
+        
       
     </script>
 
