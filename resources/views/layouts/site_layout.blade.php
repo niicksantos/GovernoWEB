@@ -12,7 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="{{ asset('ckeditor/ckeditor.js') }}" defer></script>
     
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
@@ -113,18 +112,10 @@
                     </a>
                     <a href="https://www.camaradepenapolis.sp.gov.br/webmail" target="_blank">
                         <div class="e_cont_btn_atalho" id="e_cont_btn_webmail">
-                            <div class="e_titulo_btn_atalho"><span class="e_over_xb">WEBMAIL</span></div>
-                            <div class="e_img_btn_atalho"><img src="/img/webmail_lateral.png" alt="WebMail"></div>
-                        </div>
-                    </a>
-
-                    <!--<a href="">
-                        <div class="e_cont_btn_atalho" id="e_cont_btn_libras">
                             <div class="e_titulo_btn_atalho"><span class="e_over_xb">VLIBRAS</span></div>
                             <div class="e_img_btn_atalho"><img src="/img/libras_lateral.png" alt="Libras"></div>
                         </div>
-                    </a>-->
-
+                    </a>
                 </div>
                 <!-- FIM ATALHOS LATERAIS -->
 
@@ -188,11 +179,15 @@
                 <div id="e_banner_topo_dinamico" class="e_conteudo_interno">
                 
                     <!-- LINK BRASÃO TOPO -->
-                    <a href="/">
-                        <div id="e_banner_topo_dinamico_clique">
-                            <div id="logo_branca" class="img_contraste" style="display:none"><img src="/img/logo.png" alt="Logo" style="max-width:235px; max-height:70px;"></div>
+                        <div id="e_banner_topo_dinamico_clique">      
+                            <a href="/">      
+                                <div id="logo_branca" class="img_contraste">
+        
+                                    <img src="/img/logo.png" alt="Logo" style="max-width:250px; max-height:90px;">
+                                </div>
+                            </a>
                         </div>
-                    </a>                
+                                   
                     <!-- BOX CABEÇALHO -->
                     <div class="e_box_cabecalho">
 
@@ -231,161 +226,91 @@
                 
                 <!-- MENU PRINCIPAL -->
                 <div class="e_menu_principal" id="e_menu_principal">
-                    <ul>
-                                    
+                    <ul>  
+                        
                         <li>
-
-                            
-                            <a href="https://www.camaradepenapolis.sp.gov.br/portal/editais/0/3/15/" target="_self" >
-                                <div class="e_link_menu_p">
-                                    <span class="e_over_sb">Edital Estagiários</span>
-                                </div>
-                            </a>
-
-                            
-                        </li>
-
-                                    
-                        <li>
-
-                            
-                            <a href="/portal/servicos/1008/ldo---para-2022/" target="_self" >
-                                <div class="e_link_menu_p">
-                                    <span class="e_over_sb">LDO   para 2022</span>
-                                </div>
-                            </a>
-
-                            
-                        </li>
-
-                                    
-                        <li>
-
-                            
-                            <a href="/portal/servicos/1004/orcamento/" target="_self" >
-                                <div class="e_link_menu_p">
-                                    <span class="e_over_sb">Orçamento</span>
-                                </div>
-                            </a>
-
-                            
-                        </li>
-
-                                    
-                        <li>
-
-                            
-                            <a href="/portal/carta-servicos" target="_self" >
-                                <div class="e_link_menu_p">
-                                    <span class="e_over_sb">Carta de Serviços</span>
-                                </div>
-                            </a>
-
-                            
-                        </li>
-
-                                    
-                        <li>
-
-                            
                             <a href="/portal" target="_self" >
                                 <div class="e_link_menu_p">
                                     <span class="e_over_sb">Institucional</span>
                                 </div>
                             </a>
-
-                                            
                             <div class="e_submenu_p">
-                                <ul>
-
-                                    
+                                <ul> 
                                     <li><a href="https://www.camaradepenapolis.sp.gov.br/portal/comissoes" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Comissões</span></div></a></li>
-
-                                    
-                                    <li><a href="/portal/servicos/33/controle-interno/" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Controle Interno</span></div></a></li>
-
-                                    
+                                    <li><a href="/portal/servicos/33/controle-interno/" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Controle Interno</span></div></a></li>                                 
                                     <li><a href="/portal/presidentes" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Galeria dos Presidentes</span></div></a></li>
-
-                                    
-                                    <li><a href="/portal/servicos/40/hino-municipal/" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Hino Municipal</span></div></a></li>
-
-                                                
+                                    <li><a href="/portal/servicos/40/hino-municipal/" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Hino Municipal</span></div></a></li>              
                                 </ul>
                             </div>
-
-                            
                         </li>
 
+                        <li>
+                            <a href="https://www.camaradepenapolis.sp.gov.br/portal/editais/0/3/15/" target="_self" >
+                                <div class="e_link_menu_p">
+                                    <span class="e_over_sb">Edital Estagiários</span>
+                                </div>
+                            </a>      
+                        </li>
+
+                        <li>
+                            <a href="#" target="_self" >
+                                <div class="e_link_menu_p">
+                                    <span class="e_over_sb">PROPOSIÇÕES</span>
+                                </div>
+                            </a>      
+                        </li>
+
+                        <li>
+                            <a href="#" target="_self" >
+                                <div class="e_link_menu_p">
+                                    <span class="e_over_sb">COMISSÕES</span>
+                                </div>
+                            </a>      
+                        </li>
                                     
                         <li>
-
-                            
                             <a href="/portal/leis_decretos" target="_self" >
                                 <div class="e_link_menu_p">
                                     <span class="e_over_sb">Legislação</span>
                                 </div>
                             </a>
-
-                                            
+            
                             <div class="e_submenu_p">
                                 <ul>
-
-                                    
                                     <li><a href="/portal/servicos/51/constituicao-estadual/" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Constituição Estadual</span></div></a></li>
 
-                                    
                                     <li><a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noreferrer"><div class="e_link_submenu_p"><span class="e_over_r">Constituição Federal</span></div></a></li>
-
                                     
                                     <li><a href="/portal/leis_decretos/1/0/0/0/7/0/0/0/0" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Decretos Legislativos</span></div></a></li>
-
                                     
                                     <li><a href="/portal/servicos/53/lei-organica-do-municipio/" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Lei Orgânica do Município</span></div></a></li>
-
-                                    
+                                   
                                     <li><a href="/portal/leis_decretos/1/0/0/0/2/0/0/0/0" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Leis Complementares</span></div></a></li>
 
-                                    
                                     <li><a href="/portal/leis_decretos/1/0/0/0/1/0/0/0/0" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Leis Ordinárias</span></div></a></li>
 
-                                    
                                     <li><a href="/portal/leis_decretos/1/0/0/0/5/0/0/0/0" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Regimento  Interno</span></div></a></li>
 
-                                    
-                                    <li><a href="/portal/leis_decretos/1/0/0/0/6/0/0/0/0" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Resoluções</span></div></a></li>
-
-                                                
+                                    <li><a href="/portal/leis_decretos/1/0/0/0/6/0/0/0/0" target="_self" ><div class="e_link_submenu_p"><span class="e_over_r">Resoluções</span></div></a></li>          
                                 </ul>
                             </div>
-
-                            
                         </li>
-
-                                    
+          
                         <li>
-
-                            
                             <a href="/portal/vereadores" target="_self" >
                                 <div class="e_link_menu_p">
                                     <span class="e_over_sb">Vereadores</span>
                                 </div>
                             </a>
-
-                            
                         </li>
 
                                     
-                        <li>
-
-                            
+                        <li> 
                             <a href="/portal/sessaoplenaria" target="_self" >
                                 <div class="e_link_menu_p">
                                     <span class="e_over_sb">Sessão Plenária</span>
                                 </div>
                             </a>
-
-                            
                         </li>
 
                                 
@@ -396,20 +321,13 @@
                                 <div class="e_cont_menu_todos">
                                     <div class="e_cont_barra_menu_todos">
                                         <ul>
-
-                                            
                                             <!-- MENU SERVIÇOS -->
                                             <li><div class="e_cabecalho_menu"><span class="fa fa-bars" aria-hidden="true"></span><span class="e_over_b">Serviços</span></div></li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/proposicoes" target="_self" >
                                                     <div class="e_link_menu_todos e_titulo_subitem"><span class="e_over_r">Processo</span></div>
-                                                </a>
-
-                                                
+                                                </a> 
                                             </li>
 
                                             
@@ -438,8 +356,7 @@
                                                     </div>
                                                 </a>
                                             </li>
-
-                                            
+                                          
                                             <li>
                                                 <a href="/portal/proposicoes/1/2/0/0/0/0/0/0/0/0/0/0/" target="_self" >
                                                     <div class="e_link_menu_todos e_subitem_menu e_ultimo_subitem e_over_r">
@@ -450,69 +367,43 @@
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/audiencias-publicas" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Audiências</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/editais/1" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Licitações</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/editais/3" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Editais</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/contratos" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Contratos</span></div>
                                                 </a>
-
-                                                
                                             </li>
-
                                             
                                             <li>
-
-                                                
                                                 <a href="http://demonstrativo.camarapenapolis.infocin.com.br/" target="_blank" rel="noreferrer">
                                                     <div class="e_link_menu_todos e_over_r"><span class="fa fa-dollar" aria-hidden="true"></span><span class="e_over_r">Holerite Online</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
-
-                                                
                                                 <div class="e_link_menu_todos e_titulo_subitem"><span class="e_over_r">A Nossa Cidade</span></div>
-
-                                                
                                             </li>
-
-                                            
+                                          
                                             <li>
                                                 <a href="/portal/servicos/1001/historia-da-camara/" target="_self" >
                                                     <div class="e_link_menu_todos e_subitem_menu  e_over_r">
@@ -520,7 +411,6 @@
                                                     </div>
                                                 </a>
                                             </li>
-
                                             
                                             <li>
                                                 <a href="https://www.memorialdosmunicipios.com.br/penapolis" target="_self" >
@@ -530,7 +420,6 @@
                                                 </a>
                                             </li>
 
-                                            
                                             <li>
                                                 <a href="/portal/turismo/9" target="_self" >
                                                     <div class="e_link_menu_todos e_subitem_menu e_ultimo_subitem e_over_r">
@@ -541,146 +430,83 @@
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/galeria-de-fotos/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Galeria de Fotos</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/servicos/1003/pareceres/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Pareceres</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/mesa-diretora" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Mesa Diretora</span></div>
                                                 </a>
-
-                                                
                                             </li>
-
-                                            
+                                    
                                             <li>
-
-                                                
                                                 <a href="/portal/legislaturas" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Legislaturas</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/proposicoes" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Proposições</span></div>
                                                 </a>
-
-                                                
                                             </li>
-
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/contratos" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Contratos</span></div>
-                                                </a>
-
-                                                
+                                                </a>  
                                             </li>
-
                                             
                                             <li>
-
-                                                
                                                 <a href="/portal/ouvidoria" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Ouvidoria</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/comissoes" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Comissões</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/galeria-de-videos/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Galeria de Vídeos</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/secretarias/" target="_self" >
                                                     <div class="e_link_menu_todos e_titulo_subitem"><span class="e_over_r">Secretarias</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/contas_publicas/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Contas Públicas</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/leis_decretos/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Legislação</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <div class="e_link_menu_todos e_titulo_subitem"><span class="e_over_r">Editais</span></div>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
                                                 <a href="/portal/editais/1" target="_self" >
                                                     <div class="e_link_menu_todos e_subitem_menu  e_over_r">
@@ -689,7 +515,6 @@
                                                 </a>
                                             </li>
 
-                                            
                                             <li>
                                                 <a href="/portal/editais/3" target="_self" >
                                                     <div class="e_link_menu_todos e_subitem_menu e_ultimo_subitem e_over_r">
@@ -698,39 +523,23 @@
                                                 </a>
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/links/" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Links</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/transparencia" target="_blank" rel="noreferrer">
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Transparência</span></div>
                                                 </a>
-
-                                                
                                             </li>
 
-                                            
                                             <li>
-
-                                                
                                                 <a href="/portal/sic" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Sic</span></div>
                                                 </a>
-
-                                                
                                             </li>
-
                                             
                                             <li>
                                                 <a href="/portal/noticias/3" target="_self" >
@@ -738,9 +547,7 @@
                                                 </a>
                                             </li>
 
-                                            
                                             <li>
-
                                                 <a href="/portal/contato" target="_self" >
                                                     <div class="e_link_menu_todos e_over_r"><span class="e_over_r">Contato</span></div>
                                                 </a> 
