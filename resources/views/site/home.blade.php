@@ -139,7 +139,6 @@
     </div>
 </div>
 
-
 <!----- VIDEOS ----->
 <div class="container">
     <div class="row">
@@ -151,28 +150,25 @@
             </div>
         </div>
     </div>
-    <div class="div_noticias">
+    <div class="div_videos">
         <div class="row">
             <div class="col-12">      
                     <div class="row">
-                    @foreach ($videos as $video)
-                        <div class="col-12 noticia_destaque">
-                            <a href="{{ route('noticias.noticia', ['id' => $video->id])}}" >
-                                <embed src="{{ $video->youtube }}" allowfullscreen="true" width="425" height="344">
-                            </a>
+                    @foreach ($videos_d as $video_d)
+                        <div class="col-12 video_destaque">
+                            <iframe width="640" height="360" class ="video_d" src="{{ str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_d->youtube) }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="titulo_vid">
+                                <p>{{ $video_d->titulo }}</p>
+                            </div>
                         </div>
-                    @endforeach
-                <div class="box_noticias">            
-                    @foreach ($noticia as $not)
-                        @if ($not->destaque == 0)
-                            <div class="row not_linha">
-                                <div class="col-3 noticia_padrao">
-                                    <a href="{{ route('noticias.noticia', ['id' => $not->id])}}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
-                                    <p>{!! $not->titulo !!}</p></a> 
-                                </div>
-                            </div>                            
-                        @endif
-                    @endforeach  
+                    @endforeach 
+                <div class="box_videos">            
+                    @foreach ($videos as $video)
+                        <div class="col-12 video_padrao">
+                            <iframe width="280" height="157" src="{{ str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video->youtube) }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>{{ $video->titulo }}</p>
+                        </div>
+                    @endforeach 
                 </div>
             </div>
         </div>    

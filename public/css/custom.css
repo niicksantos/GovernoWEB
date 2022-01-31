@@ -341,8 +341,66 @@ body{
 }
 
 
+/*------GALERIA DE VIDEOS-----*/
 
+.box_videos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 98.1%!important;
+    height: auto;
+    padding: 2rem 0rem 0rem 1rem;
+    margin: 0% 0% 0% 1%;
+    justify-content: space-evenly;
+}
 
+.div_videos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    top: 1rem;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_vid {
+    position: relative;
+    width: 50.3%;
+    height: 11%;
+    background-color: #c3c3c3;
+    left: 0.5%;
+    top: -1.5%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.video_destaque {
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 3rem 0rem 0.2rem;
+}
+
+.video_destaque p {
+    font-size: 2rem;
+}
+
+.video_padrao {
+    display: flex;
+    background-color: #fff;
+    height: 18rem;
+    width: 16rem!important;
+    margin: 2rem 4rem 2rem 0rem;
+    transition: 0.7s;
+}
+
+.video_d {
+    border-radius: 5px 5px 0px 0px;
+    margin: 0.5%;
+}
 
 
 @media (max-width: 991px) {
