@@ -94,7 +94,7 @@
 
                                     if (strlen($texto) > 600)
                                     {
-                                        echo $texto.'<br><br><br> <p class="float-right" style="color:#00486f;">Continuar Lendo...</p> ';
+                                        echo $texto.'<br><br><br> <p class="float-right cont_lendo">Continuar Lendo...</p> ';
                                     }
                                      
                                 @endphp                                  

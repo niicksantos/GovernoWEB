@@ -225,9 +225,8 @@ body{
 }
 
 .noticia_destaque a p:hover {
-    color: #696464;
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -338,6 +337,16 @@ body{
     left: -22%;
     margin-bottom: 10%;
     font-size: 1.2rem;
+}
+
+.cont_lendo {
+    width: 22%;
+    height: 10%;
+    background-color: #00486f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
