@@ -63,18 +63,6 @@ body{
 }
 
 
-/*------MENSAGEM DINAMICA-----*/
-
-.msg_dinamica{
-    background-color: #00486F;
-    color: #fff;    
-    position: relative;
-    top: 0.5rem;
-    max-width: 20rem;
-    border-radius: 5px;
-}
-
-
 /*------ACESSO RAPIDO-----*/
 
 .acess-rapido{
@@ -184,7 +172,7 @@ body{
     height: auto;
     flex-direction: column;
     align-items: center;
-    padding: 0rem 0rem 1rem 0rem;
+
 }
 
 .box_noticias {
@@ -283,10 +271,33 @@ body{
     width: 16.8rem;
 }
 
+.calendario_noticia {
+    z-index: 9999;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background: #00486f;
+    border-radius: 4px;
+    color: #fff;
+    align-items: center;
+    position: relative;
+    left: -20.8%;
+    top: 48%;
+}
 
-
-
-
+.calendario_noticia_dest {
+    z-index: 9999;
+    display: flex;
+    width: 80px!important;
+    height: 80px;
+    background: #00486f;
+    border-radius: 4px;
+    color: #fff;
+    align-items: center;
+    position: absolute;
+    left: 1.8%;
+    top: 42.6%;
+}
 
 
 
