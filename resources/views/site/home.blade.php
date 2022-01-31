@@ -93,8 +93,15 @@
                             </a>
                             </div>
                         </div>
-                        <div class="calendario_noticia_dest">
-                            {{$dest->data}}   
+                        <div class="calendario_noticia_dest_ano">
+                            <div class="calendario_noticia_dest_mes">
+                                @php
+                                    echo date('d-m', strtotime($dest->data));
+                                @endphp 
+                            </div>
+                            @php
+                            echo date('Y', strtotime($dest->data));
+                        @endphp
                         </div>
                     @endforeach
                 <div class="box_noticias">            
@@ -107,10 +114,15 @@
                                 </div>
                             </div>                            
                         @endif
-                        <div class="calendario_noticia">
+                        <div class="calendario_noticia_ano">
+                            <div class="calendario_noticia_mes">
+                                @php
+                                    echo date('d-m', strtotime($not->data));
+                                @endphp 
+                            </div>
                             @php
-                                echo date('d-m-Y', strtotime($not->data));
-                            @endphp   
+                            echo date('Y', strtotime($not->data));
+                        @endphp
                         </div>
                     @endforeach  
                 </div>
