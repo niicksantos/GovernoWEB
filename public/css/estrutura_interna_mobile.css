@@ -29,7 +29,7 @@ a:active, a:link, a:hover, a:focus { text-decoration: inherit; border:0px solid 
 	[data-revelar="top"]>* { transform: translateY(-100px); }
 	[data-revelar="bottom"]>* { transform: translateY(100px); }
 	[data-revelar="left"]>* { transform: translateX(-100px); }
-	[data-revelar="right"]>* { transform: translateX(100px); }
+	[data-revelar="right"]>* { transform: tra.box_noticiasnslateX(100px); }
 	[data-revelar="opacity"]>* { opacity: 0; }
 	[data-revelar="scale"]>* { transform: scale(.6); } */
 /* } */
@@ -2687,7 +2687,7 @@ img.float_right_interna { margin: 0 0 10px 10px; object-fit: cover; }
 
 .box_noticias_relacionadas {width:97%;text-decoration:none; padding:10px; float:left; margin-top:20px; border-radius:2px; border:1px solid #ECECEC;}
 .box_noticias_relacionadas:link {text-decoration:none;}
-.box_noticias {width:100%;color:#000000;text-decoration:none;  padding-top:8px; padding-bottom:8px; font-size:12px; font-family: "SW Ubuntu"; float:left; border-radius:2px; border-bottom:1px solid #ECECEC;}
+.box_noticias {width:100%;color:#000000;text-decoration:none;  padding-top:8px; padding-bottom:8px; font-size:12px; float:left; border-radius:2px; border-bottom:1px solid #ECECEC;}
 
 
 .box_include {width:98%;color:#5e5e5e;text-decoration:none; padding:1.222% 1%; font-size:12px; font-family: "SW Ubuntu"; float:left; border-radius:2px; border:1px solid #EBEBEB;}

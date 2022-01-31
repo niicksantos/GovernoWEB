@@ -305,30 +305,33 @@ body{
 
 .calendario_noticia_dest_ano {
     z-index: 9999;
-    display: flex;
+    /* display: flex; */
     width: 80px!important;
     height: 80px;
     background: #fff;
-    color: #fff;
+    color: #00486f;
     align-items: center;
     position: absolute;
     left: 1.8%;
-    top: 42.6%;
-    font-size: 16px;
+    top: 1.1%;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .calendario_noticia_dest_mes {
     z-index: 9999;
     display: flex;
-    width: 56px;
-    height: 25px;
+    width: 80px;
+    height: 39px;
     background: #00486f;
     color: #fff;
     align-items: center;
     position: relative;
-    justify-content: center;
     font-weight: bold;
+    justify-content: center;
+    left: -21%;
+    margin-bottom: 10%;
+    font-size: 1.2rem;
 }
 
 
