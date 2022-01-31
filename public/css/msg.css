@@ -16,7 +16,7 @@ a {
 
 .news {
     width: 76%;
-    background: #4f81f6;
+    background: #015b8b;
     padding: 0 2%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ a {
 .title {
     width: 20%;
     text-align: center;
-    background: #336bee;
+    background: #00486F;
     height: 3rem;
 }
 
