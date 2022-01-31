@@ -30,7 +30,7 @@
 
     <div class="ticker">
         <div class="title">
-            <h5>NOVIDADES</h5>
+            <h5>INFORMATIVO</h5>
         </div>
         <div class="news">
             <marquee class="news-content">
