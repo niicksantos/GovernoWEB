@@ -56,9 +56,9 @@
     <div class="row">
         <div class="col-12s">
             <div class="acess_rap_btns">
-                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>REQUERIMENTO</p></div></a>
-                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><P>PORTARIA</P></div></a>
-                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>DECRETO</p></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>REQUERIMENTOS</p></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><P>PORTARIAS</P></div></a>
+                <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>DECRETOS</p></div></a>
                 <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>AGENDA DE REUNIÕES</p></div></a>
                 <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>CONTAS PÚBLICAS</p></div></a>
                 <a href="#"><div class="btn_acrpd"><img src="{{ url('img/icon-3.png') }}" alt=""><p>DÚVIDAS FREQUENTES</p></div></a>
