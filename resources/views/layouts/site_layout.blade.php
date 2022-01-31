@@ -15,6 +15,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/msg.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna_mobile.css') }}" rel="stylesheet">
