@@ -26,11 +26,14 @@ class HomeController extends Controller
 
         $destaque = Noticia::all() ->where('destaque', 1);
 
+        $videos = Noticia::all() ->where('id_categoria', '=', '3', 'and', 'exibir', '=', 0);
+
 
         return view('site.home', ['contslider' => $contslider,
                                   'slider' => $slider,
                                   'destaque' => $destaque,
-                                  'noticia' =>$noticia 
+                                  'noticia' =>$noticia,
+                                  'videos' => $videos
                                 
                                     ]);
 

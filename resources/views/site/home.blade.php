@@ -155,15 +155,11 @@
         <div class="row">
             <div class="col-12">      
                     <div class="row">
-                    @foreach ($destaque as $dest)
+                    @foreach ($videos as $video)
                         <div class="col-12 noticia_destaque">
-                            <a href="{{ route('noticias.noticia', ['id' => $dest->id])}}" ><img class="img_noticia_dest" src="{{ $dest->capa }}" alt="{{ $dest->titulo }}">
-                            <!--<p>{!! $dest->titulo !!}</p> -->
-                        
-                            <div class="texto_noticia">
-                            {!! Str::limit($dest->texto, 600) !!}
+                            <a href="{{ route('noticias.noticia', ['id' => $video->id])}}" >
+                                <embed src="{{ $video->youtube }}" allowfullscreen="true" width="425" height="344">
                             </a>
-                            </div>
                         </div>
                     @endforeach
                 <div class="box_noticias">            
