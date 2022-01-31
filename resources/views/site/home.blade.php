@@ -89,7 +89,15 @@
                             <!--<p>{!! $dest->titulo !!}</p> -->
                         
                             <div class="texto_noticia">
-                            {!! Str::limit($dest->texto, 600) !!}
+                                @php
+                                    $texto = Str::limit($dest->texto, 600);
+
+                                    if (strlen($texto) > 600)
+                                    {
+                                        echo $texto.'<br><br><br> <p class="float-right" style="color:#00486f;">Continuar Lendo...</p> ';
+                                    }
+                                     
+                                @endphp                                  
                             </a>
                             </div>
                         </div>

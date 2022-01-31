@@ -222,8 +222,14 @@ body{
 .noticia_destaque a:hover {
     color: #696464;
     text-decoration: none;
+}
+
+.noticia_destaque a p:hover {
+    color: #696464;
+    text-decoration: none;
+    font-size: 1rem;
     font-weight: bold;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .noticia_destaque img{
@@ -235,7 +241,7 @@ body{
     font-size: 0.9rem;
     display: flex;
     width: 38rem!important;
-    height: 10rem;
+    height: 22rem;
     position: relative;
     top: 3.5rem;
     left: 1.5rem;
