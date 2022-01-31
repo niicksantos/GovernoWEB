@@ -126,17 +126,17 @@ body{
     text-decoration: none;
 }
 
-.btn_acrpd{
+.btn_acrpd {
     margin: 0rem 1rem 0rem 0rem;
     color: #00486F!important;
     background-color: transparent!important;
-    width: 9rem;
-    height: 8rem;
+    width: 7.5rem;
+    height: 6rem;
     border: 1px solid #C3C3C3;
-    border-radius: 15px;
+    border-radius: 5px;
     text-align: center;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .btn_acrpd:hover{
@@ -148,8 +148,8 @@ body{
     transform: scale(1.1);
 }
 
-.btn_acrpd img{
-    margin: 0.9rem 0rem 0.7rem 0rem;
+.btn_acrpd img {
+    margin: 0.5rem 0rem 0.35em 0rem;
 }
 
 
