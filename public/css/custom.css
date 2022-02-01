@@ -354,7 +354,6 @@ body{
 
 .box_videos {
     display: flex;
-    width: 98.1%!important;
     height: auto;
     padding: 2rem 0rem 0rem 1rem;
     margin: 0% 0% 0% -1%;
@@ -405,7 +404,7 @@ body{
     flex-wrap: wrap;
     color: #fff;
     font-weight: bold;
-    padding-top: 1.5%;
+    padding-top: 1.55%;
 }
 
 .titulo_vid_d:hover{
@@ -436,7 +435,7 @@ body{
 }
 
 .video_padrao p{
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .video_d {
