@@ -40,17 +40,10 @@ class HomeController extends Controller
                                   'noticia' =>$noticia,
                                   'videos' => $videos,
                                   'videos_d' => $videos_d
-                                
                                     ]);
-
-        
-
 
 
     }
-
-
-
 
 
 }

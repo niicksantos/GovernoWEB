@@ -157,7 +157,7 @@
                     @foreach ($videos_d as $video_d)
                         <div class="col-12 video_destaque">
                             <iframe width="640" height="360" class ="video_d" src="{{ str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_d->youtube) }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="titulo_vid">
+                            <div class="titulo_vid_d">
                                 <p>{{ $video_d->titulo }}</p>
                             </div>
                         </div>
@@ -165,8 +165,10 @@
                 <div class="box_videos">            
                     @foreach ($videos as $video)
                         <div class="col-12 video_padrao">
-                            <iframe width="280" height="157" src="{{ str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video->youtube) }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <p>{{ $video->titulo }}</p>
+                            <iframe width="280" height="157" class ="video_p" src="{{ str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video->youtube) }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="titulo_vid">
+                                <p>{{ $video->titulo }}</p> 
+                            </div>
                         </div>
                     @endforeach 
                 </div>
