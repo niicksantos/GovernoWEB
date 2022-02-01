@@ -67,7 +67,6 @@
     </div>
 </div>
 
-
 <!----- NOTICIAS ----->
 <div class="container">
     <div class="row">
@@ -190,6 +189,31 @@
         </div>    
     </div>
 </div>
+
+<!----- PARLAMENTARES ----->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="noticias_titulo">
+                <div class="losango"></div>
+                <p>PARLAMENTARES</p>
+                <div class="losango"></div>
+            </div>
+        </div>
+    </div>
+    <div class="div_videos">
+        <div class="row">
+            <div class="col-12">      
+                <div class="row">
+                    <div class="col-12 video_destaque">
+
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </div>
+</div>
+
 
 @endsection
 

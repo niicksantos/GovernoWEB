@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Site\Slider;
 use App\Models\Site\Noticia;
+use App\Models\Site\Parlamentar;
 
 
 
@@ -23,7 +24,6 @@ class HomeController extends Controller
         $noticia = Noticia::all()->sortByDesc('id')
                                  ->take(5);
                                  
-
         $destaque = Noticia::all() ->where('id_categoria', 1)
                                     ->where('destaque', 1);
 
@@ -33,13 +33,17 @@ class HomeController extends Controller
         $videos_d = Noticia::all() ->where('id_categoria', 3)
                                     ->where('destaque', 1);
 
+        $parlamentares = Parlamentar::all() ->where('ativo', 1);
+
+
 
         return view('site.home', ['contslider' => $contslider,
                                   'slider' => $slider,
                                   'destaque' => $destaque,
                                   'noticia' =>$noticia,
                                   'videos' => $videos,
-                                  'videos_d' => $videos_d
+                                  'videos_d' => $videos_d,
+                                  'parlamentares' => $parlamentares
                                     ]);
 
 

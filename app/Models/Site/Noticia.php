@@ -25,3 +25,4 @@ class Noticia extends Model
 
     public $timestamps = false;
 }
+ 
