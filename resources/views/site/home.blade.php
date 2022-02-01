@@ -162,7 +162,7 @@
                                     <p>{{ $video_d->titulo }}</p>
                                 </div>    
                                 </div>
-                                <div class="col-6 texto_video">
+                                <!--<div class="col-6 texto_video">
                                 @php
                                     $texto_v = Str::limit($video_d->texto, 600);
 
@@ -173,7 +173,7 @@
                                         echo $texto_v;
                                     }
                                 @endphp
-                            </div>    
+                            </div> -->
                         </div>
                     @endforeach 
                 <div class="box_videos">            
