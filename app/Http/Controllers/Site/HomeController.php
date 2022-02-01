@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Site\Slider;
 use App\Models\Site\Noticia;
 use App\Models\Site\Parlamentar;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -34,8 +35,17 @@ class HomeController extends Controller
                                     ->where('destaque', 1);
 
         $parlamentares = Parlamentar::all() ->where('ativo', 1);
+        
+       /* $presidente = Parlamentar::all() ->where('mesa_diretora', 1)
+                                         ->where('cargo_mesa_diretora', 'Presidente');*/
+
+        $presidente = DB::table('sitefox_vereador')->where('cargo_mesa_diretora', 'Presidente')
+                                                    ->where('id_legislatura', 2)
+                                                    ->join('sitefox_vereador_legislatura', 'sitefox_vereador.id', '=', 'sitefox_vereador_legislatura.id_vereador')
+                                                    ->get();
 
 
+//dd($presidente);
 
         return view('site.home', ['contslider' => $contslider,
                                   'slider' => $slider,
@@ -43,9 +53,12 @@ class HomeController extends Controller
                                   'noticia' =>$noticia,
                                   'videos' => $videos,
                                   'videos_d' => $videos_d,
-                                  'parlamentares' => $parlamentares
-                                    ]);
+                                  'parlamentares' => $parlamentares,
+                                  'presidente' => $presidente
 
+                                    ]);
+                                    
+                                    
 
     }
 

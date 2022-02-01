@@ -28,6 +28,8 @@
     </div>
 </div>
 
+
+<!----- TEXTO DINAMICO ----->
     <div class="ticker">
         <div class="title">
             <h5>INFORMATIVO</h5>
@@ -41,8 +43,8 @@
         </div>
     </div>
 
-<!----- ACESSO RAPIDO ----->
 
+<!----- ACESSO RAPIDO ----->
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -66,6 +68,7 @@
         </div>
     </div>
 </div>
+
 
 <!----- NOTICIAS ----->
 <div class="container">
@@ -138,6 +141,7 @@
     </div>
 </div>
 
+
 <!----- VIDEOS ----->
 <div class="container">
     <div class="row">
@@ -190,8 +194,8 @@
     </div>
 </div>
 
+
 <!----- PARLAMENTARES ----->
-<div class="container">
     <div class="row">
         <div class="col-12">
             <div class="noticias_titulo">
@@ -201,18 +205,20 @@
             </div>
         </div>
     </div>
-    <div class="div_videos">
+    <div class="div_parlamentares">
         <div class="row">
             <div class="col-12">      
                 <div class="row">
-                    <div class="col-12 video_destaque">
-
+                    <div class="col-12 presidente">
+                        @foreach ($presidente as $presid) 
+                            <img src="{{$presid->imagem}}" alt="{{$presid->nome}}">     
+                            {{$presid->nome}}
+                        @endforeach
                     </div>
                 </div>    
             </div>
         </div>    
     </div>
-</div>
 
 
 @endsection

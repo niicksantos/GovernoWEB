@@ -373,6 +373,7 @@ body{
     height: auto;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3%;
 }
 
 .titulo_vid_d {
@@ -457,6 +458,27 @@ body{
     text-align: justify;
     text-decoration: none!important;
 }
+
+
+/*------PARLAMENTARES-----*/
+
+.div_parlamentares{
+    margin: 0% 0% 2% 0%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    top: 1rem;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*------INICIO DAS CONFIGURAÇÕES DE REPONSIVIDADE-----*/
 
 
 @media (max-width: 991px) {
