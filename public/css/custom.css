@@ -377,11 +377,11 @@ body{
 
 .titulo_vid_d {
     position: relative;
-    width: 50.3%;
+    width: 79.2%;
     height: 13%;
     background-color: #00486f;
-    left: 0.5%;
-    top: -1.5%;
+    left: -1.1%;
+    top: -1.9%;
     border-radius: 0px 0px 5px 5px;
     display: flex;
     flex-direction: column;
@@ -440,11 +440,22 @@ body{
 
 .video_d {
     border-radius: 5px 5px 0px 0px;
-    margin: 0.5%;
+    margin: 1.5% 0% 0% -23%;
 }
 
 .video_p {
     border-radius: 5px 5px 0px 0px;;
+}
+
+.texto_video {
+    font-size: 0.9rem;
+    display: flex;
+    height: 22rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 32rem;
+    text-align: justify;
+    text-decoration: none!important;
 }
 
 
