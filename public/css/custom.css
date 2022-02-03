@@ -479,12 +479,12 @@ body{
     margin: 0% 4% 0% -2%;
     width: 310px!important;
     height: 115px;
-    -webkit-transform: skew(
+    -webkit-transform: skew( 
 140deg
-);
+ );
     background: #00486F;
     position: relative;
-    left: 4.5%;
+    left: 5.5%;
 }
 
 .losango_presidente_d {
@@ -526,7 +526,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    left: -16%;
+    left: -15.6%;
     top: -5px;
     z-index: 9999;
 }

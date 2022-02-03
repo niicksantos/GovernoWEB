@@ -225,7 +225,7 @@
                                     @endforeach
                                 </div>
                             </div>
-                           <a href="#">  <div class="losango_presidente_d"></div></a>
+                          <div class="losango_presidente_d"></div>
                         </div>    
                     </div>
                 </div>    
