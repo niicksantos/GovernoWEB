@@ -24,7 +24,7 @@ class HomeController extends Controller
         $slider = Slider::all() ->where('exibir', 1,);
         $noticia = Noticia::all()->sortByDesc('id')
                                  ->where('destaque', 0)
-                                 ->take(5);
+                                 ->take(4);
                                  
         $destaque = Noticia::all() ->where('id_categoria', 1)
                                     ->where('destaque', 1);
