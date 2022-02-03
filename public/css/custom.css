@@ -216,6 +216,14 @@ body{
     color: #696464;
     text-decoration: none;
     transition: 0.1s;
+    height: 360px;
+}
+
+.texto_noticia a {
+    color: #696464;
+    text-decoration: none;
+    transition: 0.1s;
+    height: 312px;
 }
 
 .noticia_destaque a:hover {
