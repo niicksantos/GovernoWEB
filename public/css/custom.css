@@ -511,6 +511,10 @@ body{
     align-items: center;
 }
 
+.div_presidente #legis_anter {
+    font-size: 0.9rem;
+}
+
 .box_presidente {
     width: 30%!important;
     height: 125px;
@@ -572,7 +576,7 @@ body{
     max-height: 70px;
     position: relative;
     left: 42%;
-    top: 18px;
+    top: 22px;
     font-weight: bold;
     z-index: 9999;
 }

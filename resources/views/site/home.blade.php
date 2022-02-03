@@ -213,7 +213,7 @@
                         <div class="row">
                             <div class="losango_presidente_e"></div>
                             <p id="legis_atual">Legislatura Atual:</p>
-                            <p id="legis_anter">Consultar Legislaturas Anteriores: </p>
+                            <a href="#" id="legis_anter">Consulte Legislaturas Anteriores: </a>
                             <div class="box_presidente">
                                 <div class="col-12 presidente ">
                                     @foreach ($presidente as $presid) 
@@ -225,7 +225,7 @@
                                     @endforeach
                                 </div>
                             </div>
-                            <div class="losango_presidente_d"></div>
+                           <a href="#">  <div class="losango_presidente_d"></div></a>
                         </div>    
                     </div>
                 </div>    
