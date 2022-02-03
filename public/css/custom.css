@@ -208,9 +208,8 @@ body{
 .noticia_destaque {
     height: 27rem;
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     margin: 2rem 0rem 0rem 0.2rem;
-    min-width: 1320px;
 }
 
 .noticia_destaque a {
