@@ -21,8 +21,9 @@ class HomeController extends Controller
     public function IndexSite() {
 
         $contslider = 0;
-        $slider = Slider::all() ->where('exibir', 1);
+        $slider = Slider::all() ->where('exibir', 1,);
         $noticia = Noticia::all()->sortByDesc('id')
+                                 ->where('destaque', 0)
                                  ->take(5);
                                  
         $destaque = Noticia::all() ->where('id_categoria', 1)
