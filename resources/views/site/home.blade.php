@@ -205,21 +205,37 @@
             </div>
         </div>
     </div>
-    <div class="div_parlamentares">
-        <div class="row">
-            <div class="col-12">      
+    <div class="row">
+        <div class="div_parlamentares">
+            <div class="div_presidente">
                 <div class="row">
-                    <div class="col-12 presidente">
-                        @foreach ($presidente as $presid) 
-                            <img src="{{$presid->imagem}}" alt="{{$presid->nome}}">     
-                            {{$presid->nome}}
-                        @endforeach
+                    <div class="col-12">      
+                        <div class="row">
+                            <div class="losango_presidente_e"></div>
+                            <p id="legis_atual">Legislatura Atual:</p>
+                            <p id="legis_anter">Consultar Legislaturas Anteriores: </p>
+                            <div class="box_presidente">
+                                <div class="col-12 presidente ">
+                                    @foreach ($presidente as $presid) 
+                                        <img src="{{$presid->imagem}}" alt="{{$presid->nome}}">     
+                                        <div class="texto_presidente">
+                                            {{$presid->nome}} <br>
+                                            {{$presid->partido}} 
+                                        </div> 
+                                    @endforeach
+                                </div>
+                            </div>
+                            <div class="losango_presidente_d"></div>
+                        </div>    
                     </div>
                 </div>    
             </div>
-        </div>    
+        </div>
+
     </div>
 
+
+    
 
 @endsection
 

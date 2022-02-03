@@ -39,13 +39,12 @@ class HomeController extends Controller
        /* $presidente = Parlamentar::all() ->where('mesa_diretora', 1)
                                          ->where('cargo_mesa_diretora', 'Presidente');*/
 
-        $presidente = DB::table('sitefox_vereador')->where('cargo_mesa_diretora', 'Presidente')
+        $presidente = DB::table('sitefox_vereador AS sv')->where('cargo_mesa_diretora', 'Presidente')
                                                     ->where('id_legislatura', 2)
-                                                    ->join('sitefox_vereador_legislatura', 'sitefox_vereador.id', '=', 'sitefox_vereador_legislatura.id_vereador')
+                                                    ->join('sitefox_vereador_legislatura AS svl', 'sv.id', '=', 'svl.id_vereador')
+                                                    ->join('sitefox_legislatura AS sl', 'sl.id', '=', 'svl.id_legislatura')
                                                     ->get();
 
-
-//dd($presidente);
 
         return view('site.home', ['contslider' => $contslider,
                                   'slider' => $slider,
