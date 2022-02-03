@@ -179,10 +179,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: #ececec;
-    width: 98.1%!important;
+    width: 100%!important;
     height: auto;
-    padding: 2rem 0rem 0rem 1rem;
-    margin: 0% 0% 0% 1%;
+    padding: 1rem 0rem 0rem 3rem!important;
+    margin: 0% 0% 0% 0.8%;
     justify-content: space-evenly;
 }
 
