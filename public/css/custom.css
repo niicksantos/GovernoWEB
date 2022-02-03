@@ -230,9 +230,11 @@ body{
     transition: 0.3s;
 }
 
-.noticia_destaque img{
+.noticia_destaque img {
     width: 35rem;
     height: 25rem;
+    max-width: 600px;
+    max-height: 400px;
 }
 
 .texto_noticia {
