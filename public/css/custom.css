@@ -176,7 +176,7 @@ body{
 
 .box_noticias {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #ececec;
     width: 100%!important;
     height: auto;
