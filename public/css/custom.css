@@ -240,7 +240,7 @@ body{
 .texto_noticia {
     font-size: 0.9rem;
     display: flex;
-    width: 38rem!important;
+    width: 50%!important;
     height: 22rem;
     position: relative;
     top: 3.5rem;
