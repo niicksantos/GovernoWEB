@@ -266,6 +266,7 @@ body{
     width: 16rem!important;
     margin: 2rem 4rem 2rem 0rem;
     transition: 0.7s;
+    text-align: center;
 }
 
 .noticia_padrao:hover{
