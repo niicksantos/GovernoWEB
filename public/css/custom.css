@@ -91,7 +91,7 @@ body{
     margin: 0.5rem 1rem;
     width: 300px;
     height: 31px;
-    -webkit-transform: skew(140deg);
+    transform: skew(140deg);
     background: #00486F;
 
 }
@@ -99,7 +99,7 @@ body{
 .losango p{
     color: #fff;
     font-weight: bold; 
-    -webkit-transform: skew(30deg) ;
+    transform: skew(30deg) ;
 }
 
 .acess_rap_btns{
@@ -489,7 +489,7 @@ body{
     margin: 0% 4% 0% -2%;
     width: 310px!important;
     height: 115px;
-    -webkit-transform: skew( 
+    transform: skew( 
 140deg
  );
     background: #00486F;
@@ -500,7 +500,7 @@ body{
 .losango_presidente_d {
     width: 310px!important;
     height: 115px;
-    -webkit-transform: skew(140deg);
+    transform: skew(140deg);
     background: #00486F;
     position: relative;
     left: 73%;
