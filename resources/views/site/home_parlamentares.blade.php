@@ -37,9 +37,9 @@
 
         <div class="div_vereadores">
             <div class="box_vereadores">
-                <div class="col-12 vereadores">
+                <div class="col-12 ">
                     @foreach ($parlamentares as $parlamentar) 
-                        <div class="col-3">
+                        <div class="col-3 vereadores">
                             <img src="{{$parlamentar->imagem}}" alt="{{$parlamentar->nome}}">     
                             <div class="texto_vereadores">
                                 {{$parlamentar->nome}} <br>
