@@ -36,7 +36,10 @@ class HomeController extends Controller
         $videos_d = Noticia::all() ->where('id_categoria', 3)
                                     ->where('destaque', 1);
 
-        $parlamentares = Parlamentar::where('ativo', 1)->orderBy('nome')->get();
+        $parlamentares = Parlamentar::where('ativo', 1)
+                                            ->where('cargo_mesa_diretora', '<>', 'Presidente')
+                                            ->orderBy('nome')
+                                            ->get();
         
         /* $presidente = Parlamentar::all() ->where('mesa_diretora', 1)
                                           ->where('cargo_mesa_diretora', 'Presidente');*/
