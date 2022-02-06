@@ -253,10 +253,6 @@
 
 
 
-    
+@include('site.home-sessao6')    
 
 @endsection
-
-
-
-
