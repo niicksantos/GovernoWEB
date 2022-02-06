@@ -1,7 +1,0 @@
-@charset "utf-8";
-
-/* BANNER MEIO */
-#e_conteudo .p_area_banner_meio { padding: 25px 0; overflow: hidden; margin-top: 10px; }
-#e_conteudo .p_area_banner_meio img { width: 100%; height: auto; max-width: 1160px; display: block; margin: 0 auto !important; border: none !important; }
-#e_conteudo .p_area_banner_meio .e_conteudo_interno {overflow:hidden; max-width: 1160px; }
-#e_conteudo .p_area_banner_meio .e_conteudo_interno * { height: 23.7vw; max-height: 275px;}

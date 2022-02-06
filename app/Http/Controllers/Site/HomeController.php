@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\LegislacaoTipo;
+use App\Models\Site\LegislacaoTipo;
 use App\Http\Controllers\Controller;
-use App\Legislacao;
+use App\Models\Site\Legislacao;
 use Illuminate\Http\Request;
 use App\Models\Site\Slider;
 use App\Models\Site\Noticia;
 use App\Models\Site\Parlamentar;
-use App\LegislacaoSituacao;
+use App\Models\Site\LegislacaoSituacao;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
