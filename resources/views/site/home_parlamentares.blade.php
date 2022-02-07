@@ -40,11 +40,13 @@
                 <div class="col-12 display_vereador">
                     @foreach ($parlamentares as $parlamentar) 
                         <div class="col-3 vereadores">
-                            <img src="{{$parlamentar->imagem}}" alt="{{$parlamentar->nome}}">     
-                            <div class="texto_vereadores">
-                                {{$parlamentar->nome}} <br>
-                                {{$parlamentar->partido}} 
-                            </div> 
+                            <div id="square"></div>
+                                <img src="{{$parlamentar->imagem}}" alt="{{$parlamentar->nome}}">     
+                                <div class="texto_vereadores">
+                                    {{$parlamentar->nome}} <br>
+                                    {{$parlamentar->partido}} 
+                                </div> 
+                                
                         </div>
                     @endforeach
                 </div>

@@ -1,16 +1,24 @@
 /*------PARLAMENTARES-----*/
 
+:root{
+    --cor-primaria: #00486F;
+    --gradiente-veradores: linear-gradient(160deg, rgba(0,72,111,1) 27%, rgba(255,255,255,1) 64%);
+
+
+
+}
+
+
+
 .div_parlamentares {
     margin: 0% 0% 2% 0%;
     text-align: center;
     justify-content: center;
-    background-color: #ececec;
+    background-color: #fff;
     position: relative;
     top: 1rem;
     width: 100%!important;
     height: auto;
-    /* flex-direction: column; */
-    /* align-items: center; */
 }
 
 .losango_presidente_e {
@@ -154,8 +162,9 @@
 .vereadores {
     margin: 1% 0.5%;
     padding: 0.3% 1.5%;
+    border: 1px solid var(--cor-primaria);
     border-radius: 5px;
-    background-color: #fff;
+    background: var(--gradiente-veradores);
     width: 19rem!important;
     display: flex;
     align-items: center;
@@ -168,20 +177,21 @@
     z-index: 1;
     display: inline-block;
     vertical-align: middle;
-    border: solid 5px #c3c3c3;
+    border: solid 5px #fff;
     border-radius: 100%;
     overflow: hidden;
-    /* transition: .4s cubic-bezier(0.01, 0.02, 0.01, 0.63); */
+    transition: .4s cubic-bezier(0.01, 0.02, 0.01, 0.63);
     left: -5%;
 }
 
 .texto_vereadores {
     display: block;
     font-size: 15px;
-    color: #64748a;
+    color: var(--cor-primaria);
     padding-bottom: 5px;
     height: auto;
     position: relative;
     /* top: -0.2rem; */
     font-weight: bold;
 }
+
