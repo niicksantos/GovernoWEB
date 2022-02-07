@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*------SLIDER-----*/
+
+.site-carousel{
+    border-radius: 5px;
+}
+
+
+/*----------MENSAGEM DINÂMICA----------*/
+
 a {
     color: #fff;
     text-decoration: none
