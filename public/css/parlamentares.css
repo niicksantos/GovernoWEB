@@ -2,11 +2,11 @@
 
 :root{
     --cor-primaria: #00486F;
-    --gradiente-veradores: linear-gradient(160deg, rgba(0,72,111,1) 27%, rgba(255,255,255,1) 64%);
+    --gradiente-veradores: linear-gradient(160deg, rgba(0,72,111,1) 0%, rgba(255,255,255,1) 55%);
+    --sombra: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
-
-}
+}   
 
 
 
@@ -162,17 +162,25 @@
 .vereadores {
     margin: 1% 0.5%;
     padding: 0.3% 1.5%;
-    border: 1px solid var(--cor-primaria);
+    box-shadow: var(--sombra);
     border-radius: 5px;
     background: var(--gradiente-veradores);
     width: 19rem!important;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
     align-items: center;
+    
+}
+
+.vereadores:hover img{
+    transform: scale(1.1);
 }
 
 .vereadores img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -182,16 +190,16 @@
     overflow: hidden;
     transition: .4s cubic-bezier(0.01, 0.02, 0.01, 0.63);
     left: -5%;
+    z-index: 9999;
 }
 
 .texto_vereadores {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     color: var(--cor-primaria);
     padding-bottom: 5px;
     height: auto;
     position: relative;
-    /* top: -0.2rem; */
+    z-index: 9999;
     font-weight: bold;
 }
-

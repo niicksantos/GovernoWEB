@@ -16,7 +16,7 @@
                 <div class="col-12">      
                     <div class="row">
                         <div class="losango_presidente_e"></div>
-                        <p id="legis_atual">Legislatura Atual:</p>
+                        <p id="legis_atual">Presidente da Câmara:</p>
                         <a href="#" id="legis_anter">Consulte Legislaturas Anteriores: </a>
                         <div class="box_presidente">
                             <div class="col-12 presidente ">
@@ -40,13 +40,11 @@
                 <div class="col-12 display_vereador">
                     @foreach ($parlamentares as $parlamentar) 
                         <div class="col-3 vereadores">
-                            <div id="square"></div>
                                 <img src="{{$parlamentar->imagem}}" alt="{{$parlamentar->nome}}">     
                                 <div class="texto_vereadores">
                                     {{$parlamentar->nome}} <br>
                                     {{$parlamentar->partido}} 
-                                </div> 
-                                
+                                </div>   
                         </div>
                     @endforeach
                 </div>
