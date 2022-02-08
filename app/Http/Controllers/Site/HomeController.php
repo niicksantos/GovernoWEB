@@ -31,10 +31,15 @@ class HomeController extends Controller
                                     ->where('destaque', 1);
 
         $videos = Noticia::all() ->where('id_categoria', 3)
-        ->where('destaque', 0);
+                                    ->where('destaque', 0)
+                                    ->where('ativo', 1)
+                                    ->sortByDesc('data')
+                                    ->take(4);
 
         $videos_d = Noticia::all() ->where('id_categoria', 3)
                                     ->where('destaque', 1);
+                                    
+
 
         $parlamentares = Parlamentar::where('sitefox_vereador.ativo', 1)
                                             ->where('cargo_mesa_diretora', '<>', 'Presidente')

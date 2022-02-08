@@ -5,7 +5,7 @@
             <div class="noticias_titulo">
                 <div class="losango"></div>
                 <p>GALERIA DE VÍDEOS</p>
-                <div class="losango"></div>
+                <div class="losango"></div> 
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
                                     <p>{{ $video_d->titulo }}</p>
                                 </div>    
                                 </div>
-                                <!--<div class="col-6 texto_video">
+                                <div class="col-6 texto_video">
                                 @php
                                     $texto_v = Str::limit($video_d->texto, 600);
 
@@ -32,7 +32,7 @@
                                         echo $texto_v;
                                     }
                                 @endphp
-                            </div> -->
+                            </div>
                         </div>
                     @endforeach 
                 <div class="box_videos">            
