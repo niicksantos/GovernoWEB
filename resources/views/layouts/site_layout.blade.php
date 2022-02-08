@@ -19,7 +19,7 @@
     <link href="{{ asset('css/home_noticias.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home_videos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home_parlamentares.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/msg.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/sessao6.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna_mobile.css') }}" rel="stylesheet">

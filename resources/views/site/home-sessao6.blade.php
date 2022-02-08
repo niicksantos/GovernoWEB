@@ -1,8 +1,14 @@
 <!----- SESSAO 6 ----->
 
-@section('css')
-    <link href="{{ asset('css/sessao6.css') }}" rel="stylesheet">
-@endsection
+<div class="row">
+    <div class="col-12">
+        <div class="noticias_titulo">
+            <div class="losango"></div>
+            <p>PRODUÇÃO LEGISLATIVA</p>
+            <div class="losango"></div>
+        </div>
+    </div>
+</div>
 
 <div class="row sessao6">       
     <div class="col-md-4">
