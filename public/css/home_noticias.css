@@ -56,10 +56,10 @@
 }
 
 .img_noticia {
-    height: 13rem;
-    width: 16rem;
+    height: 70%;
+    width: 110.2%;
     margin: 0rem 0rem 0rem -0.75rem;
-    border-bottom:#00486f 1px solid ;
+    border-bottom: #00486f 1px solid;
     border-radius: 0;
 }
 
@@ -121,7 +121,7 @@
     background-color: #fff;
     height: 18rem;
     width: 16rem!important;
-    margin: 2rem 4rem 2rem 0rem;
+    /* margin: 2rem 4rem 2rem 0rem; */
     transition: 0.7s;
     text-align: center;
 }

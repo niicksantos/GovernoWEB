@@ -38,7 +38,7 @@
                                 @endphp 
                             </div>
                             @php
-                            echo date('Y', strtotime($dest->data));
+                            echo date('Y', strtotime($dest->data)); 
                         @endphp
                         </div>
                     @endforeach
