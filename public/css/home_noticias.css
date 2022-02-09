@@ -33,7 +33,7 @@
 
 .box_noticias {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #ececec;
     width: 100%!important;
     height: auto;
@@ -119,8 +119,8 @@
 .noticia_padrao {
     display: flex;
     background-color: #fff;
-    height: 100%;
-    width: 100% !important;
+    height: 18rem;
+    width: 16rem!important;
     /* margin: 2rem 4rem 2rem 0rem; */
     transition: 0.7s;
     text-align: center;
