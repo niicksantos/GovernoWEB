@@ -8,23 +8,7 @@
 
 }   
 
-.parlamentares_titulo{
-    margin-top: 7%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-}
 
-.parlamentares_titulo:hover{
-    max-width: 100%;
-    font-size: 1.6rem;
-    padding-top: 0.2%;
-    color: #1675a8;
-    transition: 0.6s;
-}
 
 .div_parlamentares {
     margin: 0% 0% 2% 0%;
@@ -38,13 +22,15 @@
 }
 
 .losango_presidente_e {
-    /* margin: 0% 4% 0% -2%; */
+    margin: 0% 4% 0% -2%;
     width: 310px!important;
     height: 115px;
-    transform: skew( 140deg );
+    transform: skew( 
+140deg
+ );
     background: #00486F;
-    position: absolute;
-    left: 3.5%;
+    position: relative;
+    left: 5.5%;
 }
 
 .losango_presidente_d {
@@ -52,9 +38,9 @@
     height: 115px;
     transform: skew(140deg);
     background: #00486F;
-    position: absolute;
-    left: 72%;
-    top: 0%;
+    position: relative;
+    left: 73%;
+    top: -7.8rem;
 }
 
 .div_presidente {
@@ -64,14 +50,12 @@
     background: url(../img/bg_vereadores3.png) no-repeat;
     background-position: center;
     position: relative;
-    top: 3%;
-    /* left: 1%; */
+    top: 1rem;
+    left: -0.5%;
     width: 100%;
-    min-width: 1008px;
-    height: auto;
+    height: 7.2rem;
     flex-direction: column;
     align-items: center;
-    max-height: 115px;
 }
 
 .div_presidente #legis_anter {
@@ -82,14 +66,17 @@
     width: 30%!important;
     height: 125px;
     background: #fff;
+    box-shadow: -1px 1px 5px 1px #dcdce7;
     border-radius: 4px;
+    margin: 0% 0% 0% 0%;
     display: flex;
-    position: relative;
-    left: -17.2%;
-    top: -6px;
-    box-shadow: var(--sombra);
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -15.6%;
+    top: -5px;
+    z-index: 9999;
+    box-shadow: var(--sombra);
 }
 
 .presidente{
