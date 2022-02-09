@@ -119,8 +119,8 @@
 .noticia_padrao {
     display: flex;
     background-color: #fff;
-    height: 18rem;
-    width: 16rem!important;
+    height: 100%;
+    width: 100% !important;
     /* margin: 2rem 4rem 2rem 0rem; */
     transition: 0.7s;
     text-align: center;
