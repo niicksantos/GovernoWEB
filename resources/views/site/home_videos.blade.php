@@ -15,7 +15,7 @@
                     <div class="row">
                     @foreach ($videos_d as $video_d)
                         <div class="col-12 video_destaque">
-                            <div class="col-6">
+                            <div class="col-6 video_dest">
                                 <iframe width="480" height="270" class ="video_d" src="{{ str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_d->youtube) }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="titulo_vid_d">
                                     <p>{{ $video_d->titulo }}</p>

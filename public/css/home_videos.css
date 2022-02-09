@@ -43,12 +43,12 @@
 }
 
 .titulo_vid_d {
-    position: relative;
+    /* position: relative; */
     width: 75.4%;
     height: 13%;
     background-color: #00486f;
-    left: 0.9%;
-    top: -1.9%;
+    /* left: 0.9%; */
+    /* top: 0%; */
     border-radius: 0px 0px 5px 5px;
     display: flex;
     flex-direction: column;
@@ -106,12 +106,15 @@
     font-size: 0.7rem;
 }
 
+.video_dest {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .video_d {
     border-radius: 5px 5px 0px 0px;
-    /* margin: 1.5% 0% 0% -23%; */
-    position: relative;
-    left: -11.4%;
-    top: 3%;
+
 }
 
 .video_p {
