@@ -84,11 +84,11 @@
 }
 
 .video_destaque {
-    height: 27rem;
+    height: auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 2rem 3rem 0rem 0.2rem;
+    width: 100% !important;
+    margin: 0% 0% 0% 1%;
 }
 
 .video_destaque p {
