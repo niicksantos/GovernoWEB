@@ -17,12 +17,12 @@
                         <div class="col-12 noticia_destaque">
                             <a href="{{ route('noticias.noticia', ['id' => $dest->id])}}" ><img class="img_noticia_dest" src="{{ $dest->capa }}" alt="{{ $dest->titulo }}">
                             <!--<p>{!! $dest->titulo !!}</p> -->
-                        
+                         
                             <div class="texto_noticia">
                                 @php
-                                    $texto = Str::limit($dest->texto, 600);
+                                    $texto = Str::limit(strip_tags($dest->texto, '&nbsp'), 600);
 
-                                    if (strlen($texto) > 600)
+                                    if (strlen($dest->texto) > 600)
                                     {
                                         echo $texto.'<br><br><br> <p class="float-right cont_lendo">Continuar Lendo...</p> ';
                                     }
