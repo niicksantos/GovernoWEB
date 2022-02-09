@@ -1,7 +1,7 @@
 <!----- PARLAMENTARES ----->
 <div class="row">
     <div class="col-12">
-        <div class="noticias_titulo">
+        <div class="parlamentares_titulo">
             <div class="losango"></div>
             <p>PARLAMENTARES</p>
             <div class="losango"></div>
