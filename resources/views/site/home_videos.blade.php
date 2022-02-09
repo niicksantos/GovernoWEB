@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="noticias_titulo">
+            <div class="videos_titulo">
                 <div class="losango"></div>
                 <p>GALERIA DE VÍDEOS</p>
                 <div class="losango"></div> 
