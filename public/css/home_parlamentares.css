@@ -67,9 +67,10 @@
     top: 3%;
     /* left: -0.5%; */
     width: 103%;
-    height: 19.8%;
+    height: auto;
     flex-direction: column;
     align-items: center;
+    max-height: 115px;
 }
 
 .div_presidente #legis_anter {
