@@ -21,14 +21,14 @@ Auth::routes();
 
 Route::prefix('/')->group(function() {
 
-    route::get('/', ['as' => 'index', 'uses' => 'Site\HomeController@IndexSite']);
-    route::get('/home', ['as' => 'home', 'uses' => 'Site\HomeController@IndexSite']);
+    route::get('/', ['as' => 'index', 'uses' => 'Site\HomeController@indexSite']);
+    route::get('/home', ['as' => 'home', 'uses' => 'Site\HomeController@indexSite']);
 
 
     //NOTICIAS
 
-    route::get('Noticias', ['as' => 'noticias.noticias', 'uses' => 'Site\noticias\NoticiasController@Index']);
-    route::get('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@ExibeNoticia']);
+    route::get('Noticias', ['as' => 'noticias.noticias', 'uses' => 'Site\noticias\NoticiasController@indexNoticias']);
+    route::get('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@exibeNoticia']);
 
 
 

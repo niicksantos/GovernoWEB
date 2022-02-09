@@ -25,6 +25,7 @@
     <link href="{{ asset('css/sessao6.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sessao7.css') }}" rel="stylesheet">
     <link href="{{ asset('css/noticia.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/page_noticias.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna_mobile.css') }}" rel="stylesheet">

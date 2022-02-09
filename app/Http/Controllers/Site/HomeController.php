@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
-    public function HomeSite()
+    public function homeSite()
     {
         return redirect()->route('home');
     }
 
-    public function IndexSite()
+    public function indexSite()
     { 
         $contslider = 0;
         $slider = Slider::all() ->where('exibir', 1);
