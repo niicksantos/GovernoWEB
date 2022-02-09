@@ -7,12 +7,14 @@
         <div class="col-12 pagina_noticias">
             @foreach ($noticias as $not)
                 <div class="col-3 noticias">
-                    <div>
-                        <img class="img_noticias" src="{{$not->capa}}" alt="{{$not->titulo}}">
-                    </div>
-                    <div class="titulo_noticias">
-                        {{$not->titulo}}
-                    </div>
+                    <a href="{{ route('noticias.noticia', ['id' => $not->id])}}" >
+                        <div>
+                            <img class="img_noticias" src="{{$not->capa}}" alt="{{$not->titulo}}">
+                        </div>
+                        <div class="titulo_noticias">
+                            {{$not->titulo}}
+                        </div>
+                    </a>    
                 </div>
             @endforeach
             

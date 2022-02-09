@@ -24,10 +24,13 @@
     height: 250px;
 }
 
-titulo_noticias {
+.titulo_noticias {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding-top: 14%;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: bold;
 }
