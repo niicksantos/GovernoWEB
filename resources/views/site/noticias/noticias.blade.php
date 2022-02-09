@@ -15,10 +15,10 @@
                     </div>
                 </div>
             @endforeach
-            {{$noticias->links() }}
+            
         </div>
     </div>
-    
+    {{$noticias->links() }}
 </div>
 
 
