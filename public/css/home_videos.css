@@ -108,7 +108,10 @@
 
 .video_d {
     border-radius: 5px 5px 0px 0px;
-    margin: 1.5% 0% 0% -23%;
+    /* margin: 1.5% 0% 0% -23%; */
+    position: relative;
+    left: -11.4%;
+    top: 3%;
 }
 
 .video_p {
