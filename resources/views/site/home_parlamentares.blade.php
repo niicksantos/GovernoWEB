@@ -12,10 +12,11 @@
 <div class="row">
     <div class="div_parlamentares">
         <div class="div_presidente">
+            <div class="losango_presidente_e"></div>
             <div class="row">
                 <div class="col-12">      
                     <div class="row">
-                        <div class="losango_presidente_e"></div>
+                        
                         <p id="legis_atual">Presidente da Câmara:</p>
                         <a href="#" id="legis_anter">Consulte Legislaturas Anteriores: </a>
                         <div class="box_presidente">

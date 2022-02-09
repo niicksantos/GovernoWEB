@@ -43,8 +43,8 @@
     height: 115px;
     transform: skew( 140deg );
     background: #00486F;
-    position: relative;
-    left: 0.5%;
+    position: absolute;
+    left: 3.5%;
 }
 
 .losango_presidente_d {
