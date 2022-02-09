@@ -1,0 +1,38 @@
+/*--------- PAGINA DE NOTICIA UNICA -----------*/
+
+:root{
+    --cor-primaria: #00486F;
+    --gradiente-veradores: linear-gradient(160deg, rgba(0,72,111,1) 0%, rgba(255,255,255,1) 55%);
+    --sombra: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}   
+
+.titulo_noticia_unica {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0%;
+    padding-top: 2%;
+}
+
+.texto_noticia_unica {
+    text-align: justify;
+    padding-top: 1%;
+}
+
+.img_noticia_unica {
+    width: 100%;
+    max-width: 512px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+    position: relative;
+    left: 5%;
+}
+
+.img_noticia_unica:hover{
+    transform: scale(1.1);
+}

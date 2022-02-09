@@ -1,1 +1,1 @@
-OK!
+@extends('layouts.site_layout')
