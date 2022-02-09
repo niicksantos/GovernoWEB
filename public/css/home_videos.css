@@ -100,10 +100,25 @@
 .texto_video {
     font-size: 0.9rem;
     display: flex;
-    height: 22rem;
+    height: 18.5rem;
     position: absolute;
     top: 1.5rem;
     left: 32rem;
     text-align: justify;
     text-decoration: none!important;
+    max-width: 58% !important;
+}
+
+.cont_lendo_v {
+    width: 22%;
+    height: 10%;
+    background-color: #00486f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    position: absolute;
+    top: 90%;
+    left: 78%;
 }

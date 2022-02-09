@@ -20,14 +20,17 @@
                                 <div class="titulo_vid_d">
                                     <p>{{ $video_d->titulo }}</p>
                                 </div>    
-                                </div>
-                                <div class="col-6 texto_video">
+                            </div>
+
+                            <div class="col-6 texto_video">
                                 @php
                                     $texto_v = Str::limit($video_d->texto, 600);
 
-                                    if (strlen($texto_v) > 600)
+                                   // dd($texto_v);
+
+                                    if (strlen($video_d->texto) > 600)
                                     {
-                                        echo $texto_v.'<br><br><br> <p class="float-right cont_lendo">Continuar Lendo...</p> ';
+                                        echo $texto_v.'<br> <p class="float-right cont_lendo_v">Continuar Lendo...</p> ';
                                     } else {
                                         echo $texto_v;
                                     }
