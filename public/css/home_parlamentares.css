@@ -52,9 +52,9 @@
     height: 115px;
     transform: skew(140deg);
     background: #00486F;
-    position: relative;
-    left: 71%;
-    top: -7.8rem;
+    position: absolute;
+    left: 72%;
+    top: 0%;
 }
 
 .div_presidente {

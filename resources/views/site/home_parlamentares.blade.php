@@ -29,10 +29,11 @@
                                 @endforeach
                             </div>
                         </div>
-                        <div class="losango_presidente_d"></div>
+                        
                     </div>    
                 </div>
-            </div>    
+            </div> 
+            <div class="losango_presidente_d"></div>   
         </div>
 
         <div class="div_vereadores">
