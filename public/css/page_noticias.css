@@ -5,6 +5,16 @@
 
 } 
 
+.pagina_noticias_titulo{
+    margin: 3% 0% 2% 0%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 .pagina_noticias {
     display: flex;
     flex-wrap: wrap;
@@ -15,13 +25,18 @@
 .noticias {
     background-color: #fff;
     width: 250px !important;
-    height: 350px;
+    height: 300px;
     margin: 2% 2% 3% 0%;
 }
 
-.img_noticias{
+.noticias:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.img_noticias {
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
 
 .titulo_noticias {
