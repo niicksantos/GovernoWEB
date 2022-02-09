@@ -22,19 +22,19 @@
                 </div>                 
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="form-group rg-no-spin">
+                        <div class="input-group mb-3">
                             <input type="number" class="form-control inp-text" name="numero" placeholder="Número" value="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group rg-no-spin">
+                        <div class="input-group mb-3">
                             <input type="number" class="form-control inp-text" name="ano" placeholder="Ano" value="">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group">
+                        <div class="input-group mb-3">
                             <select name="especieNormativa" class="form-select">
                                 <option selected>Selecione uma espécie normativa</option>
                                 @foreach ($legislacao['especiesNormativas'] as $especieNormativa)
@@ -46,7 +46,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group">
+                        <div class="input-group mb-3">
                             <select name="tema" class="form-select">
                                 <option selected>Selecione um tema</option>
                                 @foreach ($legislacao['temas'] as $tema)
@@ -58,7 +58,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group">
+                        <div class="input-group mb-3">
                             <select name="autor" class="form-select">
                                 <option selected>Selecione um autor</option>
                                 @foreach ($legislacao['autores'] as $autor)
@@ -70,7 +70,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group">
+                        <div class="input-group mb-3">
                             <select name="autor" class="form-select">
                                 <option selected>Selecione uma situação</option>
                                 @foreach ($legislacao['situacoes'] as $situacao)

@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 @include('site.home_slider')
 
 @include('site.home_acesso_rapido')
@@ -13,7 +12,8 @@
 
 @include('site.home_parlamentares')
 
-@include('site.home-sessao6')    
+@include('site.home-sessao6')  
 
+@include('site.home-sessao7')  
 
 @endsection
