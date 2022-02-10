@@ -16,9 +16,10 @@
                     @foreach ($destaque as $dest)
                         <div class="col-12 noticia_destaque">
                             <a href="{{ route('noticias.noticia', ['id' => $dest->id])}}" ><img class="img_noticia_dest" src="{{ $dest->capa }}" alt="{{ $dest->titulo }}">
-                            <!--<p>{!! $dest->titulo !!}</p> -->
+                            
                          
                             <div class="texto_noticia">
+                                <p class="noticias_titulo_dest">{!! $dest->titulo !!}</p>
                                 @php
                                     $texto = Str::limit(strip_tags($dest->texto, '&nbsp'), 600);
 
