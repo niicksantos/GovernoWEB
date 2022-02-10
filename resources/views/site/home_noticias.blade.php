@@ -5,7 +5,7 @@
             <div class="noticias_titulo">
                 <div class="losango"></div>
                 <p>ÚLTIMAS NOTÍCIAS</p>
-                <div class="losango"></div>
+                <div class="losango"></div>                
             </div>
         </div>
     </div>
@@ -26,11 +26,11 @@
                                     if (strlen($dest->texto) > 600)
                                     {
                                         echo $texto.'<br><br><br> <p class="float-right cont_lendo">Continuar Lendo...</p> ';
-                                    }
-                                     
+                                    }                                    
                                 @endphp                                  
                             </a>
                             </div>
+                            <a href="{{ route('noticias.noticias')}}" class="btn btn-sm animated-button btn_veja_mais">Veja mais notícias</a> 
                         </div>
                         <div class="calendario_noticia_dest_ano">
                             <div class="calendario_noticia_dest_mes">
@@ -61,7 +61,7 @@
                             </div>
                             @php
                             echo date('Y', strtotime($not->data));
-                        @endphp
+                            @endphp
                         </div>
                     @endforeach  
                 </div>

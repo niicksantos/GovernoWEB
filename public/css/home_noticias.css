@@ -71,7 +71,6 @@
     margin: 0.5rem 0rem 0rem 0.5rem;
     transition: 1s;
 }
-}
 
 .img_noticia_dest:hover{
     transform: scale(1.03);
@@ -245,6 +244,9 @@
     position: relative;
     top: 5%;
 }
+
+
+
 
 /********* CONFIG PARA DISPOSITIVOS MOBILE **************/
 
