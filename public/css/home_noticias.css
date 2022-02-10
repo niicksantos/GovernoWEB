@@ -205,8 +205,8 @@
 .calendario_noticia_dest_ano {
     z-index: 9999;
     /* display: flex; */
-    width: 80px!important;
-    height: 80px;
+    width: 7.1% !important;
+    height: auto;
     background: #fff;
     color: #00486f;
     align-items: center;
