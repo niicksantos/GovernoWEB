@@ -74,18 +74,21 @@ a.animated-button:link, a.animated-button:visited {
 
 a.animated-button.btn_veja_mais {
     border: 2px solid var(--cor-primaria);
+    border-radius: 5px 12px;
     z-index: 9999;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 10%;
+    width: 16%;
+    height: 10px!important;
     color: var(--cor-primaria);
-    position: relative;
-    top: -7.5%;
+    /* position: relative; */
+    /* top: -7.5%; */
     left: -0.3%;
+    margin-top: 0%;
 }
+
 a.animated-button.btn_veja_mais:after {
 	background: var(--cor-primaria);
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
