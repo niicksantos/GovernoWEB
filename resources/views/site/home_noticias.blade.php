@@ -9,6 +9,7 @@
             </div>
         </div>
     </div>
+    <a href="{{ route('noticias.noticias')}}" class="btn btn-sm animated-button btn_veja_mais">Ver mais</a> 
     <div class="div_noticias">
         <div class="row">
             <div class="col-12">      
@@ -30,7 +31,6 @@
                                 @endphp                                  
                             </a>
                             </div>
-                            <a href="{{ route('noticias.noticias')}}" class="btn btn-sm animated-button btn_veja_mais">Veja mais notícias</a> 
                         </div>
                         <div class="calendario_noticia_dest_ano">
                             <div class="calendario_noticia_dest_mes">
