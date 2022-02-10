@@ -8,7 +8,7 @@
 
 }   
 
-.noticias_titulo{
+.noticias_titulo {
     margin-top: 3%;
     max-width: 100%;
     display: flex;
@@ -16,8 +16,8 @@
     justify-content: center;
     font-size: 1.4rem;
     font-weight: bold;
+    margin-top: 7%;
 }
-
 .noticias_titulo:hover{
     max-width: 100%;
     font-size: 1.6rem;
