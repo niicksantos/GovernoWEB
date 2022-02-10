@@ -171,11 +171,14 @@
     width: 100%!important;
     height: auto;
     border-radius: 4px;
-    margin: 3% 0% 0% 0%;
+    /* margin: 3% 0% 0% 0%; */
     display: flex;
     z-index: 9999;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+    left: 1%;
+    top: 6rem;
 }
 
 .display_vereador {
