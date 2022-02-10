@@ -82,7 +82,7 @@
 @media (max-width: 991px) {
 
     .acess-rapido {
-        margin: 5% 0% 0% 0%;
+        margin: 10% 0% 0% 0%;
         max-width: 100%;
         display: flex;
         flex-direction: row;
@@ -92,10 +92,9 @@
     }
     
     .acess-rapido p {
-        margin: 1.3% -10% 5% 2%;
+        margin: 2.6% -7% 5% 1%;
         width: 100%;
     }
-
     .losango {
         /*margin: 0% 8% 1% 0%;*/
         width: 100%;
