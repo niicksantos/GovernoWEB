@@ -9,7 +9,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row"> 
     <div class="div_parlamentares">
         <div class="div_presidente">
             <div class="row">

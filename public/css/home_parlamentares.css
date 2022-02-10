@@ -42,9 +42,9 @@
     margin: 0% 4% 0% -2%;
     width: 310px!important;
     height: 115px;
-    transform: skew( 
-140deg
- );
+    border: 1px solid var(--cor-primaria);
+    border-radius: 5px 20px;
+    /*transform: skew(140deg);*/
     background: #00486F;
     position: relative;
     left: 5.5%;
@@ -53,7 +53,9 @@
 .losango_presidente_d {
     width: 310px!important;
     height: 115px;
-    transform: skew(140deg);
+    /*transform: skew(140deg);*/
+    border: 1px solid var(--cor-primaria);
+    border-radius: 5px 20px;
     background: #00486F;
     position: relative;
     left: 73%;
@@ -90,7 +92,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    left: -15.6%;
+    left: -16.6%;
     top: -5px;
     z-index: 9999;
     box-shadow: var(--sombra);
