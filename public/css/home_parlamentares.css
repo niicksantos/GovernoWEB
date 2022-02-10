@@ -191,13 +191,14 @@
     box-shadow: var(--sombra);
     border-radius: 5px;
     background: var(--gradiente-veradores);
-    width: 19rem!important;
+    width: 24%!important;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     align-items: center;
-    height: 7rem;
+    height: auto;
+    max-height: 110px;
 }
 
 .vereadores:hover img{
