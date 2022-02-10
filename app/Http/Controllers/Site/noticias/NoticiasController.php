@@ -11,17 +11,17 @@ class NoticiasController extends Controller
 {
 
 
-    public function getNoticias() {
-        return Noticia::where('ativo', 1)
+    public function getNoticias(int $ativo, int $id_categoria) {
+        return Noticia::where('ativo', $ativo)
                         ->orderBy('data','desc')
-                        ->where('id_categoria', 1)
+                        ->where('id_categoria', $id_categoria)
                         ->paginate(12);
     }
 
 
     public function indexNoticias() {
 
-        $noticias = $this->getNoticias();
+        $noticias = $this->getNoticias(1, 1);
     
         return view ('site.noticias.noticias', ['noticias' => $noticias]);
     }

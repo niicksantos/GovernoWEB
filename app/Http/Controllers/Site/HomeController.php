@@ -41,8 +41,6 @@ class HomeController extends Controller
 
         $videos_d = Noticia::all() ->where('id_categoria', 3)
                                     ->where('destaque', 1);
-                                    
-
 
         $parlamentares = Parlamentar::where('sitefox_vereador.ativo', 1)
                                             ->where('cargo_mesa_diretora', '<>', 'Presidente')
@@ -52,8 +50,6 @@ class HomeController extends Controller
                                             ->orderBy('nome')
                                             ->get();
         
-
-
         $presidente = DB::table('sitefox_vereador AS sv')->where('cargo_mesa_diretora', 'Presidente')
                                                     ->where('id_legislatura', 2)
                                                     ->join('sitefox_vereador_legislatura AS svl', 'sv.id', '=', 'svl.id_vereador')
