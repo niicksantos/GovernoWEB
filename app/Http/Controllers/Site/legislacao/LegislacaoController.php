@@ -34,12 +34,14 @@ class LegislacaoController extends Controller
         
         $especiesNormativas = $this->getLegislacoes(1);
         $legislacoesTema = $this->getLegislacoes(2);
+        
+        $dadosLegis = $request->all();
 
-        $espNorm = $request->input('especieNormativa',0);
+        //dd($dadosLegis);
 
-       
+        $legis = $this->getLegislacao($dadosLegis['especieNormativa']);
 
-        $legis = $this->getLegislacao($espNorm);
+        //dd($legis);
 
 
         return view('site.legislacao.legislacao',['legislacao' => $legislacao,
