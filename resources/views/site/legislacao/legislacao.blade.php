@@ -9,10 +9,10 @@
             <div class="box_licitacao">
                 <div class="box-titulo">Busca</div>
                 <p>Escolha uma das consultas e acesse esta ferramenta de transparência do Poder Público.</p>
-                <form class="form" method="post" action="https://camaramiravania.mg.gov.br/legislacao">
+                <form class="form" name="formLegislacao" id="formLegislacao">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-search ico-legis" aria-hidden="true"></i></span>
-                        <input type="text" class="form-control" name="palavraChave" placeholder="Palavra chave">
+                        <input type="text" class="form-control" name="palavraChave"  id="palavraChave" placeholder="Palavra chave">
                     </div>                 
                     <div class="row">
                         <div class="col-md-8">
@@ -29,8 +29,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="input-group mb-3">
-                                <select name="especieNormativa" class="form-select">
-                                    <option selected>Selecione uma espécie normativa</option>
+                                <select name="especieNormativa" class="form-select" id="especieNormativa">
+                                    <option value="2">Selecione uma espécie normativa</option>
                                     @foreach ($legislacao['especiesNormativas'] as $especieNormativa)
                                         <option value="{{$especieNormativa->id}}">{{$especieNormativa->nome}}</option>
                                     @endforeach
@@ -41,8 +41,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="input-group mb-3">
-                                <select name="tema" class="form-select">
-                                    <option selected>Selecione um tema</option>
+                                <select name="tema" class="form-select" id="tema">
+                                    <option value="0">Selecione um tema</option>
                                     @foreach ($legislacao['temas'] as $tema)
                                         <option value="{{$tema->id}}">{{$tema->nome}}</option>
                                     @endforeach
@@ -80,6 +80,8 @@
                 </form>
             </div>
         </div>
+        
+        <!--CARDS COM AS LEGISLAÇÕES-->
         <div class="col-8">
             <p>Este Portal disponibiliza o Banco de Dados de Normas Jurídicas do Município. 
                Por meio de consultas rápidas e práticas, o cidadão terá acesso à íntegra de toda a Legislação Municipal vigente.
@@ -103,7 +105,7 @@
 
                 </div>
                 <div class="card-footer text-muted">
-                    <p><b>Author: {{ $leg->vereador}}</b></p>
+                    <p><b>Autor: {{ $leg->vereador}}</b></p>
                 </div>
               </div>
             
@@ -114,11 +116,19 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-12">
-        
-    </div>
-</div>
+ <script>
+    /* $(function(){
+        $('#formLegislacao').submit(function(event){
+            event.preventDefault();
+
+            var palavraChave = $(this).find('input#palavraChave').val();
+
+            alert('ok');
+        });
+     });
+     */
+
+ </script>
 
 
 @endsection

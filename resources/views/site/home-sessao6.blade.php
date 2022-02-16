@@ -15,7 +15,7 @@
         <div class="box">
             <div class="box-titulo">Legislação</div>
 
-            <form class="form" method="post" action="https://camaramiravania.mg.gov.br/legislacao">
+            <form class="form" method="post" action="{{route('legislacao.legislacao')}}">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fa fa-search ico-legis" aria-hidden="true"></i></span>
                     <input type="text" class="form-control" name="palavraChave" placeholder="Palavra chave">

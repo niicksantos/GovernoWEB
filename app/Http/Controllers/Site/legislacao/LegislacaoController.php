@@ -12,7 +12,7 @@ use App\Models\Site\Parlamentar;
 
 class LegislacaoController extends Controller
 {
-    public function indexLegislacao(){
+    public function indexLegislacao(Request $request){
 
     
         $parlamentares = Parlamentar::where('sitefox_vereador.ativo', 1)
@@ -35,7 +35,11 @@ class LegislacaoController extends Controller
         $especiesNormativas = $this->getLegislacoes(1);
         $legislacoesTema = $this->getLegislacoes(2);
 
-        $legis = $this->getLegislacao(25);
+        $espNorm = $request->input('especieNormativa',0);
+
+       
+
+        $legis = $this->getLegislacao($espNorm);
 
 
         return view('site.legislacao.legislacao',['legislacao' => $legislacao,
@@ -53,6 +57,7 @@ class LegislacaoController extends Controller
                             ->join('sitefox_legislacao_situacao', 'sitefox_legislacao.id_situacao', '=', 'sitefox_legislacao_situacao.id')
                             ->join('sitefox_vereador', 'sitefox_legislacao.id_vereador', '=', 'sitefox_vereador.id')
                             ->where('sitefox_legislacao.id_tipo', $id_tipo)
+                            ->orderBy('sitefox_legislacao.data_atualizacao','desc')
                             ->get();
     }
 
