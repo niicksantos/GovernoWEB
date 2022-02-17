@@ -35,7 +35,7 @@ class LegislacaoController extends Controller
         $especiesNormativas = $this->getLegislacoes(1);
         $legislacoesTema = $this->getLegislacoes(2);
         
-        $dadosLegis = $request->all();
+        $dadosLegis = $request->query();
 
         //dd($dadosLegis);
 
@@ -62,7 +62,6 @@ class LegislacaoController extends Controller
                             ->orderBy('sitefox_legislacao.data_atualizacao','desc')
                             ->get();
     }
-
 
     protected function getLegislacoes(int $tipo)
     {

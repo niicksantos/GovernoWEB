@@ -9,8 +9,8 @@
             <div class="box_licitacao">
                 <div class="box-titulo">Busca</div>
                 <p>Escolha uma das consultas e acesse esta ferramenta de transparência do Poder Público.</p>
-                <form class="form" name="formLegislacao" id="formLegislacao" method="post">
-                    @csrf
+                <form class="form" name="formLegislacao" id="formLegislacao"  action="{{route('legislacao.legislacao')}}">
+                    
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-search ico-legis" aria-hidden="true"></i></span>
                         <input type="text" class="form-control" name="palavraChave"  id="palavraChave" placeholder="Palavra chave">
@@ -31,7 +31,7 @@
                         <div class="col-md-12">
                             <div class="input-group mb-3">
                                 <select name="especieNormativa" class="form-select" id="especieNormativa">
-                                    <option value="2">Selecione uma espécie normativa</option>
+                                    <option value="0">Selecione uma espécie normativa</option>
                                     @foreach ($legislacao['especiesNormativas'] as $especieNormativa)
                                         <option value="{{$especieNormativa->id}}">{{$especieNormativa->nome}}</option>
                                     @endforeach
@@ -118,16 +118,34 @@
 </div>
 
  <script>
-    /* $(function(){
+     /*
+     $(function(){
         $('#formLegislacao').submit(function(event){
             event.preventDefault();
 
-            var palavraChave = $(this).find('input#palavraChave').val();
-
-            alert('ok');
+            var palavraChave = $(this).find('#palavraChave').val();
+            var especieNormativa = $(this).find('#especieNormativa').val();
+            //alert('ok');
         });
+        var url = "{{route('legislacao.legislacao')}}";
+
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+
+            url: url,
+            type: 'post',
+            dataType: "json",   
+            data: {
+                palavraChave: palavraChave,
+                especieNormativa: especieNormativa 
+            }
+        })
+
      });
+
      */
+    
 
  </script>
 

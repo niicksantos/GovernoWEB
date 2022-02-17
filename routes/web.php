@@ -35,6 +35,8 @@ Route::prefix('/')->group(function() {
     route::get('Legislacao', ['as' => 'legislacao.legislacao', 'uses' => 'Site\legislacao\LegislacaoController@indexLegislacao']);
     route::post('Legislacao', ['as' => 'legislacao.legislacao', 'uses' => 'Site\legislacao\LegislacaoController@indexLegislacao']);
 
+
+
 });
 
 
