@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="input-group mb-3">
-                                <select name="especieNormativa" class="form-select" id="especieNormativa">
+                                <select name="espNormativa" class="form-select" id="espNormativa">
                                     <option value="0">Selecione uma espécie normativa</option>
                                     @foreach ($legislacao['especiesNormativas'] as $especieNormativa)
                                         <option value="{{$especieNormativa->id}}">{{$especieNormativa->nome}}</option>
