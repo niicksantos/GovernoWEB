@@ -39,7 +39,7 @@ class LegislacaoController extends Controller
 
         //dd($dadosLegis);
 
-        //$legis = $this->getLegislacao($dadosLegis['especieNormativa']);
+        $legis = $this->getLegislacao(25);
 
         //dd($legis);
 
