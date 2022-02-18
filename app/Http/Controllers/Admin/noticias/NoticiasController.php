@@ -12,7 +12,7 @@ class NoticiasController extends Controller
         $this->middleware('auth');
     }
 
-    public function CadastraNoticia() {
+    public function cadastraNoticia() {
         return view('Admin.noticias.cadastrar_noticia');
     }
 }

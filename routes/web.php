@@ -20,7 +20,7 @@ Auth::routes();
 //SITE
 
 Route::prefix('/')->group(function() {
-
+  
     route::get('/', ['as' => 'index', 'uses' => 'Site\HomeController@indexSite']);
     route::get('/home', ['as' => 'home', 'uses' => 'Site\HomeController@indexSite']);
 
@@ -49,13 +49,13 @@ Route::prefix('/')->group(function() {
 // ROTAS DO PAINEL ADM
 
 Route::prefix('Admin')->group(function() {
-    route::get('/', ['as' => 'admin.admin_index', 'uses' => 'Admin\AdminController@IndexAdmin']);
+    route::get('/', ['as' => 'admin.admin_index', 'uses' => 'Admin\AdminController@indexAdmin']);
 
 
 
     //NOTICIAS
 
-    route::get('/Noticia', ['as' => 'admin.noticias.cadastrar_noticia', 'uses' => 'Admin\noticias\NoticiasController@CadastraNoticia']);
+    route::get('/Noticia', ['as' => 'admin.noticias.cadastrar_noticia', 'uses' => 'Admin\noticias\NoticiasController@cadastraNoticia']);
     
 
 
