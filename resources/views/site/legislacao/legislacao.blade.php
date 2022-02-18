@@ -9,7 +9,8 @@
             <div class="box_licitacao">
                 <div class="box-titulo">Busca</div>
                 <p>Escolha uma das consultas e acesse esta ferramenta de transparência do Poder Público.</p>
-                <form class="form" name="formLegislacao" id="formLegislacao"  action="{{route('legislacao.legislacao')}}">
+                <form class="form" name="formLegislacao" id="formLegislacao"  method="post" action="{{route('legislacao.legislacao')}}">
+                    @csrf
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-search ico-legis" aria-hidden="true"></i></span>
                         <input type="text" class="form-control" name="palavraChave"  id="palavraChave" placeholder="Palavra chave">
