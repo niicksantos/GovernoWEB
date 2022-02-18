@@ -39,7 +39,7 @@ class LegislacaoController extends Controller
 
         //dd($dadosLegis);
 
-        $legis = $this->getLegislacao(intval($dadosLegis));
+        $legis = $this->getLegislacao(intval($dadosLegis), 1);
 
         //dd($legis);
 
@@ -51,7 +51,7 @@ class LegislacaoController extends Controller
 
     }
 
-    protected function getLegislacao(int $id_tipo)
+    protected function getLegislacao(int $id_tipo, int $tipo)
     {
         return Legislacao::selectRaw('sitefox_legislacao.titulo, sitefox_legislacao.data_atualizacao, sitefox_legislacao.id_situacao, sitefox_legislacao.indexacao, sitefox_legislacao.ementa, sitefox_legislacao_situacao.nome, sitefox_vereador.nome AS vereador')
                             ->where('sitefox_legislacao.ativo', 1)
@@ -59,6 +59,7 @@ class LegislacaoController extends Controller
                             ->join('sitefox_legislacao_situacao', 'sitefox_legislacao.id_situacao', '=', 'sitefox_legislacao_situacao.id')
                             ->join('sitefox_vereador', 'sitefox_legislacao.id_vereador', '=', 'sitefox_vereador.id')
                             ->where('sitefox_legislacao.id_tipo', $id_tipo)
+                            ->where('sitefox_legislacao_tipo.tipo', $tipo)
                             ->orderBy('sitefox_legislacao.data_atualizacao','desc')
                             ->get();
     }
