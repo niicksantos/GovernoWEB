@@ -27,7 +27,7 @@
     <link href="{{ asset('css/sessao7.css') }}" rel="stylesheet">
     <link href="{{ asset('css/noticia.css') }}" rel="stylesheet">
     <link href="{{ asset('css/page_noticias.css') }}" rel="stylesheet">
-    
+
     <!--Licitacao-->
     <link href="{{ asset('css/legislacao/legislacao.css') }}" rel="stylesheet">
 
@@ -36,6 +36,7 @@
     <link href="{{ asset('css/estrutura_interna.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna_mobile.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     @yield('css')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
         rel="stylesheet">
@@ -79,7 +80,8 @@
                             </div>
 
                             <div class="itn_area_campos_login itn_recuperar_login_senha sw_lato_bold">Esqueci minha
-                                <span id="link_senha" class="sw_lato_bold">senha</span></div>
+                                <span id="link_senha" class="sw_lato_bold">senha</span>
+                            </div>
 
                             <div class="itn_area_campos_login itn_area_campos_login_recaptcha">
                                 <div class="g-recaptcha-login" id="captchaLogin"></div>

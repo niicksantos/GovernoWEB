@@ -1,17 +1,20 @@
 :root {
-    --cor-primaria: #00486F;
-    --gradiente-veradores: linear-gradient(160deg, rgba(0,72,111,1) 0%, rgba(255,255,255,1) 55%);
+    --cor-primaria: #00486f;
+    --gradiente-veradores: linear-gradient(
+        160deg,
+        rgba(0, 72, 111, 1) 0%,
+        rgba(255, 255, 255, 1) 55%
+    );
     --sombra: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
-.card{
+.card {
     margin: 4% 0%;
 }
 
-.card_cabecalho{
+.card_cabecalho {
     background-color: var(--cor-primaria) !important;
-    color:#fff;
+    color: #fff;
     border-radius: 5px 5px 0px 0px !important;
 }
 
@@ -28,12 +31,4 @@
 
 .box_licitacao p {
     text-align: center;
-}
-
-.dados_header{
-    display: flex;
-}
-
-.dados_header p {
-    margin-right: 15%;
 }

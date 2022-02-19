@@ -20,14 +20,14 @@ class HomeController extends Controller
     }
 
     public function indexSite()
-    { 
+    {
         $contslider = 0;
         $slider = Slider::all() ->where('exibir', 1);
 
         $noticia = Noticia::all()->sortByDesc('id')
                                 ->where('id_categoria', 1)
                                 ->where('destaque', 0)
-                                ->where('ativo', 1) 
+                                ->where('ativo', 1)
                                 ->take(4);
                                  
         $destaque = Noticia::all() ->where('id_categoria', 1)
@@ -56,14 +56,13 @@ class HomeController extends Controller
                                                     ->join('sitefox_legislatura AS sl', 'sl.id', '=', 'svl.id_legislatura')
                                                     ->get();
         
-        $legislacao['especiesNormativas'] = LegislacaoTipo::where('ativo', true)->where('tipo', 1)->get();
-        $legislacao['temas'] = LegislacaoTipo::where('ativo', true)->where('tipo', 2)->get();
-        $legislacao['autores'] = $parlamentares;
-        $legislacao['situacoes'] = LegislacaoSituacao::orderBy('nome')->where('ativo', 1)->get();
-
-        
-        $especiesNormativas = $this->getLegislacoes(1);
-        $legislacoesTema = $this->getLegislacoes(2);
+        $legislacao['especiesNormativas'] = $this->getLegislacoesPorTipo(1);
+        $legislacao['temas'] = $this->getLegislacoesPorTipo(2);
+        $legislacao['autores'] = $this->getLegislacoesPorVereador();
+        $legislacao['situacoes'] = $this->getLegislacoesPorSituacao();
+                                            
+        $especiesNormativas = $this->getLegislacoesPorTipo(1);
+        $legislacoesTema = $this->getLegislacoesPorTipo(2);
 
         return view('site.home', ['contslider' => $contslider,
                                   'slider' => $slider,
@@ -85,6 +84,35 @@ class HomeController extends Controller
         ->join('sitefox_legislacao_tipo', 'sitefox_legislacao.id_tipo', 'sitefox_legislacao_tipo.id')
         ->groupBy('sitefox_legislacao_tipo.nome')
         ->groupBy('sitefox_legislacao_tipo.id')
+        ->where('sitefox_legislacao_tipo.tipo', $tipo)
+        ->get();
+    }
+
+    protected function getLegislacoesPorVereador()
+    {
+        return Legislacao::selectRaw('sitefox_vereador.id, sitefox_vereador.nome, count(sitefox_vereador.id) as count')
+        ->join('sitefox_vereador', 'sitefox_legislacao.id_vereador', 'sitefox_vereador.id')
+        ->groupBy('sitefox_vereador.id')
+        ->groupBy('sitefox_vereador.nome')
+        ->get();
+    }
+
+    protected function getLegislacoesPorSituacao()
+    {
+        return Legislacao::selectRaw('sitefox_legislacao_situacao.id, sitefox_legislacao_situacao.nome, count(sitefox_legislacao_situacao.id) as count')
+        ->join('sitefox_legislacao_situacao', 'sitefox_legislacao.id_situacao', 'sitefox_legislacao_situacao.id')
+        ->groupBy('sitefox_legislacao_situacao.id')
+        ->groupBy('sitefox_legislacao_situacao.nome')
+        ->get();
+    }
+
+    protected function getLegislacoesPorTipo(int $tipo)
+    {
+        return Legislacao::selectRaw('sitefox_legislacao_tipo.nome, sitefox_legislacao_tipo.id, count(sitefox_legislacao_tipo.id) as count')
+        ->join('sitefox_legislacao_tipo', 'sitefox_legislacao.id_tipo', 'sitefox_legislacao_tipo.id')
+        ->groupBy('sitefox_legislacao_tipo.nome')
+        ->groupBy('sitefox_legislacao_tipo.id')
+        ->where('sitefox_legislacao.ativo', 1)
         ->where('sitefox_legislacao_tipo.tipo', $tipo)
         ->get();
     }
