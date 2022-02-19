@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin\noticias;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request;use Illuminate\Http\File;
+use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\ValidaRequest;
 
 class NoticiasController extends Controller
 {
@@ -12,19 +14,22 @@ class NoticiasController extends Controller
         $this->middleware('auth');
     }
 
-    public function cadastraNoticia(Request $request) 
+
+    public function indexCadNoticia()
     {
-        $teste = json_decode($request->input('titulo_noticia'));
 
-        dd($teste);    
-
+        return view('Admin.noticias.cadastrar_noticia');
 
 
+    }
 
 
-        return view('Admin.noticias.cadastrar_noticia',['teste' => $teste
-            
-                                                        
-                                                        ]);
+
+    public function cadastraNoticia(ValidaRequest $request) 
+    {
+        $titulo = $request->validated();
+
+        dd($titulo);
+       
     }
 }
