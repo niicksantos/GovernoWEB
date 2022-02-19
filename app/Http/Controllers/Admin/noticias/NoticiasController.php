@@ -12,7 +12,19 @@ class NoticiasController extends Controller
         $this->middleware('auth');
     }
 
-    public function cadastraNoticia() {
-        return view('Admin.noticias.cadastrar_noticia');
+    public function cadastraNoticia(Request $request) 
+    {
+        $teste = json_decode($request->input('titulo_noticia'));
+
+        dd($teste);    
+
+
+
+
+
+        return view('Admin.noticias.cadastrar_noticia',['teste' => $teste
+            
+                                                        
+                                                        ]);
     }
 }

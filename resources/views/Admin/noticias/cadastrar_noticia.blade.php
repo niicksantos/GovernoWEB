@@ -8,11 +8,11 @@
 <div class="card-body bg-white">
     <form action="#" class="form-control">
         <div class="row md-12">
-            <div class="card-body bg-white">
+            <div class="card-body bg-white">       
                 <div class="row">
                     <div class="form-group col-md-3">
                         <label for="titulo_noticia" class="form-label">Título</label>
-                        <input type="text" class="form-control" id="titulo_noticia">
+                        <input type="text" name="titulo_noticia" class="form-control" id="titulo_noticia" value="3032">
                     </div>
 
                     <div class="form-group col-md-3">
@@ -63,8 +63,32 @@
 
 <script>
     $(document).ready(function () {
+
+        var titulo = $('#titulo_noticia').val();
+
+        var url = "{{route('admin.noticias.cadastrar_noticia')}}";
+
+        $.ajaxSetup({
+                  headers: {
+                      'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                  }
+              });
+
+        $.ajax({
+            
+            url: url,
+            type: post,
+            data:{
+                titulo: titulo
+            },
+            datatype: json
+
+        });
+
         
-        CKEDITOR.replace('texto_noticia');
+
+        
+       // CKEDITOR.replace('texto_noticia');
 
     
 

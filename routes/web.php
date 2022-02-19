@@ -56,6 +56,7 @@ Route::prefix('Admin')->group(function() {
     //NOTICIAS
 
     route::get('/Noticia', ['as' => 'admin.noticias.cadastrar_noticia', 'uses' => 'Admin\noticias\NoticiasController@cadastraNoticia']);
+    route::post('/Noticia', ['as' => 'admin.noticias.cadastrar_noticia', 'uses' => 'Admin\noticias\NoticiasController@cadastraNoticia']);
     
 
 
