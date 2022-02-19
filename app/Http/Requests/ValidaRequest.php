@@ -25,7 +25,7 @@ class ValidaRequest extends FormRequest
     {
         return [
             'titulo' =>'required|min:5|max:100',
-            'capa' => 'mimes:jpg,bmp,png,jpeg',   
+            'capa' => 'required|mimes:jpg,bmp,png,jpeg|max:2048',   
             'data' => 'date',
             'chamada' => 'required|min:5|max:100'
         ];

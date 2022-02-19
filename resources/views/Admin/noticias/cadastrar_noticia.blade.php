@@ -6,7 +6,7 @@
      
 <div class="card-header">Cadastrar Notícia</div>
 <div class="card-body bg-white">
-    <form action="{{route('admin.noticias.cadastrar_noticia')}}" class="form-control" method="post">
+    <form action="{{route('admin.noticias.cadastrar_noticia')}}" class="form-control" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row md-12">
             <div class="card-body bg-white">       
