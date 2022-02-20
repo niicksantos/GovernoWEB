@@ -29,7 +29,7 @@ class NoticiasController extends Controller
     {
         $titulo = $request->validated();
 
-        dd($titulo);
+        //dd($titulo);
        
     }
 }
