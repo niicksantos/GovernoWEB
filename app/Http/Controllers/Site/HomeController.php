@@ -2,14 +2,11 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Models\Site\LegislacaoTipo;
 use App\Http\Controllers\Controller;
-use App\Models\Site\Legislacao;
-use Illuminate\Http\Request;
 use App\Models\Site\Slider;
 use App\Models\Site\Noticia;
 use App\Models\Site\Parlamentar;
-use App\Models\Site\LegislacaoSituacao;
+use App\Repositories\LegislacaoRepository;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -19,15 +16,15 @@ class HomeController extends Controller
         return redirect()->route('home');
     }
 
-    public function indexSite()
-    { 
+    public function indexSite(LegislacaoRepository $legislacaoRepository)
+    {
         $contslider = 0;
         $slider = Slider::all() ->where('exibir', 1);
 
         $noticia = Noticia::all()->sortByDesc('id')
                                 ->where('id_categoria', 1)
                                 ->where('destaque', 0)
-                                ->where('ativo', 1) 
+                                ->where('ativo', 1)
                                 ->take(4);
                                  
         $destaque = Noticia::all() ->where('id_categoria', 1)
@@ -55,37 +52,27 @@ class HomeController extends Controller
                                                     ->join('sitefox_vereador_legislatura AS svl', 'sv.id', '=', 'svl.id_vereador')
                                                     ->join('sitefox_legislatura AS sl', 'sl.id', '=', 'svl.id_legislatura')
                                                     ->get();
+
+        $especiesNormativas = $legislacaoRepository->getLegislacoesPorTipo(1);
+        $legislacoesTema = $legislacaoRepository->getLegislacoesPorTipo(2);
+                                                    
+        $legislacao['especiesNormativas'] = $especiesNormativas;
+        $legislacao['temas'] = $legislacoesTema;
+        $legislacao['autores'] = $legislacaoRepository->getLegislacoesPorVereador();
+        $legislacao['situacoes'] = $legislacaoRepository->getLegislacoesPorSituacao();
         
-        $legislacao['especiesNormativas'] = LegislacaoTipo::where('ativo', true)->where('tipo', 1)->get();
-        $legislacao['temas'] = LegislacaoTipo::where('ativo', true)->where('tipo', 2)->get();
-        $legislacao['autores'] = $parlamentares;
-        $legislacao['situacoes'] = LegislacaoSituacao::orderBy('nome')->where('ativo', 1)->get();
-
-        
-        $especiesNormativas = $this->getLegislacoes(1);
-        $legislacoesTema = $this->getLegislacoes(2);
-
-        return view('site.home', ['contslider' => $contslider,
-                                  'slider' => $slider,
-                                  'destaque' => $destaque,
-                                  'noticia' =>$noticia,
-                                  'videos' => $videos,
-                                  'videos_d' => $videos_d,
-                                  'parlamentares' => $parlamentares,
-                                  'presidente' => $presidente,
-                                  'legislacao' => $legislacao,
-                                  'especiesNormativas'=> $especiesNormativas,
-                                  'legislacoesTema' => $legislacoesTema
-                                    ]);
-    }
-
-    protected function getLegislacoes(int $tipo)
-    {
-        return Legislacao::selectRaw('sitefox_legislacao_tipo.nome, sitefox_legislacao_tipo.id, count(sitefox_legislacao_tipo.id) as count')
-        ->join('sitefox_legislacao_tipo', 'sitefox_legislacao.id_tipo', 'sitefox_legislacao_tipo.id')
-        ->groupBy('sitefox_legislacao_tipo.nome')
-        ->groupBy('sitefox_legislacao_tipo.id')
-        ->where('sitefox_legislacao_tipo.tipo', $tipo)
-        ->get();
+        return view('site.home', [
+            'contslider' => $contslider,
+            'slider' => $slider,
+            'destaque' => $destaque,
+            'noticia' =>$noticia,
+            'videos' => $videos,
+            'videos_d' => $videos_d,
+            'parlamentares' => $parlamentares,
+            'presidente' => $presidente,
+            'legislacao' => $legislacao,
+            'especiesNormativas'=> $especiesNormativas,
+            'legislacoesTema' => $legislacoesTema
+        ]);
     }
 }

@@ -9,4 +9,5 @@ class Legislacao extends Model
     protected $table = 'sitefox_legislacao';
     
     public $timestamps = false;
+    protected $dates = ['data_atualizacao'];
 }
