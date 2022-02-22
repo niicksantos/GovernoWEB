@@ -4,8 +4,7 @@ namespace App\Http\Controllers\Site\legislacao;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Repositories\LegislacaoRepository;
-
+use App\Repositories\LegislacaoRepository; 
 class LegislacaoController extends Controller
 {
     public function indexLegislacao(Request $request, LegislacaoRepository $legislacaoRepository)
@@ -32,3 +31,4 @@ class LegislacaoController extends Controller
         ]);
     }
 }
+ 

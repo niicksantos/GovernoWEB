@@ -6,7 +6,7 @@
      
 <div class="card-header">Cadastrar Notícia</div>
 <div class="card-body bg-white">
-    <form action="{{route('admin.noticias.cadastrar_noticia')}}" class="form-control" method="post" enctype="multipart/form-data">
+    <form action="{{route('admin.noticias.cadastra_noticia')}}" class="form-control" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row md-12">
             <div class="card-body bg-white">       
@@ -18,7 +18,7 @@
 
                     <div class="form-group col-md-2">
                         <label for="data" class="form-label">Data</label>
-                        <input type="text" class="form-control" id="data">
+                        <input type="date" class="form-control" id="data" name="data">
                     </div>
 
                     <div class="form-group col-md-5">
@@ -34,19 +34,19 @@
                     </div>
 
                     <div class="form-check col-md-2" style="margin: 2% 0% 0% 1%;">
-                        <input class="form-check-input" type="checkbox" value="" id="exibir">
+                        <input class="form-check-input" type="checkbox" value="" id="exibir" name="exibir" checked>
                         <label for="exibir" class="form-label">Exibir?</label>
                     </div>
 
                     <div class="form-check col-md-2" style="margin: 2% 0% 0% -9%;">
-                        <input class="form-check-input" type="checkbox" value="" id="destaque">
+                        <input class="form-check-input" type="checkbox" value="" id="destaque" name="destaque">
                         <label for="destaque" class="form-label">Destaque?</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-10 form-group">
-                        <label>Texto</label>
-                        <textarea class="form-control" rows="20" id="texto"></textarea>
+                        <label for="texto">Texto</label>
+                        <textarea class="form-control" rows="20" id="texto" name="texto"></textarea>
                     </div>
                 </div>
             </div>
@@ -69,11 +69,13 @@
 
 <script>
     $(document).ready(function () {
+        
+        CKEDITOR.replace('texto');
 
         /*
         var titulo = $('#titulo').val();
 
-        var url = "{{route('admin.noticias.cadastrar_noticia')}}";
+        var url = "{{route('admin.noticias.cadastra_noticia')}}";
 
         $.ajaxSetup({
                   headers: {
@@ -94,15 +96,14 @@
 
         */
         
-
-        
-        CKEDITOR.replace('texto');
-
     
 
     });
 
-    $('#data').datepicker();
+   /* $('#data').datepicker({
+  dateFormat: "dd-mm-yy"
+  */
+});
 
 </script>
 

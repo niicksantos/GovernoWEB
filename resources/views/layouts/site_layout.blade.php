@@ -49,6 +49,9 @@
 </head>
 
 <body>
+
+    @include('flash-message')
+    
     <div>
         <header>
             <!-- FORMULÁRIO DE LOGIN E CADASTRO -->

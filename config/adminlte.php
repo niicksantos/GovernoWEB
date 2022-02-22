@@ -388,11 +388,11 @@ return [
             'submenu' => [
                 [
                     'text' => 'Cadastrar',
-                    'url'  => 'Admin/Noticia',
+                    'url'  => 'Admin/cadNoticia',
                 ],
                 [
                     'text' => 'Consultar/Alterar',
-                    'url'  => '#',
+                    'url'  => 'Admin/pesqNoticia',
                 ],
             ],
         ], 

@@ -6,30 +6,26 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;use Illuminate\Http\File;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\ValidaRequest;
+use App\Models\Site\Noticia;
+use Illuminate\Support\Str;
 
-class NoticiasController extends Controller
+class PesqNotController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-
-    public function indexCadNoticia()
+    public function indexPesqNoticia()
     {
 
-        return view('Admin.noticias.cadastrar_noticia');
+        $noticias = Noticia::all();
 
+        return view('admin.noticias.pesquisa_noticia', $noticias);
 
     }
 
 
 
-    public function cadastraNoticia(ValidaRequest $request) 
-    {
-        $titulo = $request->validated();
 
-        //dd($titulo);
-       
-    }
 }

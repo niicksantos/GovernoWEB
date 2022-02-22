@@ -27,7 +27,8 @@ class ValidaRequest extends FormRequest
             'titulo' =>'required|min:5|max:100',
             'capa' => 'required|mimes:jpg,bmp,png,jpeg|max:2048',   
             'data' => 'date',
-            'chamada' => 'required|min:5|max:100'
+            'chamada' => 'required|min:5|max:100',
+            'texto' => 'required|min:20|max:2500'
         ];
     }
 }
