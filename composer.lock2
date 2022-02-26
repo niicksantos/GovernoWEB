@@ -1,13 +1,58 @@
+<<<<<<< HEAD
+@@ -4,7 +4,7 @@
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "95b772167a56f398625a3f915e94bc1c",
+=======
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95b772167a56f398625a3f915e94bc1c",
+>>>>>>> parent of 0406b57 (Delete composer.lock)
+    "content-hash": "d72751f4a3da71ae08dc2f1f5f3628cd",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
+<<<<<<< HEAD
+@ -4953,6 +4953,91 @@
+                }
+            ],
+            "time": "2020-11-12T00:07:28+00:00"
+        },
+        {
+            "name": "yajra/laravel-datatables-oracle",
+            "version": "v9.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables.git",
+                "reference": "553482df5f68969928acc0ee1a3af032cdaaf824"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/553482df5f68969928acc0ee1a3af032cdaaf824",
+                "reference": "553482df5f68969928acc0ee1a3af032cdaaf824",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.8.*|^6|^7|^8|^9",
+                "illuminate/filesystem": "5.8.*|^6|^7|^8|^9",
+                "illuminate/http": "5.8.*|^6|^7|^8|^9",
+                "illuminate/support": "5.8.*|^6|^7|^8|^9",
+                "illuminate/view": "5.8.*|^6|^7|^8|^9",
+                "php": "^7.1.3|^8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0|^7.0"
+            },
+            "suggest": {
+                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+                "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
+                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
+=======
             "version": "v3.1.0",
             "source": {
                 "type": "git",
@@ -71,10 +116,30 @@
             "require-dev": {
                 "phpunit/phpunit": "^6|^7|^8|^9",
                 "squizlabs/php_codesniffer": "^3.5"
+>>>>>>> parent of 0406b57 (Delete composer.lock)
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
+                    "dev-master": "9.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\DataTablesServiceProvider"
+                    ],
+                    "aliases": {
+                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+=======
                     "dev-master": "2.0-dev"
                 }
             },
@@ -194,6 +259,7 @@
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
+>>>>>>> parent of 0406b57 (Delete composer.lock)
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -202,6 +268,36 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "jQuery DataTables API for Laravel 5|6|7|8|9",
+            "keywords": [
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/yajra/laravel-datatables/issues",
+                "source": "https://github.com/yajra/laravel-datatables/tree/v9.19.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yajra",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/yajra",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-01-18T01:13:47+00:00"
+        }
+    ],
+    "packages-dev": [
+=======
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
@@ -4953,6 +5049,7 @@
                 }
             ],
             "time": "2020-11-12T00:07:28+00:00"
+
         }
     ],
     "packages-dev": [
@@ -7282,3 +7379,9 @@
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
+>>>>>>> parent of 0406b57 (Delete composer.lock)
+       ],
+            "time": "2022-01-18T01:13:47+00:00"
+        }
+    ],
+    "packages-dev": [
