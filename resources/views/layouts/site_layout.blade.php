@@ -10,39 +10,22 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="{{ asset('ckeditor/ckeditor.js') }}" defer></script>
 
     <!-- Styles -->
+    <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/botoes.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home_slider.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home_acesso_rapido.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home_noticias.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home_videos.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home_parlamentares.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/sessao6.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/sessao7.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/noticia.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/page_noticias.css') }}" rel="stylesheet">
-
-    <!--Licitacao-->
-    <link href="{{ asset('css/legislacao/legislacao.css') }}" rel="stylesheet">
-
-
+    
     <link href="{{ asset('css/estrutura.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna_mobile.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    @yield('css')
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
 
     <title>@yield('titulo', 'Prefeitura Municipal de ***')</title>

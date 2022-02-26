@@ -1,3 +1,6 @@
+
+<link href="{{ asset('css/sessao6.css') }}" rel="stylesheet">
+
 <div class="row">
     <div class="col-12">
         <div class="noticias_titulo">

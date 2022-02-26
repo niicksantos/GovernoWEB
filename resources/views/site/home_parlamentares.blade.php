@@ -1,4 +1,7 @@
 <!----- PARLAMENTARES ----->
+
+<link href="{{ asset('css/home_parlamentares.css') }}" rel="stylesheet">
+
 <div class="row">
     <div class="col-12">
         <div class="parlamentares_titulo">

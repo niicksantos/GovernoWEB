@@ -1,4 +1,7 @@
 <!----- ACESSO RAPIDO ----->
+
+<link href="{{ asset('css/home_acesso_rapido.css') }}" rel="stylesheet">
+    
 <div class="container">
     <div class="row">
         <div class="col-12">

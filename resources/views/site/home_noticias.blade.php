@@ -1,4 +1,7 @@
 <!----- NOTICIAS ----->
+
+<link href="{{ asset('css/home_noticias.css') }}" rel="stylesheet">
+
 <div class="container">
     <div class="row">
         <div class="col-12">
