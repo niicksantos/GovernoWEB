@@ -19,11 +19,14 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/botoes.css') }}" rel="stylesheet">
     
+    
     <link href="{{ asset('css/estrutura.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna.css') }}" rel="stylesheet">
     <link href="{{ asset('css/estrutura_interna_mobile.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 

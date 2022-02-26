@@ -12,7 +12,9 @@
             </div>
         </div>
     </div>
+
     <a href="{{ route('noticias.noticias')}}" class="btn btn-sm animated-button btn_veja_mais">Ver mais</a> 
+    
     <div class="div_noticias">
         <div class="row">
             <div class="col-12">      

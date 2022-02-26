@@ -1,4 +1,4 @@
-
+''
 <link href="{{ asset('css/sessao7.css') }}" rel="stylesheet">
 
 <div class="row">
