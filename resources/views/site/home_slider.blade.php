@@ -1,4 +1,7 @@
 <!----- SLIDER ----->
+
+<link href="{{ asset('css/home_slider.css') }}" rel="stylesheet">
+
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-pause="false" data-bs-ride="carousel">
     <div class="carousel-inner site-carousel">
         @foreach ($slider as $item)

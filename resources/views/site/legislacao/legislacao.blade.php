@@ -1,5 +1,7 @@
 @extends('layouts.site_layout')
 
+<link href="{{ asset('css/legislacao/legislacao.css') }}" rel="stylesheet">
+
 @section('content')
     <div class="container">
         <div class="row">

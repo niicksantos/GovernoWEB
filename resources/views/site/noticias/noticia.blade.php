@@ -1,5 +1,6 @@
 @extends('layouts.site_layout')
 
+<link href="{{ asset('css/noticia.css') }}" rel="stylesheet">
 
 @section('content')
 <div class="container">

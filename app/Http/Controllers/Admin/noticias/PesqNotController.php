@@ -16,12 +16,18 @@ class PesqNotController extends Controller
         $this->middleware('auth');
     }
 
-    public function indexPesqNoticia()
+    public function indexPesqNoticia(Request $request)
     {
 
-        $noticias = Noticia::all();
+        $result_page = $request->resultados;
 
-        return view('admin.noticias.pesquisa_noticia', $noticias);
+        dd($result_page);
+
+        $noticias = Noticia::paginate(15);
+
+        //dd($noticias);
+
+        return view('admin.noticias.pesquisa_noticia', ['noticias' => $noticias]);
 
     }
 

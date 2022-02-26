@@ -1,5 +1,7 @@
 @extends('layouts.site_layout')
 
+<link href="{{ asset('css/page_noticias.css') }}" rel="stylesheet">
+
 @section('content')
 
 <div class="row">
