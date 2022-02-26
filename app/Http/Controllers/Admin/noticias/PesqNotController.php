@@ -8,10 +8,6 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\ValidaRequest;
 use App\Models\Site\Noticia;
 use Illuminate\Support\Str;
-use DataTables;
-
-
-
 
 class PesqNotController extends Controller
 {
@@ -25,9 +21,9 @@ class PesqNotController extends Controller
 
         $result_page = $request->resultados;
 
-        //dd($result_page);
+        dd($result_page);
 
-        $noticias = Noticia::all();
+        $noticias = Noticia::paginate(15);
 
         //dd($noticias);
 
