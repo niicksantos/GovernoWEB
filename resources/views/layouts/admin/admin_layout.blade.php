@@ -14,11 +14,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="{{ asset('ckeditor/ckeditor.js') }}" defer></script>
 
+    <script src="{{ asset('DataTables/datatables.min.js') }}" defer></script>
+
     <script src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
     
 
     <!-- Styles -->
     @yield('css')
+
+    <link href="{{ asset('DataTables/DataTables-1.11.4/css/dataTables.bootstrap5.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
