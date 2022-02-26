@@ -52,13 +52,14 @@ Route::prefix('Admin')->group(function() {
     route::get('/', ['as' => 'admin.admin_index', 'uses' => 'Admin\AdminController@indexAdmin']);
 
 
-
+ 
     //NOTICIAS
 
     route::get('/cadNoticia', ['as' => 'admin.noticias.cadastra_noticia', 'uses' => 'Admin\noticias\CadNotController@indexCadNoticia']);
     route::post('/cadNoticia', ['as' => 'admin.noticias.cadastra_noticia', 'uses' => 'Admin\noticias\CadNotController@cadastraNoticia']);
 
     route::get('/pesqNoticia', ['as' => 'admin.noticias.pesquisa_noticia', 'uses' => 'Admin\noticias\PesqNotController@indexPesqNoticia']);
+
   // route::post('/pesqNoticia', ['as' => 'admin.noticias.pesquisa_noticia', 'uses' => 'Admin\noticias\PesqNotController@cadastraNoticia']);
 
 
