@@ -18,7 +18,6 @@
                             <th scope="col">Título</th>
                             <th scope="col">Categoria</th>
                             <th scope="col">Secretaria</th>
-                            <th scope="col">Exibir</th>
                             <th scope="col">Ações</th>
                           </tr>
                         </thead>
@@ -27,13 +26,12 @@
                                 <tr>
                                     <td class="col-1">{{$noticia->id}}</td>
                                     <td class="col-1">{{$noticia->data}}</td>
-                                    <td class="col-3">{{$noticia->titulo}}</td>
+                                    <td class="col-4">{{$noticia->titulo}}</td>
                                     <td class="col-1">{{$noticia->id_categoria}}</td>
-                                    <td class="col-2">{{$noticia->titulo}}</td>
-                                    <td class="col-1"> @if( $noticia->exibir == 1)Sim @else Não @endif  </td>
-                                    <td class="col-2"> <a href="{{route('edita_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->exibir == 1)../img/check.png @else ../img/close.png @endif" class="img-btn" title="@if( $noticia->exibir == 1)Exibir @else Não exibir @endif" alt="Exibir"></a> 
-                                                        <a href="{{route('edita_noticia', ['id' => $noticia->id])}}"><img src="../img/destaqueon.png" class="img-btn" title="Destaque" alt="Destaque"></a> 
-                                                        <a href="{{route('edita_noticia', ['id' => $noticia->id])}}"><img src="../img/edit.png" class="img-btn" title="Editar" alt="Editar"></a> 
+                                    <td class="col-3">{{$noticia->titulo}}</td>
+                                    <td class="col-2"> <a href="{{route('exibe_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->exibir == 1)../img/check.png @else ../img/close.png @endif" class="img-btn" title="@if( $noticia->exibir == 1)Exibindo @else Não exibindo @endif" alt="Exibir"></a> 
+                                                        <a href="{{route('destaque_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->destaque == 1)../img/destaqueon.png @else ../img/destaqueoff.png @endif" class="img-btn" title="@if( $noticia->exibir == 1)Não destacado @else Em destaque @endif" alt="Destaque"></a> 
+                                                        <a href="{{route('edit_noticia', ['id' => $noticia->id])}}"><img src="../img/edit.png" class="img-btn" title="Editar" alt="Editar"></a> 
                                                         <a href="{{route('deleta_noticia', ['id' => $noticia->id])}}" onclick="return confirm('Tem certeza que deseja exclui esta notícia?')"><img src="../img/delete.png" class="img-btn" title="Excluir" alt="Excluir"></a>
                                     </td>
                                 </tr>

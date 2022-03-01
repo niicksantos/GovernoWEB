@@ -21,17 +21,13 @@ class PesqNotController extends Controller
 
         $result_page = $request->resultados;
 
-        //dd($result_page);
 
         $noticias = Noticia::orderBy('id','desc')
                             ->where('id_categoria', 1)
                             ->get();
-        //dd($noticias);
-
         return view('admin.noticias.pesquisa_noticia', ['noticias' => $noticias]);
 
     }
-
 
     public function editNoticia($id)
     {
@@ -50,31 +46,24 @@ class PesqNotController extends Controller
 
     }
 
-
     public function editAction(Request $request, $id)
     {
 
         $noticia = Noticia::find($id);
 
-        $capa = $noticia->capa_edit;
-
-        if($request->capa_edit != '') {
-            
-            $capa = $request->capa_edit;
-        }
-
-        // dd($capa);
+        $capa = $noticia->capa;
 
         $noticia->titulo = $request->titulo;
         $noticia->data = $request->data;
-        $noticia->capa = $capa->store('fotos');
+        $noticia->capa = $capa;
         $noticia->chamada = $request->chamada;
         $noticia->texto = $request->texto;
         $noticia->url = Str::slug($request->titulo);
 
         $noticia->save();
 
-        return back()->with('success', 'Notícia cadastrada com sucesso!');
+        return redirect()->route('admin.noticias.pesquisa_noticia')
+                         ->with('success', 'Notícia editada com sucesso!');
     }
 
 
@@ -86,4 +75,30 @@ class PesqNotController extends Controller
 
     }
 
+
+    public function exibeNoticia($id)
+    {
+        $noticia = Noticia::find($id);
+        
+        $noticia->exibir = 1 - $noticia->exibir;
+
+        $noticia->save();
+
+        return redirect()->route('admin.noticias.pesquisa_noticia');
+    }
+
+
+    public function destaqueNoticia($id)
+    {
+        $noticia = Noticia::find($id);
+        
+        $noticia->destaque = 1 - $noticia->destaque;
+
+        $noticia->save();
+
+        return redirect()->route('admin.noticias.pesquisa_noticia');
+    }
+
+
+    
 }

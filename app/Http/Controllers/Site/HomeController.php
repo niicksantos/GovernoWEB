@@ -23,6 +23,7 @@ class HomeController extends Controller
 
         $noticia = Noticia::all()->sortByDesc('id')
                                 ->where('id_categoria', 1)
+                                ->where('exibir', 1)
                                 ->where('destaque', 0)
                                 ->where('ativo', 1)
                                 ->take(4);
