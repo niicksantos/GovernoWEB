@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin\noticias;
+namespace App\Http\Controllers\admin\noticias;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;use Illuminate\Http\File;
@@ -100,5 +100,5 @@ class PesqNotController extends Controller
     }
 
 
-    
+
 }
