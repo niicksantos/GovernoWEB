@@ -58,7 +58,7 @@ Route::prefix('Admin')->group(function() {
     route::get('/cadNoticia', ['as' => 'admin.noticias.cadastra_noticia', 'uses' => 'admin\noticias\CadNotController@indexCadNoticia']);
     route::post('/cadNoticia', ['as' => 'admin.noticias.cadastra_noticia', 'uses' => 'admin\noticias\CadNotController@cadastraNoticia']);
 
-    route::resource('/pesqNoticia', ['as' => 'admin.noticias.pesquisa_noticia', 'uses' => 'admin\noticias\PesqNotController@indexPesqNoticia']);
+    route::get('/pesqNoticia', ['as' => 'admin.noticias.pesquisa_noticia', 'uses' => 'admin\noticias\PesqNotController@indexPesqNoticia']);
 
     route::get('/editNoticia/{id}', ['as' => 'edit_noticia', 'uses' => 'admin\noticias\PesqNotController@editNoticia']);
     route::post('/editNoticia/{id}', ['as' => 'edit_noticia', 'uses' => 'admin\noticias\PesqNotController@editNoticia']);
