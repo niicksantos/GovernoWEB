@@ -7,7 +7,7 @@ use Illuminate\Http\Request;use Illuminate\Http\File;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\ValidaRequest;
 use App\Models\Site\Noticia;
-use Illuminate\Support\Str;
+use Illuminate\Support\Str; 
 
 class PesqNotController extends Controller
 {
@@ -23,8 +23,9 @@ class PesqNotController extends Controller
 
         //dd($result_page);
 
-        $noticias = Noticia::all();
-
+        $noticias = Noticia::orderBy('id','desc')
+                            ->where('id_categoria', 1)
+                            ->get();
         //dd($noticias);
 
         return view('admin.noticias.pesquisa_noticia', ['noticias' => $noticias]);
@@ -32,6 +33,57 @@ class PesqNotController extends Controller
     }
 
 
+    public function editNoticia($id)
+    {
+        $noticia = Noticia::find($id);
 
+        //dd($noticia);
+
+    
+        if($noticia) {
+            return view('admin.noticias.edita_noticia', [
+                        'noticia' => $noticia
+            ]);
+        } else {
+            return redirect()->route('admin.noticias.pesquisa_noticia');
+        }
+
+    }
+
+
+    public function editAction(Request $request, $id)
+    {
+
+        $noticia = Noticia::find($id);
+
+        $capa = $noticia->capa_edit;
+
+        if($request->capa_edit != '') {
+            
+            $capa = $request->capa_edit;
+        }
+
+        // dd($capa);
+
+        $noticia->titulo = $request->titulo;
+        $noticia->data = $request->data;
+        $noticia->capa = $capa->store('fotos');
+        $noticia->chamada = $request->chamada;
+        $noticia->texto = $request->texto;
+        $noticia->url = Str::slug($request->titulo);
+
+        $noticia->save();
+
+        return back()->with('success', 'Notícia cadastrada com sucesso!');
+    }
+
+
+    public function deleteNoticia($id)
+    {
+        Noticia::find($id)->delete();
+
+        return redirect()->route('admin.noticias.pesquisa_noticia');
+
+    }
 
 }

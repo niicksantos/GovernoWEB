@@ -1,0 +1,9 @@
+
+.table{
+    text-align: center;
+}
+
+.table td a{
+    text-decoration: none;
+    color: #fff;
+}

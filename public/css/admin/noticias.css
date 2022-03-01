@@ -1,0 +1,29 @@
+:root{
+    --cor-primaria: #00486F;
+    --gradiente-veradores: linear-gradient(160deg, rgba(0,72,111,1) 0%, rgba(255,255,255,1) 55%);
+    --sombra: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+} 
+
+.dataTables_wrapper{
+    top: 10px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 1%;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    font-size: 14px;
+}
+
+.img-btn{
+    margin-left: 3%;
+}
+
+.img-btn:hover{
+    transform: scale(1.5);
+    transition:0.3s;
+
+}
