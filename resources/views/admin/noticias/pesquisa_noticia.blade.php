@@ -26,7 +26,7 @@
                                 <tr>
                                     <td class="col-1">{{$noticia->id}}</td>
                                     <td class="col-1">{{$noticia->data}}</td>
-                                    <td class="col-4">{{$noticia->titulo}}</td>
+                                    <td class="col-4">{{$noticia->titulo}}</td> 
                                     <td class="col-1">{{$noticia->id_categoria}}</td>
                                     <td class="col-3">{{$noticia->titulo}}</td>
                                     <td class="col-2"> <a href="{{route('exibir_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->exibir == 1)../img/check.png @else ../img/close.png @endif" class="img-btn" title="@if( $noticia->exibir == 1)Exibindo @else Não exibindo @endif" alt="Exibir"></a> 
