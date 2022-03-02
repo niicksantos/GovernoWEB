@@ -30,7 +30,7 @@
                                     <td class="col-1">{{$noticia->id_categoria}}</td>
                                     <td class="col-3">{{$noticia->titulo}}</td>
                                     <td class="col-2"> <a href="{{route('exibir_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->exibir == 1)../img/check.png @else ../img/close.png @endif" class="img-btn" title="@if( $noticia->exibir == 1)Exibindo @else Não exibindo @endif" alt="Exibir"></a> 
-                                                        <a href="{{route('destaque_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->destaque == 1)../img/destaqueon.png @else ../img/destaqueoff.png @endif" class="img-btn" title="@if( $noticia->exibir == 1)Em destaque @else Não destacado @endif" alt="Destaque"></a> 
+                                                        <a href="{{route('destaque_noticia', ['id' => $noticia->id])}}"><img src="@if( $noticia->destaque == 1)../img/destaqueon.png @else ../img/destaqueoff.png @endif" class="img-btn" title="@if( $noticia->destaque == 1)Em destaque @else Não destacado @endif" alt="Destaque"></a> 
                                                         <a href="{{route('edit_noticia', ['id' => $noticia->id])}}"><img src="../img/edit.png" class="img-btn" title="Editar" alt="Editar"></a> 
                                                         <a href="{{route('deleta_noticia', ['id' => $noticia->id])}}" onclick="return confirm('Tem certeza que deseja exclui esta notícia?')"><img src="../img/delete.png" class="img-btn" title="Excluir" alt="Excluir"></a>
                                     </td>
