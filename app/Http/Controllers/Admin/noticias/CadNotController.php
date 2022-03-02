@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\admin\noticias;
+namespace App\Http\Controllers\Admin\noticias;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;use Illuminate\Http\File;
