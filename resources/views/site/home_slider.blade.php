@@ -7,12 +7,12 @@
         @foreach ($slider as $item)
             @if ($contslider == 0)
                 <div class="carousel-item active">
-                    <img src="{{$item->foto}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('storage/'.$item->foto)}}" class="d-block w-100" alt="...">
                 </div>
                 {{ $contslider++}}
-            @else
+            @else 
                 <div class="carousel-item">
-                    <img src="{{$item->foto}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('storage/'.$item->foto)}}" class="d-block w-100" alt="...">
                 </div>
             @endif
         @endforeach        

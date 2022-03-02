@@ -94,7 +94,7 @@ class PesqNotController extends Controller
 
         $noticia->save();
 
-        return redirect()->route('admin.noticias.pesquisa_noticia');
+        return redirect()->route('pesquisa_noticia');
     }
 
 
@@ -106,7 +106,7 @@ class PesqNotController extends Controller
 
         $noticia->save();
 
-        return redirect()->route('admin.noticias.pesquisa_noticia');
+        return redirect()->route('pesquisa_noticia');
     }
 
 

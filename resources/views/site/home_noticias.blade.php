@@ -21,7 +21,7 @@
                     <div class="row">
                     @foreach ($destaque as $dest)
                         <div class="col-12 noticia_destaque">
-                            <a href="{{ route('noticias.noticia', ['id' => $dest->id])}}" ><img class="img_noticia_dest" src="{{ $dest->capa }}" alt="{{ $dest->titulo }}">
+                            <a href="{{ route('noticias.noticia', ['id' => $dest->id])}}" ><img class="img_noticia_dest" src="{{asset('storage/'.$dest->capa)}}" alt="{{ $dest->titulo }}">
                             
                          
                             <div class="texto_noticia">
@@ -53,7 +53,7 @@
                         @if ($not->destaque == 0)
                             <div class="row not_linha">
                                 <div class="col-3 noticia_padrao">
-                                    <a href="{{ route('noticias.noticia', ['id' => $not->id])}}" ><img class="img_noticia" src="{{ $not->capa }}" alt="{{ $not->titulo }}">
+                                    <a href="{{ route('noticias.noticia', ['id' => $not->id])}}" ><img class="img_noticia" src="{{asset('storage/'.$not->capa)}}" alt="{{ $not->titulo }}">
                                     <p>{!! $not->titulo !!}</p></a> 
                                 </div>
                             </div>                            

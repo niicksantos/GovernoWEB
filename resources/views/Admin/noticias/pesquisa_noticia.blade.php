@@ -4,7 +4,7 @@
 
 <link href="{{ asset('css/admin/noticias.css') }}" rel="stylesheet">
 
-
+ 
 @section('content')
 
     <h5 class="card-header">Pesquisar Notícias</h5>

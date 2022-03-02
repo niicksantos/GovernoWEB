@@ -24,7 +24,7 @@
                         <div class="box_presidente">
                             <div class="col-12 presidente ">
                                 @foreach ($presidente as $presid) 
-                                    <img src="{{$presid->imagem}}" alt="{{$presid->nome}}">     
+                                    <img src="{{asset('storage/'.$presid->imagem)}}" alt="{{$presid->nome}}">     
                                     <div class="texto_presidente">
                                         {{$presid->nome}} <br>
                                         {{$presid->partido}} 
@@ -43,7 +43,7 @@
                 <div class="col-12 display_vereador">
                     @foreach ($parlamentares as $parlamentar) 
                         <div class="col-3 vereadores">
-                                <img src="{{$parlamentar->imagem}}" alt="{{$parlamentar->nome}}">     
+                                <img src="{{asset('storage/'.$parlamentar->imagem)}}" alt="{{$parlamentar->nome}}">     
                                 <div class="texto_vereadores">
                                     {{$parlamentar->nome}} <br>
                                     {{$parlamentar->partido}} 
