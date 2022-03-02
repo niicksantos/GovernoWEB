@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="form-group col-md-2">
-                        <label for="data" class="form-label">Data</label>
+                        <label for="data" class="form-label">Data</label> 
                         <input type="date" value="{{$noticia->data}}" class="form-control" id="data" name="data">
                     </div>
 
