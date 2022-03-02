@@ -48,7 +48,7 @@ Route::prefix('/')->group(function() {
 
 // ROTAS DO PAINEL ADM
 
-Route::prefix('Admin')->group(function() {
+Route::prefix('admin')->group(function() {
     route::get('/', ['as' => 'admin.admin_index', 'uses' => 'admin\AdminController@indexAdmin']);
 
 
