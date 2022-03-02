@@ -32,7 +32,7 @@ Route::prefix('/')->group(function() {
 
 
     //LEGISLAÇÃO
-    route::get('Legislacao', ['as' => 'legislacao.legislacao', 'uses' => 'Site\legislacao\LegislacaoController@indexLegislacao']);
+    route::get('Legislacao', ['as' => 'legislacao.legis', 'uses' => 'Site\legislacao\LegislacaoController@indexLegislacao']);
     route::post('Legislacao', ['as' => 'legislacao.legislacao', 'uses' => 'Site\legislacao\LegislacaoController@indexLegislacao']);
 
 
@@ -55,24 +55,24 @@ Route::prefix('Admin')->group(function() {
 
     //NOTICIAS
 
-    route::get('/cadNoticia', ['as' => 'admin.noticias.cadastra_noticia', 'uses' => 'Admin\noticias\CadNotController@indexCadNoticia']);
-    route::post('/cadNoticia', ['as' => 'admin.noticias.cadastra_noticia', 'uses' => 'Admin\noticias\CadNotController@cadastraNoticia']);
+    route::get('/cadNoticia', ['as' => 'cad_noticia', 'uses' => 'Admin\noticias\CadNotController@indexCadNoticia']);
+    route::post('/cadNoticia', ['as' => 'cadastra_noticia', 'uses' => 'Admin\noticias\CadNotController@cadastraNoticia']);
 
-    route::get('/pesqNoticia', ['as' => 'admin.noticias.pesquisa_noticia', 'uses' => 'Admin\noticias\PesqNotController@indexPesqNoticia']);
+    route::get('/pesqNoticia', ['as' => 'pesquisa_noticia', 'uses' => 'Admin\noticias\PesqNotController@indexPesqNoticia']);
 
-    route::get('/editNoticia/{id}', ['as' => 'edit_noticia', 'uses' => 'Admin\noticias\PesqNotController@editNoticia']);
+    route::get('/editNoticia/{id}', ['as' => 'edit_not', 'uses' => 'Admin\noticias\PesqNotController@editNoticia']);
     route::post('/editNoticia/{id}', ['as' => 'edit_noticia', 'uses' => 'Admin\noticias\PesqNotController@editNoticia']);
 
     route::get('/editNoticiaSave/{id}', ['as' => 'edita_noticia', 'uses' => 'Admin\noticias\PesqNotController@editAction']);
-    route::post('/editNoticiaSave/{id}', ['as' => 'edita_noticia', 'uses' => 'Admin\noticias\PesqNotController@editAction']);
+    route::post('/editNoticiaSave/{id}', ['as' => 'editar_noticia', 'uses' => 'Admin\noticias\PesqNotController@editAction']);
 
-    route::get('/pesqNoticiaDel/{id}', ['as' => 'deleta_noticia', 'uses' => 'Admin\noticias\PesqNotController@deleteNoticia']);
+    route::get('/pesqNoticiaDel/{id}', ['as' => 'del_noticia', 'uses' => 'Admin\noticias\PesqNotController@deleteNoticia']);
     route::post('/pesqNoticiaDel/{id}', ['as' => 'deleta_noticia', 'uses' => 'Admin\noticias\PesqNotController@deleteNoticia']);
 
     route::get('/exibeNoticia/{id}', ['as' => 'exibe_noticia', 'uses' => 'Admin\noticias\PesqNotController@exibeNoticia']);
-    route::post('/exibeNoticia/{id}', ['as' => 'exibe_noticia', 'uses' => 'Admin\noticias\PesqNotController@exibeNoticia']);
+    route::post('/exibeNoticia/{id}', ['as' => 'exibir_noticia', 'uses' => 'Admin\noticias\PesqNotController@exibeNoticia']);
 
-    route::get('/destaqueNoticia/{id}', ['as' => 'destaque_noticia', 'uses' => 'Admin\noticias\PesqNotController@destaqueNoticia']);
+    route::get('/destaqueNoticia/{id}', ['as' => 'dest_noticia', 'uses' => 'Admin\noticias\PesqNotController@destaqueNoticia']);
     route::post('/destaqueNoticia/{id}', ['as' => 'destaque_noticia', 'uses' => 'Admin\noticias\PesqNotController@destaqueNoticia']);
 
 });

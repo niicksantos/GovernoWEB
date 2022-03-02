@@ -6,7 +6,7 @@
      
 <div class="card-header">Cadastrar Notícia</div>
 <div class="card-body bg-white">
-    <form action="{{route('admin.noticias.cadastra_noticia')}}" class="form-control" method="post" enctype="multipart/form-data">
+    <form action="{{route('cadastra_noticia')}}" class="form-control" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row md-12">
             <div class="card-body bg-white">       
@@ -75,7 +75,7 @@
         /*
         var titulo = $('#titulo').val();
 
-        var url = "{{route('admin.noticias.cadastra_noticia')}}";
+        var url = "{{route('cadastra_noticia')}}";
 
         $.ajaxSetup({
                   headers: {

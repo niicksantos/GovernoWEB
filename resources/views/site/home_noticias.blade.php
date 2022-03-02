@@ -46,7 +46,7 @@
                             @php
                             echo date('Y', strtotime($dest->data)); 
                         @endphp
-                        </div>
+                        </div> 
                     @endforeach
                 <div class="box_noticias">            
                     @foreach ($noticia as $not)

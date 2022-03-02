@@ -6,7 +6,7 @@
      
 <div class="card-header">Cadastrar Notícia</div>
 <div class="card-body bg-white">
-    <form action="{{route('edita_noticia', ['id' => $noticia->id])}}" class="form-control" method="post" enctype="multipart/form-data">
+    <form action="{{route('editar_noticia', ['id' => $noticia->id])}}" class="form-control" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row md-12">
             <div class="card-body bg-white">       
@@ -24,7 +24,7 @@
                     <div class="form-group col-md-5">
                         <label for="capa_edit" class="form-label">Capa</label>
                         <input type="file" name="capa_edit" class="form-control" id="capa_edit">
-                        <img src="../../{{$noticia->capa}}" alt="{{$noticia->capa}}">
+                        <img src="{{asset('storage/'.$noticia->capa)}}" alt="{{$noticia->capa}}">
                     </div> 
 
                 </div>
@@ -87,7 +87,7 @@
         /*
         var titulo = $('#titulo').val();
 
-        var url = "{{route('admin.noticias.cadastra_noticia')}}";
+        var url = "{{route('cadastra_noticia')}}";
 
         $.ajaxSetup({
                   headers: {

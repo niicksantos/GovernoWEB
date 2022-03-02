@@ -41,7 +41,7 @@ class PesqNotController extends Controller
                         'noticia' => $noticia
             ]);
         } else {
-            return redirect()->route('admin.noticias.pesquisa_noticia');
+            return redirect()->route('pesquisa_noticia');
         }
 
     }
@@ -53,6 +53,13 @@ class PesqNotController extends Controller
 
         $capa = $noticia->capa;
 
+        if($request->hasFile('capa_edit')){
+            $filename = $request->capa_edit->getClientOriginalName();
+            $nome_arquivo = "{$filename}";
+            $capa = $request->capa_edit->storeAs('fotos', $nome_arquivo);
+        }
+
+
         $noticia->titulo = $request->titulo;
         $noticia->data = $request->data;
         $noticia->capa = $capa;
@@ -62,7 +69,9 @@ class PesqNotController extends Controller
 
         $noticia->save();
 
-        return redirect()->route('admin.noticias.pesquisa_noticia')
+        //dd($noticia);
+
+        return redirect()->route('pesquisa_noticia')
                          ->with('success', 'Notícia editada com sucesso!');
     }
 
@@ -71,7 +80,8 @@ class PesqNotController extends Controller
     {
         Noticia::find($id)->delete();
 
-        return redirect()->route('admin.noticias.pesquisa_noticia');
+        return redirect()->route('pesquisa_noticia')
+                         ->with('success', 'Notícia excluída com sucesso!');;
 
     }
 
