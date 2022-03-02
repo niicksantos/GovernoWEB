@@ -5,7 +5,7 @@
 
 
 } 
-
+ 
 .dataTables_wrapper{
     top: 10px;
 }
@@ -26,4 +26,16 @@ table.dataTable tbody th, table.dataTable tbody td {
     transform: scale(1.5);
     transition:0.3s;
 
+}
+
+.capa_noticia {
+    width: 215px;
+    height: 155px;
+    position: absolute;
+    top: 16.3%;
+    left: 65%;
+}
+
+.row{
+    padding-bottom: 4%;
 }

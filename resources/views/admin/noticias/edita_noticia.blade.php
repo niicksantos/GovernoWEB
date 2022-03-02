@@ -1,6 +1,8 @@
 @extends('layouts.admin.admin_layout')
 
 @section('titulo', 'Editar Notícia')
+
+<link href="{{ asset('css/admin/noticias.css') }}" rel="stylesheet">
     
 @section('content')
      
@@ -24,24 +26,22 @@
                     <div class="form-group col-md-5">
                         <label for="capa_edit" class="form-label">Capa</label>
                         <input type="file" name="capa_edit" class="form-control" id="capa_edit">
-                        <img src="{{asset('storage/'.$noticia->capa)}}" alt="{{$noticia->capa}}">
+                        <img class="capa_noticia" src="{{asset('storage/'.$noticia->capa)}}" title="{{$noticia->chamada}}">
                     </div> 
 
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-5">
                         <label for="chamada" class="form-label">Chamada</label>
                         <input type="text" name="chamada" value="{{$noticia->chamada}}" class="form-control" id="chamada">
                     </div>
 
-                    <div class="form-check col-md-2" style="margin: 2% 0% 0% 1%;">
+                    <div class="form-check col-md-2" style="margin: 2% 0% 0% 4%;">
                         <input class="form-check-input" type="checkbox" value="" id="exibir" name="exibir" @if ($noticia->exibir == 1) checked @else  @endif>
                         <label for="exibir" class="form-label">Exibir?</label>
                     </div>
 
-                    @if ($noticia->exibir == 1) Sim @else  @endif
-
-                    <div class="form-check col-md-2" style="margin: 2% 0% 0% -9%;">
+                    <div class="form-check col-md-2" style="margin: 2% 0% 0% -8%;">
                         <input class="form-check-input" type="checkbox" value="" id="destaque" name="destaque" @if ($noticia->destaque == 1) checked @else  @endif>
                         <label for="destaque" class="form-label">Destaque?</label>
                     </div>

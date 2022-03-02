@@ -52,17 +52,20 @@ class PesqNotController extends Controller
         $noticia = Noticia::find($id);
 
         $capa = $noticia->capa;
+        $capa_edit = "";
 
         if($request->hasFile('capa_edit')){
-            $filename = $request->capa_edit->getClientOriginalName();
-            $nome_arquivo = "{$filename}";
-            $capa = $request->capa_edit->storeAs('fotos', $nome_arquivo);
+            $nome_arquivo = $request->capa_edit->getClientOriginalName();
+            $capa = $request->capa_edit->storeAs('public/fotos', $nome_arquivo);
+            $capa_edit = 'fotos/'.$nome_arquivo;
+        } else {
+            $capa_edit = $capa;
         }
 
 
         $noticia->titulo = $request->titulo;
         $noticia->data = $request->data;
-        $noticia->capa = $capa;
+        $noticia->capa = $capa_edit;
         $noticia->chamada = $request->chamada;
         $noticia->texto = $request->texto;
         $noticia->url = Str::slug($request->titulo);
@@ -71,7 +74,7 @@ class PesqNotController extends Controller
 
         //dd($noticia);
 
-        return redirect()->route('pesquisa_noticia')
+        return redirect()->route('edit_not', $noticia )
                          ->with('success', 'Notícia editada com sucesso!');
     }
 
