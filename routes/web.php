@@ -52,6 +52,10 @@ Route::prefix('Admin')->group(function() {
     route::get('/', ['as' => 'Admin.Admin_index', 'uses' => 'Admin\AdminController@indexAdmin']);
 
 
+    //MENSAGEM DE ALERTA
+
+    route::get('/msgAlerta', ['as' => 'msg_alerta', 'uses' => 'Admin\configuracoes\MsgAlertaController@indexMsg']);
+    route::post('/msgAlerta', ['as' => 'msg_alerta', 'uses' => 'Admin\configuracoes\MsgAlertaController@indexMsg']);
 
     //NOTICIAS
 

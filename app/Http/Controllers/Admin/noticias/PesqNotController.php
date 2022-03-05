@@ -37,7 +37,7 @@ class PesqNotController extends Controller
 
     
         if($noticia) {
-            return view('admin.noticias.edita_noticia', [
+            return view('admin.noticias.edita_noticia', [ 
                         'noticia' => $noticia
             ]);
         } else {

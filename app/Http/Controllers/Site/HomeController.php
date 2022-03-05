@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Models\Site\Slider;
 use App\Models\Site\Noticia;
+use App\Models\Site\MsgAlerta;
 use App\Models\Site\Parlamentar;
 use App\Repositories\LegislacaoRepository;
 use Illuminate\Support\Facades\DB;
@@ -20,6 +21,8 @@ class HomeController extends Controller
     {
         $contslider = 0;
         $slider = Slider::all() ->where('exibir', 1);
+
+        $msg_alerta = MsgAlerta::all() ->where('ativo', 1);
 
         $noticia = Noticia::all()->sortByDesc('id')
                                 ->where('id_categoria', 1)
@@ -62,6 +65,8 @@ class HomeController extends Controller
         $legislacao['autores'] = $legislacaoRepository->getLegislacoesPorVereador();
         $legislacao['situacoes'] = $legislacaoRepository->getLegislacoesPorSituacao();
         
+
+
         return view('site.home', [
             'contslider' => $contslider,
             'slider' => $slider,
@@ -73,7 +78,8 @@ class HomeController extends Controller
             'presidente' => $presidente,
             'legislacao' => $legislacao,
             'especiesNormativas'=> $especiesNormativas,
-            'legislacoesTema' => $legislacoesTema
+            'legislacoesTema' => $legislacoesTema,
+            'msg_alerta' => $msg_alerta
         ]);
     }
 }
