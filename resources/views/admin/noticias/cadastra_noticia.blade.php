@@ -2,7 +2,7 @@
 
 @section('titulo', 'Cadastrar Notícia')
     
-@section('content')
+@section('content') 
      
 <div class="card-header">Cadastrar Notícia</div>
 <div class="card-body bg-white">
