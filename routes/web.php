@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\configuracao\MensagemAlertaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,8 +55,8 @@ Route::prefix('Admin')->group(function() {
 
     //MENSAGEM DE ALERTA
 
-    route::get('/msgAlerta', ['as' => 'msg_alerta', 'uses' => 'Admin\configuracoes\MsgAlertaController@indexMsg']);
-    route::post('/msgAlerta', ['as' => 'msg_alerta', 'uses' => 'Admin\configuracoes\MsgAlertaController@indexMsg']);
+    route::get('/msgAlerta', ['as' => 'msg_alerta', 'uses' => 'Admin\configuracao\MensagemAlertaController@indexMensagem']);
+
 
     //NOTICIAS
 
@@ -80,10 +81,5 @@ Route::prefix('Admin')->group(function() {
     route::post('/destaqueNoticia/{id}', ['as' => 'destaque_noticia', 'uses' => 'Admin\noticias\PesqNotController@destaqueNoticia']);
 
 });
-
-
-
-
-
 
 

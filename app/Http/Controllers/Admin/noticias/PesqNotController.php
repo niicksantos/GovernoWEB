@@ -20,7 +20,7 @@ class PesqNotController extends Controller
     {
 
         $result_page = $request->resultados;
-
+ 
 
         $noticias = Noticia::orderBy('id','desc')
                             ->where('id_categoria', 1)
