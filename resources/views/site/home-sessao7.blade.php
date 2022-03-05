@@ -1,4 +1,3 @@
-''
 <link href="{{ asset('css/sessao7.css') }}" rel="stylesheet">
 
 <div class="row">
@@ -7,7 +6,7 @@
             <div class="box-titulo-sessao7">Tempo</div>
 
         </div>
-    </div>
+    </div> 
 
     <div class="col">
         <div class="box-sessao7">

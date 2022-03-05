@@ -34,7 +34,7 @@
                                         echo $texto.'<br><br><br> <p class="float-right cont_lendo">Continuar Lendo...</p> ';
                                     }                                    
                                 @endphp                                  
-                            </a>
+                            </a> 
                             </div>
                         </div>
                         <div class="calendario_noticia_dest_ano">

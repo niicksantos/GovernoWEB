@@ -10,7 +10,7 @@
             <div class="losango"></div>
         </div>
     </div>
-</div>
+</div> 
 
 <div class="row"> 
     <div class="div_parlamentares">

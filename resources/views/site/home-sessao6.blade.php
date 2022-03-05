@@ -1,4 +1,3 @@
-
 <link href="{{ asset('css/sessao6.css') }}" rel="stylesheet">
 
 <div class="row">

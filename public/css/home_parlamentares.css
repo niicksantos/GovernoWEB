@@ -40,7 +40,7 @@
 .losango_presidente_e {
     margin: 0% 4% 0% -2%;
     width: 310px!important;
-    height: 115px;
+    height: 118px;
     border: 1px solid var(--cor-primaria);
     border-radius: 5px 20px;
     /*transform: skew(140deg);*/
@@ -51,7 +51,7 @@
 
 .losango_presidente_d {
     width: 310px!important;
-    height: 115px;
+    height: 118px;
     /*transform: skew(140deg);*/
     border: 1px solid var(--cor-primaria);
     border-radius: 5px 20px;
@@ -91,9 +91,9 @@
     margin: 0% 0% 0% 0%;
     display: flex;
     position: relative;
-    left: -20.6%;
+    left: -16.5%;
     top: -5px;
-    /* z-index: 9999; */
+    z-index: 9999;
     box-shadow: var(--sombra);
     align-items: center;
     flex-direction: row;
@@ -159,7 +159,7 @@
     /* display: flex; */
     text-align: center;
     position: relative;
-    top: 1rem;
+    top: 0%;
     left: -0.5%;
     width: 100%;
     height: auto;
