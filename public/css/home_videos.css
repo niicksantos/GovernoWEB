@@ -61,10 +61,10 @@
 
 .titulo_vid {
     position: relative;
-    width: 89.6%;
+    width: 93.3%;
     height: 20%;
     background-color: #00486f;
-    left: 5.4%;
+    left: 3.5%;
     top: -2.9%;
     border-radius: 0px 0px 5px 5px;
     display: flex;
@@ -98,7 +98,7 @@
 .video_padrao {
     background-color: #fff;
     height: 14rem;
-    width: 19.5rem!important;
+    width: 23.5%!important;
     transition: 0.7s;
 }
 

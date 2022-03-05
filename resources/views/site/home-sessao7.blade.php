@@ -3,7 +3,7 @@
 <div class="row sessao7">
     <div class="col">
         <div class="box-sessao7">
-            <div class="box-titulo-sessao7">Tempo</div>
+            <div class="box-titulo-sessao7">Links Rápidos</div>
 
         </div>
     </div>
