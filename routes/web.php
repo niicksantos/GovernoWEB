@@ -15,7 +15,7 @@ use App\Http\Controllers\configuracao\MensagemAlertaController;
 */ 
 
 
-Auth::routes();
+'Auth'::routes();
 
 
 //SITE
@@ -79,6 +79,38 @@ Route::prefix('Admin')->group(function() {
 
     route::get('/destaqueNoticia/{id}', ['as' => 'dest_noticia', 'uses' => 'Admin\noticias\PesqNotController@destaqueNoticia']);
     route::post('/destaqueNoticia/{id}', ['as' => 'destaque_noticia', 'uses' => 'Admin\noticias\PesqNotController@destaqueNoticia']);
+
+
+
+
+     //AGENDA
+
+     route::get('agenda', ['as' => 'cad.agenda', 'uses' => 'Admin\agenda\AgendaController@indexAgenda']);
+     //route::post('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@exibeNoticia']);
+
+     
+     //BANNER HOME
+
+     route::get('banner_home', ['as' => 'cad.banner', 'uses' => 'Admin\banner\BannerController@indexBanner']);
+     //route::post('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@exibeNoticia']);
+
+
+     //COMISSÕES
+
+     route::get('comissoes', ['as' => 'cad.comissoes', 'uses' => 'Admin\comissoes\ComissoesController@indexComissoes']);
+     //route::post('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@exibeNoticia']);
+
+
+     //DADOS COVID-19
+
+     route::get('dados_covid', ['as' => 'cad.dados', 'uses' => 'Admin\dados_covid\DadosController@indexDados']);
+     //route::post('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@exibeNoticia']);
+
+
+     //DÚVIDAS FREQUENTES
+
+     route::get('duvidas_frequentes', ['as' => 'cad.duvidas', 'uses' => 'Admin\duvidas_frequentes\DuvidasController@indexDuvidas']);
+     //route::post('Noticia/{id}', ['as' => 'noticias.noticia', 'uses' => 'Site\noticias\NoticiasController@exibeNoticia']);
 
 });
 
